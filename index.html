@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bến hàng nặng An Khánh – Bắc Giang · Hồ sơ bản vẽ và thẩm định giá thầu nền móng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#15212d; --navy:#14354f; --navy2:#1d4e75; --blue:#1f74ab; --sky:#4e9bcb;
+  --water:#bfe0f0; --water2:#e6f3fa;
+  --orange:#d4621f; --orange-d:#a94a13; --orange-l:#fdf0e6; --amber:#c98a06; --amber-l:#fdf6e3;
+  --green:#1b7a51; --green-l:#e7f4ed; --red:#b8322a; --red-l:#fbeeec;
+  --rock:#c9a77d; --rock-d:#8e6b43; --earth:#ece0ca; --earth-d:#d2c0a0; --grey:#6f7d89;
+  --line:#dbe2e8; --line2:#eef1f4; --paper:#faf8f5; --card:#ffffff; --mut:#55636f;
+  --sans:'Be Vietnam Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --sh:0 1px 2px rgba(21,33,45,.05),0 8px 22px rgba(21,33,45,.06);
+  --sh-lg:0 2px 5px rgba(21,33,45,.07),0 22px 54px rgba(21,33,45,.11);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.62;
+  -webkit-font-smoothing:antialiased;font-size:19px;overflow-x:hidden;
+  font-variant-numeric:tabular-nums;font-feature-settings:'tnum' 1}
+.wrap{max-width:1300px;margin:0 auto;padding:0 26px}
+
+/* ---------- nav ---------- */
+.topnav{position:sticky;top:0;z-index:300;background:rgba(250,248,245,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.topnav .wrap{display:flex;align-items:center;gap:6px;height:62px;overflow-x:auto;scrollbar-width:none}
+.topnav .wrap::-webkit-scrollbar{display:none}
+.topnav a{color:var(--mut);text-decoration:none;font-size:16px;font-weight:600;padding:9px 14px;border-radius:999px;white-space:nowrap;transition:.18s}
+.topnav a:hover{color:var(--navy);background:#eef2f6}
+.topnav a.on{color:#fff;background:var(--navy)}
+.topnav .brand{font-weight:800;color:var(--navy);font-size:16px;margin-right:14px;white-space:nowrap}
+.topnav .brand i{color:var(--orange);font-style:normal}
+
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(170deg,#fff 0%,#f3f7fa 60%,#eef4f8 100%);border-bottom:1px solid var(--line);padding:50px 0 54px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;
+  background-image:linear-gradient(rgba(20,53,79,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(20,53,79,.045) 1px,transparent 1px);
+  background-size:48px 48px;mask-image:radial-gradient(ellipse 120% 90% at 50% 0%,#000 20%,transparent 75%)}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--orange-d);border:1.5px solid rgba(212,98,31,.35);padding:7px 16px;border-radius:999px;background:var(--orange-l)}
+.hero h1{font-size:clamp(34px,4.6vw,56px);line-height:1.08;font-weight:800;letter-spacing:-1px;margin:22px 0 16px;max-width:19ch;color:var(--navy)}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .lede{font-size:clamp(18px,1.6vw,22px);color:var(--mut);max-width:62ch}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.hero .meta span{font-size:15px;color:var(--navy);background:#fff;border:1px solid var(--line);padding:7px 14px;border-radius:9px;font-weight:500}
+
+.verdict{margin-top:34px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--sh)}
+.verdict .vq{font-size:15px;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:20px}
+.vbars{display:flex;flex-direction:column;gap:17px}
+.vbar{display:grid;grid-template-columns:230px 1fr 130px;align-items:center;gap:18px}
+.vbar .lb{font-size:17px;color:var(--ink);font-weight:600}
+.vbar .lb small{display:block;font-size:14px;color:var(--mut);font-weight:400}
+.vtrack{height:22px;background:#eef2f5;border-radius:11px;overflow:hidden;border:1px solid var(--line)}
+.vfill{height:100%;border-radius:11px;transition:width .9s cubic-bezier(.22,1,.36,1)}
+.vbar .vv{font-size:21px;font-weight:700;text-align:right}
+.vnote{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);font-size:18px;color:var(--ink);display:flex;gap:13px;align-items:flex-start;line-height:1.55}
+.vdot{width:13px;height:13px;border-radius:50%;flex:none;margin-top:8px}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:30px}
+.kpi{background:#fff;padding:20px 22px}
+.kpi b{display:block;font-size:30px;font-weight:700;color:var(--navy);line-height:1.08;letter-spacing:-.6px}
+.kpi b i{font-style:normal;font-size:17px;color:var(--mut);font-weight:500}
+.kpi span{display:block;font-size:14.5px;color:var(--mut);margin-top:7px;line-height:1.42}
+.hero .foot{margin-top:26px;font-size:15px;color:var(--mut)}
+
+/* ---------- sections ---------- */
+section{padding:74px 0;position:relative}
+section[id]{scroll-margin-top:68px}
+section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.shead{display:flex;gap:18px;align-items:flex-start;margin-bottom:12px}
+.snum{font-size:16px;font-weight:700;color:#fff;background:var(--orange);width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex:none;margin-top:4px}
+.shead h2{font-size:clamp(27px,3.2vw,38px);font-weight:800;letter-spacing:-.6px;line-height:1.16;color:var(--navy)}
+.sub{font-size:19px;color:var(--mut);max-width:76ch;margin:0 0 32px 58px;line-height:1.6}
+@media(max-width:760px){.sub{margin-left:0}}
+
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;padding:4px 11px;border-radius:999px;white-space:nowrap}
+.c-src{background:#e6f1f8;color:#16577f}
+.c-est{background:var(--orange-l);color:var(--orange-d)}
+.c-new{background:#efe8fb;color:#5b3ca8}
+.note{display:flex;gap:14px;padding:18px 20px;border-radius:14px;font-size:18px;line-height:1.55;align-items:flex-start}
+.n-warn{background:var(--orange-l);border-left:5px solid var(--orange)}
+.n-bad{background:var(--red-l);border-left:5px solid var(--red)}
+.n-ok{background:var(--green-l);border-left:5px solid var(--green)}
+.n-info{background:#eaf3fa;border-left:5px solid var(--blue)}
+.note .ic{font-size:22px;line-height:1.1;flex:none;font-weight:700}
+
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--sh)}
+section.alt .card{box-shadow:none;background:var(--paper)}
+.card h4{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:9px}
+.card p{font-size:17.5px;color:var(--mut);line-height:1.56}
+.card .big{font-size:34px;font-weight:700;color:var(--navy);letter-spacing:-.8px;line-height:1.05}
+.card .big i{font-style:normal;font-size:17px;color:var(--mut);font-weight:500}
+
+table{width:100%;border-collapse:collapse;font-size:17px}
+th{text-align:left;font-weight:700;color:var(--navy);padding:12px 13px;border-bottom:2.5px solid var(--navy);font-size:15.5px}
+td{padding:12px 13px;border-bottom:1px solid var(--line2);vertical-align:top}
+td.n,th.n{text-align:right}
+tr.tot td{font-weight:700;border-top:2.5px solid var(--navy);border-bottom:none;background:#f5f8fa}
+
+/* ---------- 3D viewer ---------- */
+.v3d{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh-lg);overflow:hidden}
+.v3d-top{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 20px;border-bottom:1px solid var(--line);background:linear-gradient(#fcfdfe,#f4f8fa);flex-wrap:wrap}
+.v3d-title{font-size:17px;font-weight:700;color:var(--navy)}
+.v3d-title small{display:block;font-weight:400;color:var(--mut);font-size:14.5px}
+.v3d-body{display:grid;grid-template-columns:1fr 340px}
+@media(max-width:1020px){.v3d-body{grid-template-columns:1fr}}
+.stage{position:relative;background:linear-gradient(#dcebf5,#eef5f9 55%,#f6f3ec);touch-action:none;cursor:grab}
+.stage.night{background:linear-gradient(#101d2c,#1a2f44 55%,#1e3346)}
+.stage:active{cursor:grabbing}
+.stage canvas{display:block;width:100%;height:auto}
+.hint{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:10px;padding:7px 13px;font-size:14px;color:var(--mut);pointer-events:none}
+.stage.night .hint{background:rgba(16,29,44,.85);border-color:rgba(255,255,255,.2);color:#b9cbd9}
+.v3d-ctrl{display:flex;flex-wrap:wrap;gap:9px;padding:14px 20px;border-top:1px solid var(--line);background:#fafbfc}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:16px;font-weight:600;border:1.5px solid var(--line);background:#fff;color:var(--navy);
+  padding:11px 16px;border-radius:11px;cursor:pointer;transition:.16s;min-height:46px;font-family:inherit}
+.btn:hover{border-color:var(--navy)}
+.btn.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.sm{padding:8px 13px;min-height:40px;font-size:15px}
+.btn i{width:13px;height:13px;border-radius:4px;display:block;flex:none}
+.ctrl-grp{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.ctrl-grp>.lb{font-size:14.5px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.6px}
+
+.insp{border-left:1px solid var(--line);padding:20px;background:#fff;overflow:auto;max-height:620px}
+@media(max-width:1020px){.insp{border-left:none;border-top:1px solid var(--line);max-height:none}}
+.insp .tag{font-size:14px;font-weight:700;color:var(--orange-d);letter-spacing:.8px;text-transform:uppercase}
+.insp h3{font-size:23px;font-weight:800;color:var(--navy);margin:4px 0 6px;line-height:1.2}
+.insp .desc{font-size:16.5px;color:var(--mut);line-height:1.5;margin-bottom:16px}
+.spec{display:grid;grid-template-columns:1fr auto;gap:9px 14px;font-size:16.5px;border-top:1px solid var(--line2);padding-top:14px}
+.spec dt{color:var(--mut)}
+.spec dd{font-weight:700;color:var(--navy);text-align:right}
+.insp .src{margin-top:16px;font-size:14.5px;color:var(--mut);border-top:1px solid var(--line2);padding-top:12px}
+.insp .idle{color:var(--mut);font-size:17px;line-height:1.55}
+.insp .idle b{color:var(--navy)}
+.legend3{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.legend3 span{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--mut);background:#f4f7f9;padding:4px 10px;border-radius:7px}
+.legend3 i{width:12px;height:12px;border-radius:3px;display:block}
+
+/* ---------- drawing sheet (2D) ---------- */
+.sheet{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);overflow:hidden}
+section.alt .sheet{box-shadow:none;background:var(--paper)}
+.sheet-top{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 20px;border-bottom:1px solid var(--line);background:linear-gradient(#fcfdfe,#f5f8fa);flex-wrap:wrap}
+.sheet-title{font-size:17px;font-weight:700;color:var(--navy)}
+.sheet-title small{display:block;font-weight:400;color:var(--mut);font-size:14.5px}
+.sheet-body{padding:18px;background:linear-gradient(rgba(20,53,79,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(20,53,79,.025) 1px,transparent 1px);background-size:28px 28px}
+.sheet-foot{padding:15px 20px;border-top:1px solid var(--line);background:#fafbfc;font-size:17px;color:var(--mut);line-height:1.55}
+.sheet-foot b{color:var(--navy)}
+.scene-ctrl{display:flex;align-items:center;gap:10px}
+.dots{display:flex;gap:6px}
+.dot{width:26px;height:7px;border-radius:4px;background:var(--line);cursor:pointer;transition:.3s;border:none;padding:0}
+.dot.on{background:var(--orange);width:36px}
+.scene-cap{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;border-top:1px solid var(--line);background:#fff;min-height:92px}
+section.alt .scene-cap{background:var(--paper)}
+.scene-cap .k{font-size:14px;font-weight:700;color:#fff;background:var(--navy);padding:4px 10px;border-radius:7px;flex:none;margin-top:3px}
+.scene-cap h4{font-size:19px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.scene-cap p{font-size:17px;color:var(--mut);line-height:1.5}
+.lyr{opacity:0;transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);transform:translateY(10px)}
+.lyr.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.lyr{transition:opacity .01s}}
+svg.fig{display:block;width:100%;height:auto}
+svg text.hl{paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.fg-l{font-family:var(--sans);font-size:13px;fill:var(--navy);font-weight:700}
+.fg-s{font-family:var(--sans);font-size:11.5px;fill:var(--mut)}
+.fg-m{font-family:var(--sans);font-size:12px;fill:var(--navy);letter-spacing:.2px}
+.toggles{display:flex;flex-wrap:wrap;gap:9px;padding:15px 20px;border-top:1px solid var(--line);background:#fff}
+section.alt .toggles{background:var(--paper)}
+
+/* ---------- pile side ---------- */
+.pile-wrap{display:grid;grid-template-columns:1fr 360px}
+@media(max-width:1020px){.pile-wrap{grid-template-columns:1fr}}
+.pile-side{border-left:1px solid var(--line);padding:22px;background:#fff}
+section.alt .pile-side{background:var(--paper)}
+@media(max-width:1020px){.pile-side{border-left:none;border-top:1px solid var(--line)}}
+.pile-side .pid{font-size:15px;color:var(--orange-d);font-weight:700;letter-spacing:.8px}
+.pile-side h4{font-size:21px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.pcirc{cursor:pointer}
+circle.pc{transition:.2s}
+.reqs{display:flex;flex-direction:column;gap:12px;counter-reset:r}
+.req{display:flex;gap:15px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px 19px}
+section.alt .req{background:var(--paper)}
+.req::before{counter-increment:r;content:counter(r);font-size:15px;font-weight:700;color:#fff;background:var(--navy);width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none;margin-top:2px}
+.req b{color:var(--navy);font-weight:700}
+.req p{font-size:17.5px;color:var(--mut);line-height:1.5;margin-top:3px}
+
+/* ---------- cost ---------- */
+.cost-shell{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--sh-lg);overflow:hidden}
+.cost-head{padding:20px 24px;border-bottom:1px solid var(--line);background:linear-gradient(#fcfdfe,#f4f8fa);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.cost-head h3{font-size:21px;font-weight:700;color:var(--navy)}
+.cost-head p{font-size:15.5px;color:var(--mut)}
+.grp{border-bottom:1px solid var(--line)}
+.grp-h{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 24px;background:#eef3f7;font-size:15px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase}
+.grp-h .gt{font-size:19px;letter-spacing:0;text-transform:none}
+.grp.opt .grp-h{background:#f6f1fb}
+.row{display:grid;grid-template-columns:1fr 340px 140px;gap:18px;align-items:center;padding:16px 24px;border-top:1px solid var(--line2)}
+.row:hover{background:#fcfdfe}
+.row .nm{font-size:18px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.row .qt{font-size:15px;color:var(--mut);margin-top:3px}
+.row .nt{font-size:15px;color:var(--mut);margin-top:5px;line-height:1.42}
+.ctrl{display:flex;align-items:center;gap:11px}
+input[type=range]{-webkit-appearance:none;appearance:none;height:7px;border-radius:4px;background:var(--line);outline:none;cursor:pointer;flex:1;min-width:100px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:var(--orange);cursor:pointer;border:4px solid #fff;box-shadow:0 1px 6px rgba(0,0,0,.3)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--orange);cursor:pointer;border:4px solid #fff;box-shadow:0 1px 6px rgba(0,0,0,.3)}
+.ctrl input[type=text],.ctrl input[type=number]{width:132px;font-size:17px;padding:10px 11px;border:1.5px solid var(--line);border-radius:10px;text-align:right;color:var(--navy);font-weight:700;background:#fff;font-family:inherit;min-height:46px}
+.ctrl input:focus{outline:3px solid rgba(212,98,31,.35);border-color:var(--orange)}
+.ctrl .u{font-size:14px;color:var(--mut);white-space:nowrap}
+.qin{width:96px;font-size:15px;padding:5px 8px;border:1.5px solid var(--orange);border-radius:8px;text-align:right;color:var(--orange-d);font-weight:700;font-family:inherit;background:#fff}
+.row .amt{font-size:19px;font-weight:700;color:var(--navy);text-align:right}
+.row .amt i{display:block;font-style:normal;font-size:13.5px;color:var(--mut);font-weight:500;margin-top:2px}
+@media(max-width:900px){
+  .row{grid-template-columns:1fr auto;gap:10px}
+  .ctrl{grid-column:1/-1;order:3}
+}
+.cost-foot{padding:24px}
+.tot-line{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:11px 0;font-size:18px}
+.tot-line.big{border-top:2.5px solid var(--navy);margin-top:12px;padding-top:18px;font-size:21px;font-weight:800}
+.tot-line .v{font-weight:700;color:var(--navy)}
+.tot-line.big .v{font-size:31px;letter-spacing:-.8px}
+.tot-line .lb small{display:block;font-size:15px;color:var(--mut);font-weight:400}
+.gauge{margin-top:26px;background:#f5f8fa;border:1px solid var(--line);border-radius:16px;padding:22px}
+.gl{display:flex;justify-content:space-between;font-size:14.5px;color:var(--mut);margin-bottom:26px}
+.gtrack{position:relative;height:46px;border-radius:11px;border:1px solid var(--line);
+  background:linear-gradient(90deg,#e7f4ec 0%,#e7f4ec 72.7%,#fdf2e7 72.7%,#fdf2e7 82.6%,#fbeeec 82.6%,#fbeeec 100%)}
+.gmark{position:absolute;top:-7px;bottom:-7px;width:3px;background:var(--navy)}
+.gmark span{position:absolute;top:-24px;left:50%;transform:translateX(-50%);font-size:14px;color:var(--navy);white-space:nowrap;font-weight:700}
+.gmark.rev{background:var(--green)}.gmark.rev span{color:var(--green)}
+.gneedle{position:absolute;top:-11px;bottom:-11px;width:6px;background:var(--orange);border-radius:4px;transition:left .7s cubic-bezier(.22,1,.36,1);box-shadow:0 0 0 4px rgba(212,98,31,.2)}
+.gneedle b{position:absolute;bottom:-34px;left:50%;transform:translateX(-50%);font-size:16px;color:#fff;background:var(--orange);padding:3px 11px;border-radius:8px;white-space:nowrap;font-weight:700}
+.gauge .verdict-txt{margin-top:46px;font-size:18px;font-weight:600;display:flex;gap:11px;align-items:flex-start;line-height:1.5}
+
+/* ---------- risk (light) ---------- */
+.risk-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
+@media(max-width:1020px){.risk-grid{grid-template-columns:1fr}}
+.rcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px;box-shadow:var(--sh)}
+.rcard h4{font-size:20px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:11px;margin-bottom:6px}
+.rcard h4 .em{font-size:23px}
+.rcard>p{font-size:17px;color:var(--mut);margin-bottom:17px;line-height:1.5}
+.rrow{display:grid;grid-template-columns:1fr 150px 110px;gap:14px;align-items:center;margin-bottom:13px}
+@media(max-width:620px){.rrow{grid-template-columns:1fr 100px}.rrow .rlb{grid-column:1/-1}}
+.rlb{font-size:17px;color:var(--ink)}
+.rrow .rv{font-size:17px;color:var(--orange-d);text-align:right;font-weight:700}
+.rsw{display:flex;align-items:center;gap:12px;font-size:17px;color:var(--ink);cursor:pointer;user-select:none;margin-top:8px;min-height:44px}
+.rsw input{width:0;height:0;opacity:0;position:absolute}
+.rsw .tk{width:52px;height:30px;border-radius:999px;background:#d8dfe5;position:relative;transition:.22s;flex:none}
+.rsw .tk::after{content:'';position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:.22s;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.rsw input:checked + .tk{background:var(--red)}
+.rsw input:checked + .tk::after{left:25px}
+.rimp{font-size:16px;color:var(--orange-d);margin-top:13px;padding-top:13px;border-top:1px solid var(--line2);font-weight:600}
+.rout{position:sticky;top:76px;background:#fff;border:2px solid var(--navy);border-radius:18px;padding:24px;box-shadow:var(--sh-lg)}
+@media(max-width:1020px){.rout{position:static}}
+.rout h4{font-size:14.5px;text-transform:uppercase;letter-spacing:1.1px;color:var(--mut);font-weight:700;margin-bottom:16px}
+.rbig{font-size:46px;font-weight:800;letter-spacing:-1.6px;line-height:1;transition:color .4s;color:var(--navy)}
+.rbig i{font-style:normal;font-size:20px;color:var(--mut);font-weight:500}
+.rsubtxt{font-size:15.5px;color:var(--mut);margin-top:6px}
+.rline{display:flex;justify-content:space-between;font-size:17.5px;padding:11px 0;border-top:1px solid var(--line2);color:var(--mut)}
+.rline:first-of-type{border-top:none}
+.rline b{font-weight:700;color:var(--navy)}
+.rverd{margin-top:18px;padding:16px;border-radius:13px;font-size:17px;font-weight:600;line-height:1.5;display:flex;gap:11px;align-items:flex-start}
+.rv-ok{background:var(--green-l);border:1.5px solid rgba(27,122,81,.4);color:#135c3c}
+.rv-warn{background:var(--amber-l);border:1.5px solid rgba(201,138,6,.45);color:#8a5d04}
+.rv-bad{background:var(--red-l);border:1.5px solid rgba(184,50,42,.4);color:#8f241e}
+.torn .tr{display:grid;grid-template-columns:168px 1fr 92px;gap:12px;align-items:center;margin-bottom:9px;font-size:15.5px}
+.torn .tl{color:var(--mut);text-align:right;line-height:1.3}
+.ttrack{height:24px;background:#eef2f5;border-radius:7px;overflow:hidden}
+.tfill{height:100%;border-radius:7px;transition:width .6s cubic-bezier(.22,1,.36,1)}
+.torn .tv{color:var(--orange-d);font-size:15.5px;font-weight:700}
+@media(max-width:620px){.torn .tr{grid-template-columns:120px 1fr 78px;gap:8px;font-size:14px}}
+
+.act{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px 22px;margin-bottom:14px;box-shadow:var(--sh)}
+.act .pri{font-size:13.5px;font-weight:800;padding:6px 12px;border-radius:8px;flex:none;margin-top:3px;letter-spacing:.4px}
+.p1{background:var(--red);color:#fff}.p2{background:var(--amber);color:#fff}.p3{background:var(--blue);color:#fff}
+.act h4{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.act p{font-size:17.5px;color:var(--mut);line-height:1.52}
+
+footer{background:var(--navy);color:rgba(255,255,255,.72);padding:48px 0 56px;font-size:16px;line-height:1.65}
+footer a{color:#9fd0ef;text-decoration:none;border-bottom:1px solid rgba(159,208,239,.35)}
+footer h5{color:#fff;font-size:15px;font-weight:800;margin-bottom:11px;text-transform:uppercase;letter-spacing:1px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.src-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-bottom:30px}
+.disc{border-top:1px solid rgba(255,255,255,.18);padding-top:24px;font-size:15.5px;color:rgba(255,255,255,.6);line-height:1.6}
+@media(max-width:700px){
+  body{font-size:18px}
+  section{padding:52px 0}
+  .shead{gap:12px}
+  .vbar{grid-template-columns:1fr;gap:7px}
+  .vbar .vv{text-align:left}
+  .grp-h{flex-direction:column;align-items:flex-start;gap:4px}
+  .row{padding:16px}
+  .cost-foot,.cost-head{padding:18px}
+}
+
+/* ================= KHUNG LÀM VIỆC ================= */
+html,body{height:auto}
+body.nofs{overflow:hidden}
+.topbar{position:sticky;top:0;z-index:300;background:rgba(250,248,245,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.topbar .row1{display:flex;align-items:center;gap:12px;min-height:60px;padding:6px 20px}
+.topbar .brand{font-weight:800;color:var(--navy);font-size:16px;white-space:nowrap}
+.topbar .brand i{color:var(--orange);font-style:normal}
+.tabs{display:flex;gap:8px;margin-left:auto}
+.tabb{font-family:inherit;font-size:18px;font-weight:700;padding:9px 22px;border-radius:12px;border:1.5px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;min-height:46px;white-space:nowrap}
+.tabb.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.vbar2{display:flex;gap:6px 22px;align-items:center;padding:6px 20px 8px;border-top:1px solid var(--line2);font-size:17px;flex-wrap:wrap;background:#fff}
+.vbar2 .dot2{width:14px;height:14px;border-radius:50%;flex:none}
+.vbar2 .cell{display:flex;align-items:baseline;gap:7px;white-space:nowrap}
+.vbar2 .cell small{color:var(--mut);font-size:14.5px}
+.vbar2 .cell b{font-size:19px;color:var(--navy)}
+.vbar2 .vt2{flex:1;min-width:260px;font-size:16px;line-height:1.35}
+.vbar2 .vt2 b{color:var(--ink)}
+
+.tab{display:none}
+.tab.on{display:block}
+.tab section{padding:34px 0 40px}
+.tab section.alt{border-top:1px solid var(--line)}
+.tab .shead{margin-bottom:10px}
+.tab .sub{margin-left:0}
+
+.ws{position:relative;display:grid;grid-template-columns:330px minmax(0,1fr) 390px;height:calc(100vh - 118px);height:calc(100dvh - 118px);min-height:600px;background:#fff}
+.tree{overflow:auto;border-right:1px solid var(--line);background:#faf8f5;padding:10px 10px 40px;-webkit-overflow-scrolling:touch}
+.tree-h{display:flex;align-items:center;justify-content:space-between;padding:6px 6px 4px;font-size:18px;color:var(--navy)}
+.tbtn{font-family:inherit;font-size:15px;font-weight:700;color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:9px;padding:6px 12px;cursor:pointer;min-height:38px}
+.tleg{display:flex;flex-wrap:wrap;gap:4px 12px;padding:2px 6px 10px;font-size:13.5px;color:var(--mut)}
+.tleg span{display:inline-flex;align-items:center;gap:5px}
+.d-yes,.d-no,.d-ref,.d-est{display:inline-block;width:11px;height:11px;border-radius:50%;flex:none}
+.d-yes{background:#d4621f}.d-no{background:#9aa6b1}.d-ref{background:#1f74ab}.d-est{background:#7a5bb5}
+.tgp{margin-bottom:5px}
+.tg-h{width:100%;display:flex;align-items:center;gap:9px;text-align:left;font-family:inherit;font-size:17.5px;font-weight:800;color:var(--navy);background:#eef2f6;border:none;border-radius:11px;padding:10px 12px;min-height:50px;cursor:pointer}
+.tg-h .chev{display:inline-block;font-size:15px;transition:transform .2s;width:14px;flex:none}
+.tgp.open .chev{transform:rotate(90deg)}
+.tg-n{flex:1;line-height:1.25}
+.tg-n small{display:block;font-weight:500;font-size:13.5px;color:var(--mut)}
+.tg-c{font-size:15px;font-weight:700;color:var(--orange-d);white-space:nowrap}
+.tg-b{display:none;padding:4px 0 2px 14px;border-left:3px solid #dfe6ec;margin:4px 0 4px 15px}
+.tgp.open .tg-b{display:block}
+.tn{width:100%;display:grid;grid-template-columns:12px auto 1fr auto;gap:8px;align-items:center;text-align:left;font-family:inherit;font-size:16.5px;color:var(--ink);background:transparent;border:none;border-radius:10px;padding:8px 8px;min-height:50px;cursor:pointer}
+.tn:hover{background:#eef2f6}
+.tn.sel{background:var(--navy);color:#fff}
+.tn-code{font-weight:800;font-size:15px;white-space:nowrap;color:var(--navy)}
+.tn.sel .tn-code{color:#ffd9bf}
+.tn-name{line-height:1.25;font-size:15.5px}
+.tn-c{font-size:14px;font-weight:700;color:var(--orange-d);white-space:nowrap}
+.tn.sel .tn-c{color:#ffd9bf}
+
+.center{position:relative;display:flex;flex-direction:column;min-width:0;background:#e9eef2}
+.vtool{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 12px;background:#fff;border-bottom:1px solid var(--line)}
+.vtitle{font-size:17px;color:var(--ink);flex:1;min-width:120px;line-height:1.25}
+.vtitle b{color:var(--orange-d)}
+.tb{display:none;align-items:center;gap:7px;flex-wrap:wrap}
+.tb .sep{width:1px;height:26px;background:var(--line);margin:0 3px}
+.tb .lb{font-size:13.5px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.5px}
+.zoomv{min-width:56px;text-align:center;font-weight:700;color:var(--navy);font-size:16px}
+.tt{display:none}
+.btn.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.vstage{position:relative;flex:1;min-height:0;overflow:hidden}
+.imgv{position:absolute;inset:0;touch-action:none;cursor:grab;overflow:hidden;background:#d9e0e6;display:none}
+.imgv:active{cursor:grabbing}
+.imgt{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform;background:#fff;box-shadow:0 3px 18px rgba(0,0,0,.28);overflow:hidden}
+.imgt.anim{transition:transform .55s cubic-bezier(.22,1,.36,1)}
+.imgt img{display:block;width:100%;height:100%;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;pointer-events:none}
+.hs{position:absolute;inset:0}
+.hs.off{display:none}
+.hz{position:absolute;box-sizing:border-box;border:calc(3px*var(--inv,1)) solid rgba(212,98,31,.95);background:rgba(212,98,31,.09);border-radius:calc(5px*var(--inv,1));cursor:pointer;z-index:1}
+.hz .bd{position:absolute;left:0;top:0;width:30px;height:30px;line-height:30px;text-align:center;font-weight:800;font-size:16px;color:#fff;background:#d4621f;border-radius:0 0 9px 0;transform:scale(var(--inv,1));transform-origin:0 0;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.hz.sel{z-index:3;background:rgba(212,98,31,.10);box-shadow:0 0 0 20000px rgba(10,22,34,.50)}
+.hs.has-sel .hz:not(.sel){opacity:.35}
+.spin{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:12px;font-size:18px;color:var(--mut);background:rgba(233,238,242,.9);z-index:5}
+.sp-d{width:22px;height:22px;border:3px solid #c5d0d9;border-top-color:var(--orange);border-radius:50%;animation:rot .8s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.zcap{display:none;position:absolute;left:12px;right:12px;bottom:12px;max-width:760px;background:#fff;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.28);padding:14px 52px 14px 14px;z-index:6;gap:12px}
+.zcap .zc-n{position:absolute;left:14px;top:14px;width:34px;height:34px;border-radius:10px;background:var(--orange);color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center}
+.zcap .zc-b{margin-left:46px}
+.zcap b{font-size:19px;color:var(--navy);display:block;margin-bottom:3px}
+.zcap p{font-size:17.5px;color:var(--ink);line-height:1.5}
+.zx{position:absolute;right:8px;top:8px;width:44px;height:44px;border:none;background:#eef2f6;border-radius:12px;font-size:26px;cursor:pointer;color:var(--navy);line-height:1}
+.fs-x{display:none;position:absolute;right:14px;top:14px;z-index:8;font-family:inherit;font-size:17px;font-weight:700;background:var(--navy);color:#fff;border:none;border-radius:12px;padding:12px 18px;cursor:pointer;min-height:46px}
+.center.fs{position:fixed;inset:0;z-index:600;background:#e9eef2}
+.center.fs .fs-x{display:block}
+.center.fs .vtool{padding-right:200px}
+
+.stage.s3{position:absolute;inset:0;display:none}
+.stage.s3 canvas{display:block}
+.nodraw{position:absolute;inset:0;display:none;align-items:flex-start;justify-content:center;padding:30px 24px;overflow:auto;background:linear-gradient(#f3f6f9,#e9eef2)}
+.nd-card{max-width:760px;width:100%;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--sh)}
+.nd-ic{font-size:46px;line-height:1;margin-bottom:10px}
+.nd-card h3{font-size:27px;color:var(--navy);margin-bottom:10px}
+.nd-card p{font-size:19px;color:var(--mut);line-height:1.6}
+.steps{list-style:none;margin:20px 0 6px;display:flex;flex-direction:column;gap:9px}
+.steps li{display:flex;gap:14px;align-items:center;font-size:18.5px;background:#f4f7fa;border-radius:12px;padding:12px 14px}
+.steps li span{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.nd-src{font-size:15px;color:var(--mut);margin-top:8px}
+
+.info{position:relative;overflow:auto;border-left:1px solid var(--line);background:#fff;-webkit-overflow-scrolling:touch}
+#info-draw{padding:18px 18px 40px}
+.info .insp{display:none;border-left:none;max-height:none;height:100%}
+.i-tag{font-size:14px;font-weight:800;color:var(--orange-d);letter-spacing:.8px;text-transform:uppercase}
+#info-draw h3{font-size:24px;font-weight:800;color:var(--navy);margin:4px 0 10px;line-height:1.2}
+.pkb{display:inline-block;font-size:15.5px;font-weight:800;padding:6px 14px;border-radius:999px;margin-bottom:12px}
+.pkb em{font-style:normal;font-weight:700}
+.pkb-yes{background:var(--orange-l);color:var(--orange-d);border:1.5px solid rgba(212,98,31,.35)}
+.pkb-no{background:#eef1f4;color:#55636f;border:1.5px solid #cfd8df}
+.pkb-ref{background:#e6f1f8;color:#16577f;border:1.5px solid #b9d6e8}
+.pkb-est{background:#efe8fb;color:#5b3ca8;border:1.5px solid #cfc0ee}
+.i-sum{font-size:18px;color:var(--ink);line-height:1.58;margin-bottom:14px}
+.cbox{background:#f3f8fb;border:1.5px solid #cfe0ec;border-radius:14px;padding:14px;margin-bottom:14px}
+.cbox.c-none{background:#f5f6f8;border-color:#dfe3e8}
+.cbox.c-none b{font-size:17.5px;color:var(--navy)}
+.cbox.c-none p{font-size:16.5px;color:var(--mut);margin-top:4px;line-height:1.5}
+.cbox-t{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:15.5px;color:var(--mut);margin-bottom:8px}
+.cbox-t b{font-size:26px;color:var(--navy);font-weight:800}
+.cbox-t b{white-space:nowrap}
+.crow{width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;font-family:inherit;background:#fff;border:1.5px solid var(--line);border-radius:11px;padding:10px 12px;margin-top:7px;min-height:52px;cursor:pointer}
+.crow:hover{border-color:var(--orange)}
+.crow .cn{font-size:16.5px;font-weight:700;color:var(--ink);line-height:1.3}
+.crow .cn small{display:block;font-weight:500;font-size:14px;color:var(--mut);margin-top:2px}
+.crow .ca{font-size:17px;font-weight:800;color:var(--orange-d);white-space:nowrap}
+.cbox-f{font-size:14px;color:var(--mut);margin-top:10px;line-height:1.45}
+.go3d{width:100%;justify-content:center;margin-bottom:14px;background:var(--navy);color:#fff;border-color:var(--navy)}
+.flagbox{background:var(--amber-l);border-left:5px solid var(--amber);border-radius:12px;padding:13px 15px;margin-bottom:14px}
+.flagbox b{font-size:16.5px;color:#8a5d04}
+.flagbox ul{margin:6px 0 0 18px}
+.flagbox li{font-size:16.5px;line-height:1.5;margin-bottom:5px;color:#4d3a07}
+#info-draw h4{font-size:18px;color:var(--navy);margin:20px 0 9px;font-weight:800}
+#info-draw h4 small{font-weight:500;color:var(--mut);font-size:14.5px}
+.zl{display:flex;flex-direction:column;gap:6px}
+.zi{display:flex;gap:11px;align-items:center;width:100%;text-align:left;font-family:inherit;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:9px 11px;min-height:52px;cursor:pointer}
+.zi:hover{border-color:var(--orange)}
+.zi.sel{border-color:var(--orange);background:var(--orange-l)}
+.zi .zn{width:32px;height:32px;border-radius:9px;background:var(--orange);color:#fff;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex:none}
+.zi .zt{font-size:16.5px;font-weight:700;color:var(--ink);line-height:1.3}
+.zi .zt small{display:block;font-weight:500;color:var(--mut);font-size:13.5px}
+.zd{display:none;font-size:16.5px;color:var(--mut);line-height:1.55;padding:2px 6px 8px 49px}
+.zd.open{display:block}
+.notes{margin:0 0 0 22px}
+.notes li{font-size:16.5px;line-height:1.55;margin-bottom:6px;color:var(--ink)}
+#info-draw .spec{font-size:16.5px}
+#info-draw .spec dd{font-size:16.5px}
+.dlink{margin-top:9px;font-family:inherit;font-size:14.5px;font-weight:700;color:var(--navy);background:#eef2f6;border:1.5px solid var(--line);border-radius:9px;padding:6px 12px;cursor:pointer;min-height:38px}
+.dlink:hover{border-color:var(--navy)}
+.drawer-bg{display:none}
+.row.flash{animation:flash 2.2s ease}
+@keyframes flash{0%,60%{background:#fff2e2;box-shadow:inset 6px 0 0 var(--orange)}100%{background:transparent;box-shadow:inset 0 0 0 transparent}}
+.hint{font-size:14.5px}
+
+/* iPad dọc và màn hình hẹp */
+@media(max-width:1279px){
+  .ws{grid-template-columns:300px minmax(0,1fr);grid-template-rows:auto auto;height:auto;min-height:0}
+  .tree{grid-row:1/3;position:sticky;top:116px;height:calc(100vh - 116px);height:calc(100dvh - 116px)}
+  .center{height:calc(100vh - 116px);height:calc(100dvh - 116px);min-height:480px}
+  .info{border-left:none;border-top:1px solid var(--line);overflow:visible}
+  .info .insp{height:auto}
+}
+@media(max-width:820px){
+  .ws{grid-template-columns:1fr}
+  .tree{position:fixed;left:0;top:0;bottom:0;width:min(86vw,360px);height:auto;z-index:700;transform:translateX(-104%);transition:transform .25s;grid-row:auto;box-shadow:6px 0 30px rgba(0,0,0,.3)}
+  .tree.open{transform:none}
+  .drawer-bg.on{display:block;position:fixed;inset:0;background:rgba(10,22,34,.45);z-index:650}
+  .tt{display:inline-flex}
+  .topbar .brand{display:none}
+  .tabs{margin-left:0;width:100%}
+  .tabb{flex:1;padding:9px 8px;font-size:16px}
+}
+section.tab{padding:0}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="row1">
+    <span class="brand">BẾN HÀNG NẶNG <i>·</i> AN KHÁNH – BẮC GIANG</span>
+    <nav class="tabs">
+      <button class="tabb on" data-tab="hinh-ve">Hình vẽ</button>
+      <button class="tabb" data-tab="chi-phi">Chi phí</button>
+      <button class="tabb" data-tab="rui-ro">Rủi ro</button>
+    </nav>
+  </div>
+  <div class="vbar2" id="vbar2">
+    <span class="dot2" id="cb-dot" style="background:var(--amber)"></span>
+    <span class="cell"><small>Doanh thu chưa VAT</small><b id="cb-rev">—</b></span>
+    <span class="cell"><small>Chi phí</small><b id="cb-cost">—</b></span>
+    <span class="cell"><small>Trần vốn</small><b id="cb-cap">8,00 tỉ</b></span>
+    <span class="cell"><small>Lãi gộp</small><b id="cb-profit">—</b></span>
+    <span class="vt2" id="cb-text">Đang tính…</span>
+  </div>
+</header>
+
+<main>
+<section id="tab-hinh-ve" class="tab on" style="padding:0">
+ <div class="ws">
+  <div class="drawer-bg" id="drawer-bg"></div>
+  <aside class="tree" id="tree"></aside>
+
+  <div class="center" id="center">
+    <div class="vtool" id="vtool">
+      <button class="btn sm tt" id="tree-toggle">☰ Hồ sơ</button>
+      <button class="btn sm" id="v-prev" aria-label="Bản trước">‹</button>
+      <span class="vtitle" id="vtitle"></span>
+      <button class="btn sm" id="v-next" aria-label="Bản sau">›</button>
+
+      <div class="tb" id="tb-img">
+        <button class="btn sm" id="z-out" aria-label="Thu nhỏ">−</button>
+        <span class="zoomv" id="zoomv">100%</span>
+        <button class="btn sm" id="z-in" aria-label="Phóng to">+</button>
+        <button class="btn sm" id="z-fit">Vừa khung</button>
+        <button class="btn sm on" id="z-hs">Vùng chạm: bật</button>
+        <span class="tb" id="pager" style="display:none"><button class="btn sm" id="pg-p">‹</button><span id="pg-t" class="zoomv" style="min-width:90px">Trang 1</span><button class="btn sm" id="pg-n">›</button></span>
+        <button class="btn sm" id="z-fs">⤢ Toàn màn hình</button>
+      </div>
+
+      <div class="tb" id="tb-main">
+        <button class="btn sm" data-view="main:iso">Phối cảnh</button>
+        <button class="btn sm" data-view="main:plan">Mặt bằng</button>
+        <button class="btn sm" data-view="main:side">Mặt đứng</button>
+        <button class="btn sm" data-view="main:river">Từ sông</button>
+        <span class="sep"></span>
+        <span class="lb">Nước</span>
+        <button class="btn sm on" data-wl="main:-0.31">−0,31</button>
+        <button class="btn sm" data-wl="main:7.13">+7,13</button>
+        <button class="btn sm" data-wl="main:8.20">Lũ +8,20</button>
+        <span class="sep"></span>
+        <button class="btn sm" data-night="main">🌙 Ban đêm</button>
+        <button class="btn sm" data-explode="main">Tách lớp</button>
+        <button class="btn sm" data-reset="main">↺</button>
+        
+      </div>
+
+      <div class="tb" id="tb-pile">
+        <button class="btn sm" data-view="pile:iso">Phối cảnh</button>
+        <button class="btn sm" data-view="pile:plan">Mặt bằng</button>
+        <button class="btn sm" data-view="pile:side">Mặt đứng</button>
+        <span class="sep"></span>
+        <button class="btn sm" data-rebar="pile">Hiện lồng thép</button>
+        <button class="btn sm" data-ghost="pile">Bệ trong suốt</button>
+        <button class="btn sm" data-soil="pile">Ẩn đất</button>
+        <button class="btn sm" data-reset="pile">↺</button>
+        
+      </div>
+    </div>
+
+    <div class="vstage" id="vstage">
+      <div class="imgv" id="imgv">
+        <div class="imgt" id="imgt"><img id="img" alt="Bản vẽ gốc"><div class="hs" id="hs"></div></div>
+        <div class="spin" id="spin"><span class="sp-d"></span>Đang tải bản vẽ…</div>
+      </div>
+      <div class="stage s3" id="stage-main"><canvas id="cv-main"></canvas><div class="hint">Kéo để xoay · chụm để phóng to · chạm vào hạng mục để xem số liệu</div></div>
+      <div class="stage s3" id="stage-pile"><canvas id="cv-pile"></canvas><div class="hint">Chạm vào một cọc để xem số liệu riêng của cọc đó</div></div>
+      <div class="nodraw" id="nodraw"></div>
+      <div class="zcap" id="zcap"></div>
+      <button class="fs-x" id="fs-x">× Đóng toàn màn hình</button>
+    </div>
+  </div>
+
+  <aside class="info" id="info">
+    <div id="info-draw" style="display:none"></div>
+    <div class="insp" id="insp-main"></div>
+    <div class="insp" id="insp-pile"></div>
+  </aside>
+ </div>
+</section>
+
+<section id="tab-chi-phi" class="tab"><div class="wrap"><!-- ===================== 7. CHI PHÍ ===================== -->
+<section id="chiphi">
+<div class="wrap">
+  <div class="shead"><h2>Bảng chi phí — kéo chỉnh cho tới khi bạn thấy đúng</h2></div>
+  <p class="sub">28 hạng mục, khối lượng lấy từ bản vẽ, đơn giá tham chiếu thị trường 2026. <b>Kéo thanh trượt hoặc gõ thẳng số</b> vào ô đơn giá; tổng, lãi gộp và kết luận ở dưới sẽ đổi ngay. Giả định bạn tự thi công cọc bằng thiết bị của công ty.</p>
+
+  <div class="cost-shell">
+    <div class="cost-head">
+      <div><h3>Dự toán gói nền móng</h3><p>Đơn giá đã gồm vật liệu, máy, nhân công tại hiện trường · chưa VAT</p></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn sm" id="btn-reset">↺ Về số gốc</button>
+        <button class="btn sm" id="btn-low">Kịch bản thấp</button>
+        <button class="btn sm" id="btn-high">Kịch bản cao</button>
+      </div>
+    </div>
+    <div id="cost-rows"></div>
+    <div class="cost-foot">
+      <div class="tot-line"><span class="lb">Cộng chi phí trực tiếp</span><span class="v" id="t-direct">—</span></div>
+      <div class="tot-line"><span class="lb">Chi phí chung, quản lý <small>tỷ lệ % của chi phí trực tiếp — kéo để đổi</small></span>
+        <span style="display:flex;align-items:center;gap:14px">
+          <input type="range" id="r-oh" min="3" max="12" step="0.5" value="6.5" style="width:150px;flex:none">
+          <span class="v" style="min-width:62px;text-align:right" id="t-ohp">6,5%</span>
+          <span class="v" style="min-width:150px;text-align:right" id="t-oh">—</span>
+        </span></div>
+      <div class="tot-line big"><span class="lb">TỔNG CHI PHÍ <small style="font-weight:400">chưa VAT</small></span><span class="v" id="t-total">—</span></div>
+
+      <div style="margin:22px 0;padding:20px;background:#f3f8fb;border:1.5px solid #cfe0ec;border-radius:14px">
+        <div style="font-size:16px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px">Giá thầu của bạn</div>
+        <div class="tot-line" style="padding-top:0"><span class="lb">Giá chào trọn gói <small>kéo để thử mức giá khác</small></span>
+          <span style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <input type="range" id="r-bid" min="7" max="14" step="0.05" value="10" style="width:190px;flex:none">
+            <input type="text" inputmode="numeric" id="n-bid" value="10.000.000.000" style="width:170px;font-size:17px;padding:10px;border:1.5px solid var(--line);border-radius:10px;text-align:right;font-weight:700;color:var(--navy);font-family:inherit">
+            <span class="u" style="font-size:14px;color:var(--mut)">đ, gồm VAT</span>
+          </span></div>
+        <div class="tot-line"><span class="lb">Thuế VAT <small>đầu ra</small></span>
+          <span style="display:flex;align-items:center;gap:12px">
+            <button class="btn sm" data-vat="8">8%</button><button class="btn sm on" data-vat="10">10%</button>
+            <span class="v" style="min-width:150px;text-align:right" id="t-vat">—</span>
+          </span></div>
+        <div class="tot-line"><span class="lb">Doanh thu chưa VAT</span><span class="v" style="color:var(--green)" id="t-rev">—</span></div>
+        <div class="tot-line" style="font-weight:800"><span class="lb">Lãi gộp còn lại</span><span class="v" id="t-profit">—</span></div>
+        <div class="tot-line"><span class="lb">Giá chào tối thiểu để hoà vốn</span><span class="v" id="t-break">—</span></div>
+      </div>
+
+      <div class="gauge">
+        <div class="gl"><span>0</span><span>Tổng chi phí so với các mốc quan trọng</span><span>12 tỉ</span></div>
+        <div class="gtrack" id="gtrack">
+          <div class="gmark" style="left:72.7%"><span>trần 8 tỉ</span></div>
+          <div class="gmark rev" id="gmark-rev" style="left:82.6%"><span id="gmark-rev-t">doanh thu 9,09 tỉ</span></div>
+          <div class="gneedle" id="gneedle" style="left:0"><b id="gval">—</b></div>
+        </div>
+        <div class="verdict-txt" id="gverdict"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid g3" style="margin-top:24px">
+    <div class="card"><h4>Đơn giá lấy ở đâu ra</h4><p>Thép, bê tông, cấp phối đá dăm và đá hộc dựa trên công bố giá 2026 của các Sở Xây dựng (Bắc Ninh, Hải Phòng, Hà Nam) và giá niêm yết Hoà Phát. Nhân công theo đơn giá Bắc Ninh 2026 — Lục Nam thuộc <b>Vùng II</b>. Dầu diesel 22.290 đ/lít, điện 2.204 đ/kWh.</p></div>
+    <div class="card"><h4>Chỗ nào tôi phải đoán</h4><p>Nạo vét, đê quây, đá hộc thả dưới nước và <b>toàn bộ hệ chiếu sáng</b> không có đơn giá công bố hay bản vẽ. Tôi để mức giữa của khoảng thị trường và cho bạn kéo rộng. Đừng chốt giá thầu trước khi có báo giá thật.</p></div>
+    <div class="card"><h4>Chưa tính trong bảng</h4><p>Bảo lãnh thực hiện hợp đồng, bảo hiểm công trình, chi phí bảo hành, và lãi vay vốn lưu động. Lãi vay có trong phần rủi ro bên dưới.</p></div>
+  </div>
+</div>
+</section>
+
+</div></section>
+<section id="tab-rui-ro" class="tab"><div class="wrap"><!-- ===================== 8. RỦI RO ===================== -->
+<section id="ruiro">
+<div class="wrap">
+  <div class="shead"><h2>Nếu mọi thứ không như kế hoạch</h2></div>
+  <p class="sub">Bốn thứ có thể làm vỡ dự toán. Kéo từng thanh để xem chi phí nhảy lên bao nhiêu, và khi nào thì bạn mất lãi hoặc vượt trần vốn 8 tỉ.</p>
+
+  <div class="risk-grid">
+    <div>
+      <div class="rcard">
+        <h4><span class="em">📈</span> Vật liệu tăng giá</h4>
+        <p>Thép đã tăng giá từ cuối tháng 7/2026. Thi công bến mất 8–14 tháng, đủ để giá thép, xi măng và đá trượt một nhịp nữa.</p>
+        <div class="rrow"><span class="rlb">Mức tăng giá vật liệu</span><input type="range" id="k-mat" min="0" max="30" step="1" value="0"><span class="rv" id="v-mat">0%</span></div>
+        <div class="rimp" id="i-mat">Tác động: 0 đ</div>
+      </div>
+      <div class="rcard">
+        <h4><span class="em">🌊</span> Lũ và mưa bão</h4>
+        <p>Mực nước lũ 100 năm +8,20 m cao hơn mặt bến 6,5 m. Mỗi ngày dừng thi công vẫn phải trả lương, thuê máy nằm chờ và duy trì lán trại.</p>
+        <div class="rrow"><span class="rlb">Số ngày dừng thi công</span><input type="range" id="k-day" min="0" max="75" step="1" value="0"><span class="rv" id="v-day">0 ngày</span></div>
+        <div class="rrow"><span class="rlb">Chi phí chờ việc mỗi ngày</span><input type="range" id="k-dcost" min="4" max="30" step="1" value="12"><span class="rv" id="v-dcost">12 tr</span></div>
+        <label class="rsw"><input type="checkbox" id="k-dyke"><span class="tk"></span><span>Vỡ đê quây, phải làm lại và nạo vét bồi lắng (+450 tr)</span></label>
+        <div class="rimp" id="i-weather">Tác động: 0 đ</div>
+      </div>
+      <div class="rcard">
+        <h4><span class="em">🪨</span> Địa chất xấu hơn thiết kế</h4>
+        <p>Chưa có báo cáo khảo sát. Nếu lớp 13 nằm sâu hơn, cọc phải khoan dài thêm — mỗi mét thêm cho cả 9 cọc tốn khoảng 44 triệu.</p>
+        <div class="rrow"><span class="rlb">Cọc dài thêm mỗi cọc</span><input type="range" id="k-pile" min="0" max="8" step="0.5" value="0"><span class="rv" id="v-pile">0 m</span></div>
+        <label class="rsw"><input type="checkbox" id="k-geo"><span class="tk"></span><span>Phải tự thuê khoan khảo sát địa chất bổ sung (+180 tr)</span></label>
+        <div class="rimp" id="i-geo">Tác động: 0 đ</div>
+      </div>
+      <div class="rcard">
+        <h4><span class="em">⚙️</span> Máy móc và dòng tiền</h4>
+        <p>Bạn tự thi công cọc nên rủi ro thiết bị là của bạn. Thêm vào đó, chủ đầu tư chậm thanh toán thì vốn bị đọng và phải trả lãi vay.</p>
+        <div class="rrow"><span class="rlb">Phát sinh sửa chữa, suy hao máy</span><input type="range" id="k-mach" min="0" max="25" step="1" value="0"><span class="rv" id="v-mach">0%</span></div>
+        <div class="rrow"><span class="rlb">Chậm thanh toán</span><input type="range" id="k-pay" min="0" max="12" step="1" value="0"><span class="rv" id="v-pay">0 tháng</span></div>
+        <div class="rrow"><span class="rlb">Lãi vay vốn lưu động</span><input type="range" id="k-rate" min="6" max="16" step="0.5" value="10"><span class="rv" id="v-rate">10%/năm</span></div>
+        <div class="rimp" id="i-mach">Tác động: 0 đ</div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn sm" id="btn-rnone">Không có rủi ro</button>
+        <button class="btn sm" id="btn-rlikely">Kịch bản dễ xảy ra</button>
+        <button class="btn sm" id="btn-rbad">Kịch bản xấu</button>
+      </div>
+    </div>
+
+    <div class="rout">
+      <h4>Kết quả sau rủi ro</h4>
+      <div class="rbig" id="r-total">—</div>
+      <div class="rsubtxt">tổng chi phí chưa VAT</div>
+      <div style="margin-top:20px">
+        <div class="rline"><span>Chi phí gốc</span><b id="r-base">—</b></div>
+        <div class="rline"><span>Cộng thêm do rủi ro</span><b id="r-add" style="color:var(--orange-d)">—</b></div>
+        <div class="rline"><span>Doanh thu chưa VAT</span><b style="color:var(--green)" id="r-rev">—</b></div>
+        <div class="rline" style="font-weight:800"><span>Lãi gộp còn lại</span><b id="r-profit">—</b></div>
+        <div class="rline"><span>Vượt trần 8 tỉ</span><b id="r-over">—</b></div>
+      </div>
+      <div class="rverd rv-warn" id="r-verdict">—</div>
+      <h4 style="margin-top:26px">Thứ nào nguy hiểm nhất</h4>
+      <div class="torn" id="torn"></div>
+      <p style="font-size:14.5px;color:var(--mut);margin-top:13px;line-height:1.5">Độ dài cột = mức tăng chi phí nếu riêng yếu tố đó xảy ra ở mức xấu, các yếu tố khác giữ nguyên.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===================== 9. HÀNH ĐỘNG ===================== -->
+<section id="hanhdong" class="alt">
+<div class="wrap">
+  <div class="shead"><h2>Vậy phải làm gì trước khi ký</h2></div>
+  <p class="sub">Xếp theo mức độ gấp. Sáu việc đầu phải xong trước khi bạn chốt giá với chủ đầu tư.</p>
+
+  <div class="act"><span class="pri p1">GẤP</span><div><h4>Hỏi lại khối lượng nạo vét: bảng ghi 21.056 m³ nhưng hình ghi diện tích khác</h4><p>Trên DL-09, bảng ghi diện tích các mặt cắt 325,79 / 744,82 / 323,24 / 181,35 m², còn hình ghi 300 / 240 / 240 / 270 m². Nếu tính theo hình, khối lượng chỉ khoảng 17.500 m³ — ít hơn 3.500 m³, tương đương gần 400 triệu đồng. Xác nhận con số nào là căn cứ thanh toán trước khi báo giá.</p></div></div>
+  <div class="act"><span class="pri p1">GẤP</span><div><h4>Lấy báo giá thật cho nạo vét và đá hộc thả dưới nước</h4><p>Hai hạng mục này chiếm khoảng 38% gói nhưng hoàn toàn không có đơn giá công bố. Chỉ cần lệch 30 nghìn đồng mỗi mét khối nạo vét là tổng đổi 630 triệu. Gọi ít nhất ba đơn vị có tàu cuốc hoặc xáng cạp làm ở khu vực sông Lục Nam.</p></div></div>
+  <div class="act"><span class="pri p1">GẤP</span><div><h4>Yêu cầu chủ đầu tư cung cấp báo cáo khảo sát địa chất</h4><p>Bản vẽ ghi cọc phải ngàm vào "lớp 13" ít nhất 2,0 m nhưng hồ sơ bạn nhận không có hồ sơ địa chất. Không có nó thì chiều dài cọc chỉ là phỏng đoán. Nếu chủ đầu tư không có, hãy đưa điều khoản điều chỉnh khối lượng cọc vào hợp đồng.</p></div></div>
+  <div class="act"><span class="pri p1">GẤP</span><div><h4>Chốt khối lượng đá hộc bảo vệ mái 1:3 và đáy khu nước</h4><p>Thuyết minh nói dải rộng 84,1 m, dày 600 mm nhưng không có bảng khối lượng. Ước tính của tôi dao động từ 1.000 đến 4.500 m³ — chênh nhau tới 1,4 tỉ. Đây là khoảng mù lớn nhất của cả gói.</p></div></div>
+  <div class="act"><span class="pri p1">GẤP</span><div><h4>Xin bản vẽ điện chiếu sáng, hoặc chốt rõ nó không thuộc gói</h4><p>Trong 19 bản vẽ không có bất kỳ bản vẽ điện nào. Tôi đang tạm tính gần 600 triệu cho 12 cột đèn, cáp ngầm và tủ điện. Nếu chủ đầu tư yêu cầu chiếu sáng mà không có bản vẽ, bạn sẽ phải tự thiết kế và tự chịu khối lượng.</p></div></div>
+  <div class="act"><span class="pri p1">GẤP</span><div><h4>Hỏi rõ mũi cọc là −13,0 hay −16,00 và mác thép là gì</h4><p>DL-03 và DL-13 ghi hai cao độ khác nhau. Mác thép không ghi ở bất kỳ bản vẽ nào trong khi gói cần 46,7 tấn thép. Gửi một văn bản hỏi chính thức để có căn cứ sau này.</p></div></div>
+  <div class="act"><span class="pri p2">QUAN TRỌNG</span><div><h4>Đưa điều khoản trượt giá vật liệu vào hợp đồng</h4><p>Thép, bê tông và đá chiếm khoảng 3,5 tỉ trong gói. Thi công kéo dài 8–14 tháng mà giá thép vừa tăng từ cuối tháng 7/2026. Hợp đồng trọn gói cố định giá sẽ đẩy toàn bộ rủi ro này sang bạn.</p></div></div>
+  <div class="act"><span class="pri p2">QUAN TRỌNG</span><div><h4>Lập kế hoạch mùa lũ và phương án đê quây</h4><p>Lũ 100 năm cao hơn mặt bến 6,5 m. Sắp xếp công việc dưới nước vào mùa kiệt, và tính trước chi phí ngày chờ việc. Một tháng dừng thi công tốn khoảng 360 triệu.</p></div></div>
+  <div class="act"><span class="pri p2">QUAN TRỌNG</span><div><h4>Cập nhật địa hình — số liệu trong hồ sơ đo từ tháng 9/2017</h4><p>Đã 9 năm. Lòng sông và cao độ bãi có thể đã bồi lắng hoặc xói, làm khối lượng nạo vét và đào đắp lệch so với bản vẽ. Một đợt đo đạc tốn vài chục triệu nhưng bảo vệ được cả gói.</p></div></div>
+  <div class="act"><span class="pri p3">NÊN LÀM</span><div><h4>Thoả thuận rõ ranh giới với nhà thầu mặt đường</h4><p>Bạn bàn giao tới đáy tấm bê tông C40, nghiệm thu bằng CBR, độ chặt và sức chịu tải đỉnh nền 120 kPa. Chốt trước ai thí nghiệm, ai trả tiền, và xử lý thế nào nếu không đạt.</p></div></div>
+  <div class="act"><span class="pri p3">NÊN LÀM</span><div><h4>Khoá nguồn đá phong hoá và đá hộc sớm</h4><p>Cần khoảng 3.400 m³ đá phong hoá đạt Cu ≥ 5, Cc = 1–3, khối lượng thể tích khô ≥ 2,05 t/m³, và đá hộc 10–100 kg cường độ ngâm nước ≥ 30 MPa. Không phải mỏ nào cũng đạt — tìm mỏ và ký khung giá trước.</p></div></div>
+</div>
+</section>
+
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="src-grid">
+    <div><h5>Hồ sơ thiết kế</h5><ul>
+      <li>Thuyết minh thiết kế đường dốc tải trọng nặng</li>
+      <li>AQMTC-ZT-01 — Tổng mặt bằng bố trí</li>
+      <li>AQMTS-DL-01 … DL-12 — Đường dốc, mái dốc, đào đắp, khối neo, cột bích, mặt đường</li>
+      <li>AQMTC-DL-13 … DL-16 — Trụ bến, cốt thép, cọc khoan nhồi, đệm va cao su</li>
+      <li>Phiên bản A, phát hành tháng 10/2026</li>
+    </ul></div>
+    <div><h5>Nguồn đơn giá 2026</h5><ul>
+      <li><a href="https://cafeland.vn/vat-lieu-xay-dung/bang-gia-vlxd/60/" target="_blank" rel="noopener">Bảng giá thép xây dựng tháng 6/2026</a></li>
+      <li><a href="https://cdn.haiphong.gov.vn/gov-hpg/6216/tintuc/2026/8/1.-phu-luc-1-t7-10-8-17h-in-trinh-ky.signed639221316246679423.pdf" target="_blank" rel="noopener">Sở Xây dựng Hải Phòng — giá VLXD tháng 7/2026</a></li>
+      <li><a href="https://thuviennhadat.vn/cam-nang-nha-dat/gia-vat-lieu-xay-dung-bac-ninh-thang-6-2026-743874.html" target="_blank" rel="noopener">Công bố 07/2026/CBGLS-XD-TC — giá VLXD Bắc Ninh tháng 6/2026</a></li>
+      <li><a href="https://thuvienphapluat.vn/hoi-dap-phap-luat/don-gia-nhan-cong-xay-dung-tai-bac-ninh-moi-nhat-2026-138098829.html" target="_blank" rel="noopener">Đơn giá nhân công xây dựng Bắc Ninh 2026 — Lục Nam thuộc Vùng II</a></li>
+      <li><a href="https://stockbiz.vn/tin-tuc/hoa-phat-vnsteel-va-nhieu-hang-thep-cung-nang-gia-ban-tu-cuoi-thang-72026/41245579" target="_blank" rel="noopener">Các hãng thép nâng giá bán từ cuối tháng 7/2026</a></li>
+    </ul></div>
+  </div>
+  <div class="disc">
+    <b style="color:rgba(255,255,255,.85)">Đọc kỹ trước khi dùng để ra quyết định.</b> Khối lượng trong trang này lấy từ bản vẽ thiết kế và được đánh dấu rõ. Đơn giá là tham chiếu thị trường, không phải báo giá của nhà cung cấp — hồ sơ thiết kế không kèm bất kỳ đơn giá nào. Ba khối lượng (đá hộc bảo vệ mái, chi phí đê quây, toàn bộ hệ chiếu sáng) là ước tính của tôi vì hồ sơ không có. Mô hình 3D là mô hình diễn giải dựng lại từ bản vẽ, không phải mô hình thiết kế có thẩm tra; hệ chiếu sáng trong mô hình là đề xuất của tôi, không có trong hồ sơ. Các mức rủi ro là kịch bản giả định để thử sức chịu đựng của dự toán, không phải dự báo. Trước khi ký hợp đồng, hãy xác nhận mọi con số bằng báo giá thật và ý kiến của đơn vị thiết kế có thẩm quyền.
+  </div>
+</div></footer>
+
+
+
+<script>
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)},
+    $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var NF=new Intl.NumberFormat('vi-VN');
+function vnd(v){return NF.format(Math.round(v))+' đ'}
+function ti(v){return (v/1e9).toFixed(2).replace('.',',')+' tỉ'}
+function tr(v){return NF.format(Math.round(v/1e6))+' tr'}
+function vn(v,d){return v.toFixed(d===undefined?2:d).replace('.',',')}
+
+/* ==================================================================
+   MINI 3D ENGINE  — tự viết, không dùng thư viện ngoài
+   ================================================================== */
+function Eng(canvasId,stageId){
+  var cv=$('#'+canvasId), st=$('#'+stageId), ctx=cv.getContext('2d');
+  var E={cv:cv,st:st,ctx:ctx,meshes:[],az:-0.72,el:0.46,dist:300,target:[120,-1,0],
+         ortho:false,oscale:3,night:false,pick:null,onPick:null,dpr:1,W:900,H:505};
+  function resize(){
+    var w=st.clientWidth, h=st.clientHeight; if(!w||!h) return; E.dpr=Math.min(2,window.devicePixelRatio||1);
+    E.W=w; E.H=h;
+    cv.width=Math.round(E.W*E.dpr); cv.height=Math.round(E.H*E.dpr);
+    cv.style.width=E.W+'px'; cv.style.height=E.H+'px';
+    ctx.setTransform(E.dpr,0,0,E.dpr,0,0); draw();
+  }
+  E.resize=resize;
+
+  function basis(){
+    var ce=Math.cos(E.el),se=Math.sin(E.el),ca=Math.cos(E.az),sa=Math.sin(E.az);
+    var dir=[ce*sa,se,ce*ca];
+    var eye=[E.target[0]+dir[0]*E.dist,E.target[1]+dir[1]*E.dist,E.target[2]+dir[2]*E.dist];
+    var f=[-dir[0],-dir[1],-dir[2]];
+    var r=[f[2],0,-f[0]]; var rl=Math.hypot(r[0],r[2])||1; r=[r[0]/rl,0,r[2]/rl];
+    var u=[f[1]*r[2]-f[2]*r[1], f[2]*r[0]-f[0]*r[2], f[0]*r[1]-f[1]*r[0]];
+    return {eye:eye,f:f,r:r,u:u};
+  }
+  function project(B){
+    var fl=(Math.min(E.H,E.W*0.78)*0.5)/Math.tan(0.42), cx=E.W/2, cy=E.H/2, eye=B.eye;
+    return function(p){
+      var dx=p[0]-eye[0],dy=p[1]-eye[1],dz=p[2]-eye[2];
+      var X=dx*B.r[0]+dy*B.r[1]+dz*B.r[2];
+      var Y=dx*B.u[0]+dy*B.u[1]+dz*B.u[2];
+      var Z=dx*B.f[0]+dy*B.f[1]+dz*B.f[2];
+      if(E.ortho){return [cx+X*E.oscale, cy-Y*E.oscale, Z];}
+      if(Z<1) return [0,0,Z];
+      return [cx+fl*X/Z, cy-fl*Y/Z, Z];
+    };
+  }
+  var LIGHT=[0.42,0.80,0.43];
+  function shade(col,n,emissive){
+    if(emissive) return 'rgb('+col[0]+','+col[1]+','+col[2]+')';
+    var d=n[0]*LIGHT[0]+n[1]*LIGHT[1]+n[2]*LIGHT[2];
+    var k=(E.night?0.30:0.56)+(E.night?0.34:0.46)*Math.max(0,d);
+    if(E.night)k*=0.82;
+    return 'rgb('+Math.min(255,Math.round(col[0]*k))+','+Math.min(255,Math.round(col[1]*k))+','+Math.min(255,Math.round(col[2]*k))+')';
+  }
+  E.faceBuf=[];
+  function build(){
+    var B=basis(), P=project(B), out=[];
+    for(var m=0;m<E.meshes.length;m++){
+      var M=E.meshes[m]; if(M.hidden) continue;
+      var oy=M.off||0, sp=[];
+      for(var i=0;i<M.v.length;i++){var p=M.v[i]; sp.push(P([p[0],p[1]+oy,p[2]]));}
+      for(var fI=0;fI<M.f.length;fI++){
+        var f=M.f[fI], ok=true, zs=0, k;
+        for(k=0;k<f.length;k++){ var sPt=sp[f[k]]; if(sPt[2]<1.2){ok=false;break;} zs+=sPt[2]; }
+        if(!ok) continue;
+        var A=M.v[f[0]],Bv=M.v[f[1]],C=M.v[f[2]];
+        var e1=[Bv[0]-A[0],Bv[1]-A[1],Bv[2]-A[2]], e2=[C[0]-A[0],C[1]-A[1],C[2]-A[2]];
+        var n=[e1[1]*e2[2]-e1[2]*e2[1], e1[2]*e2[0]-e1[0]*e2[2], e1[0]*e2[1]-e1[1]*e2[0]];
+        var nl=Math.hypot(n[0],n[1],n[2]); if(!nl) continue; n=[n[0]/nl,n[1]/nl,n[2]/nl];
+        var ox=0,oy2=0,oz=0;
+        for(k=0;k<f.length;k++){ox+=M.v[f[k]][0];oy2+=M.v[f[k]][1];oz+=M.v[f[k]][2];}
+        ox/=f.length; oy2=oy2/f.length+oy; oz/=f.length;
+        var tx=B.eye[0]-ox, ty2=B.eye[1]-oy2, tz=B.eye[2]-oz;
+        var facing=n[0]*tx+n[1]*ty2+n[2]*tz;
+        if(M.twoSided){ if(facing<0) n=[-n[0],-n[1],-n[2]]; }
+        else if(facing<=0) continue;
+        var pts=[]; for(k=0;k<f.length;k++){pts.push(sp[f[k]]);}
+        out.push({z:zs/f.length-(M.bias||0),pts:pts,col:M.col,n:n,M:M,alpha:M.alpha===undefined?1:M.alpha,em:M.em});
+      }
+    }
+    out.sort(function(p,q){return q.z-p.z});
+    E.faceBuf=out; return out;
+  }
+  function draw(){
+    var fs=build();
+    ctx.clearRect(0,0,E.W,E.H);
+    for(var i=0;i<fs.length;i++){
+      var F=fs[i], M=F.M;
+      ctx.globalAlpha=F.alpha;
+      ctx.beginPath(); ctx.moveTo(F.pts[0][0],F.pts[0][1]);
+      for(var k=1;k<F.pts.length;k++) ctx.lineTo(F.pts[k][0],F.pts[k][1]);
+      ctx.closePath();
+      ctx.fillStyle=(E.pick===M.id)?'#e8893f':shade(F.col,F.n,F.em);
+      ctx.fill();
+      if(M.edge!==false){
+        ctx.lineWidth=(E.pick===M.id)?1.6:0.6;
+        ctx.strokeStyle=(E.pick===M.id)?'#8a3b06':(E.night?'rgba(0,0,0,.45)':'rgba(20,40,60,.30)');
+        ctx.stroke();
+      }
+    }
+    ctx.globalAlpha=1;
+    if(E.overlay) E.overlay(ctx,basis(),project(basis()));
+  }
+  E.draw=draw;
+
+  /* interaction */
+  var drag=false,moved=0,lx=0,ly=0,pinch=0;
+  function pt(e){var r=cv.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top]}
+  cv.addEventListener('pointerdown',function(e){drag=true;moved=0;lx=e.clientX;ly=e.clientY;cv.setPointerCapture(e.pointerId)});
+  cv.addEventListener('pointermove',function(e){
+    if(!drag)return;
+    var dx=e.clientX-lx, dy=e.clientY-ly; lx=e.clientX; ly=e.clientY;
+    moved+=Math.abs(dx)+Math.abs(dy);
+    E.az-=dx*0.008; E.el=Math.max(-0.08,Math.min(1.45,E.el+dy*0.006)); draw();
+  });
+  cv.addEventListener('pointerup',function(e){
+    drag=false;
+    if(moved<7){ doPick(pt(e)); }
+  });
+  cv.addEventListener('pointercancel',function(){drag=false});
+  cv.addEventListener('wheel',function(e){e.preventDefault();
+    if(E.ortho){E.oscale=Math.max(0.8,Math.min(18,E.oscale*(e.deltaY>0?0.92:1.09)));}
+    else {E.dist=Math.max(45,Math.min(900,E.dist*(e.deltaY>0?1.09:0.92)));}
+    draw();},{passive:false});
+  var tDist=0;
+  cv.addEventListener('touchstart',function(e){ if(e.touches.length===2){
+    tDist=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);drag=false;}});
+  cv.addEventListener('touchmove',function(e){ if(e.touches.length===2){ e.preventDefault();
+    var d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+    if(tDist){ var r=d/tDist; if(E.ortho)E.oscale=Math.max(0.8,Math.min(18,E.oscale*r)); else E.dist=Math.max(45,Math.min(900,E.dist/r)); draw(); }
+    tDist=d; }},{passive:false});
+  function inPoly(p,pts){
+    var x=p[0],y=p[1],inside=false;
+    for(var i=0,j=pts.length-1;i<pts.length;j=i++){
+      var xi=pts[i][0],yi=pts[i][1],xj=pts[j][0],yj=pts[j][1];
+      if(((yi>y)!==(yj>y)) && (x < (xj-xi)*(y-yi)/(yj-yi)+xi)) inside=!inside;
+    }
+    return inside;
+  }
+  function doPick(p){
+    var fs=E.faceBuf;
+    for(var i=fs.length-1;i>=0;i--){
+      var F=fs[i]; if(F.M.pick===false) continue; if(F.alpha<0.3) continue;
+      if(inPoly(p,F.pts)){ E.pick=F.M.id; draw(); if(E.onPick)E.onPick(F.M.id); return; }
+    }
+    E.pick=null; draw(); if(E.onPick)E.onPick(null);
+  }
+  window.addEventListener('resize',resize);
+  return E;
+}
+
+/* ---------- geometry helpers ---------- */
+function boxV(x0,x1,y0,y1,z0,z1){
+  return orient({v:[[x0,y0,z0],[x1,y0,z0],[x1,y0,z1],[x0,y0,z1],[x0,y1,z0],[x1,y1,z0],[x1,y1,z1],[x0,y1,z1]],
+          f:[[0,3,2,1],[4,5,6,7],[0,1,5,4],[1,2,6,5],[2,3,7,6],[3,0,4,7]]});
+}
+function cylV(cx,cy0,cy1,cz,r,seg){
+  var v=[],f=[],i;
+  for(i=0;i<seg;i++){var a=i/seg*Math.PI*2; v.push([cx+r*Math.cos(a),cy0,cz+r*Math.sin(a)]);}
+  for(i=0;i<seg;i++){var a2=i/seg*Math.PI*2; v.push([cx+r*Math.cos(a2),cy1,cz+r*Math.sin(a2)]);}
+  for(i=0;i<seg;i++){var j=(i+1)%seg; f.push([i,j,seg+j,seg+i]);}
+  var top=[],bot=[];
+  for(i=0;i<seg;i++){top.push(seg+i); bot.push(seg-1-i);}
+  f.push(top); f.push(bot);
+  return orient({v:v,f:f});
+}
+function loft(secs,closed){
+  var v=[],f=[],n=secs[0].length,i,s;
+  for(s=0;s<secs.length;s++) for(i=0;i<n;i++) v.push(secs[s][i]);
+  for(s=0;s<secs.length-1;s++){
+    var a=s*n,b=(s+1)*n, lim=closed?n:n-1;
+    for(i=0;i<lim;i++){var j=(i+1)%n; f.push([a+i,a+j,b+j,b+i]);}
+  }
+  if(closed){
+    var first=[],last=[];
+    for(i=0;i<n;i++){first.push(n-1-i); last.push((secs.length-1)*n+i);}
+    f.push(first); f.push(last);
+    return orient({v:v,f:f});
+  }
+  return {v:v,f:f};
+}
+function orient(o){
+  var cx=0,cy=0,cz=0,i,L=o.v.length;
+  for(i=0;i<L;i++){cx+=o.v[i][0];cy+=o.v[i][1];cz+=o.v[i][2];}
+  cx/=L;cy/=L;cz/=L;
+  for(i=0;i<o.f.length;i++){
+    var f=o.f[i],A=o.v[f[0]],B=o.v[f[1]],C=o.v[f[2]];
+    var e1=[B[0]-A[0],B[1]-A[1],B[2]-A[2]],e2=[C[0]-A[0],C[1]-A[1],C[2]-A[2]];
+    var n=[e1[1]*e2[2]-e1[2]*e2[1],e1[2]*e2[0]-e1[0]*e2[2],e1[0]*e2[1]-e1[1]*e2[0]];
+    var g=[(A[0]+B[0]+C[0])/3-cx,(A[1]+B[1]+C[1])/3-cy,(A[2]+B[2]+C[2])/3-cz];
+    if(n[0]*g[0]+n[1]*g[1]+n[2]*g[2]<0) o.f[i]=f.slice().reverse();
+  }
+  return o;
+}
+function mesh(id,g,col,o,extra){
+  var M={id:id,name:g,col:col,v:o.v,f:o.f};
+  if(extra) for(var k in extra) M[k]=extra[k];
+  return M;
+}
+
+/* ==================================================================
+   ALIGNMENT + SCENE
+   ================================================================== */
+var A1=-0.18326, A2=0.18326, BEND=92.76, LEN=232.76;
+var U1=[Math.cos(A1),Math.sin(A1)], U2=[Math.cos(A2),Math.sin(A2)];
+var PB=[U1[0]*BEND,U1[1]*BEND];
+function plan(ch){ return ch<=BEND ? [U1[0]*ch,U1[1]*ch] : [PB[0]+U2[0]*(ch-BEND), PB[1]+U2[1]*(ch-BEND)]; }
+function dirAt(ch){ return ch<=BEND?U1:U2; }
+function nrm(ch){ var d=dirAt(ch); return [-d[1],d[0]]; }
+function pos(ch,o){ var p=plan(ch),n=nrm(ch); return [p[0]+n[0]*o, p[1]+n[1]*o]; }
+var EK=[0,15.26,BEND,172.76,LEN], EV=[8.55,8.55,5.30,5.30,1.70];
+function elev(ch){
+  if(ch<=0)return EV[0]; if(ch>=LEN)return EV[4];
+  for(var i=0;i<EK.length-1;i++){ if(ch<=EK[i+1]){
+    var t=(ch-EK[i])/(EK[i+1]-EK[i]); return EV[i]+(EV[i+1]-EV[i])*t; } }
+  return EV[4];
+}
+var THK=1.26;
+function yOuter(ch){ if(ch<=205)return 4.2; if(ch>=225.7)return -2.7; return 4.2-(ch-205)/3; }
+function P3(ch,o,y){ var p=pos(ch,o); return [p[0],y,p[1]]; }
+
+function slab(c0,c1,fTop,fBot,hw,steps){
+  var secs=[],i; steps=steps||26;
+  for(i=0;i<=steps;i++){
+    var ch=c0+(c1-c0)*i/steps, yt=fTop(ch), yb=fBot(ch), w=(typeof hw==='function')?hw(ch):hw;
+    secs.push([P3(ch,w,yt),P3(ch,-w,yt),P3(ch,-w,yb),P3(ch,w,yb)]);
+  }
+  return loft(secs,true);
+}
+function strip(c0,c1,fPts,steps){
+  var secs=[],i; steps=steps||30;
+  for(i=0;i<=steps;i++){ var ch=c0+(c1-c0)*i/steps; secs.push(fPts(ch)); }
+  return loft(secs,false);
+}
+function pyr(ch,o,y0,y1,h0,h1){
+  var a=[],b=[],k,S=[[1,1],[-1,1],[-1,-1],[1,-1]];
+  for(k=0;k<4;k++){a.push(P3(ch+S[k][0]*h0,o+S[k][1]*h0,y0));}
+  for(k=0;k<4;k++){b.push(P3(ch+S[k][0]*h1,o+S[k][1]*h1,y1));}
+  return loft([a,b],true);
+}
+
+var COL={c40:[170,176,184], cpdd1:[206,196,180], cpdd2:[214,200,172], rock:[198,165,124],
+  soil:[214,210,188], soilD:[196,178,145], rip:[146,156,166], cap:[214,124,58],
+  pile:[168,180,192], anchor:[132,116,166], boll:[96,106,120], fender:[58,62,70],
+  pole:[150,160,170], lamp:[255,236,170], water:[116,182,218], hull:[104,136,166],
+  deck:[196,204,212], slabq:[150,160,172], rebar:[40,70,110], hoop:[214,98,31]};
+
+var DATA={
+ road:{tag:'Mặt đường · lớp trên cùng',t:'Bê tông xi măng C40',d:'Lớp mặt chịu trực tiếp bánh xe module. Không thuộc gói nền móng của bạn — bạn bàn giao tới đáy lớp này.',
+  s:[['Chiều dày','260 mm'],['Mác bê tông','C40'],['Cường độ chịu kéo khi uốn','5,0 MPa'],['Mô đun đàn hồi khi uốn','31.000 MPa'],['Cường độ chịu nén','40 MPa'],['Bề rộng mặt đường','12,0 m'],['Dốc ngang hai mái','2%'],['Khối lượng','673,92 m³'],['Bảo dưỡng','14–21 ngày, giữ ẩm 7 ngày đầu']],src:'Thuyết minh mục IV, V · AQMTS-DL-02'},
+ cpdd1:{tag:'Móng đường · lớp trên',t:'Cấp phối đá dăm 200 mm',d:'Lớp móng trên, nằm ngay dưới tấm bê tông. Thuộc gói của bạn.',
+  s:[['Chiều dày','200 mm'],['Mô đun đàn hồi khi nén','300 MPa'],['Cường độ chịu nén đá','≥ 80 MPa'],['Độ nén dập','< 35%'],['Hàm lượng hạt mềm yếu','< 5%'],['Hạt thoi dẹt (1:2)','< 20%'],['Hàm lượng bùn sét','< 2%'],['Quy cách đá dăm','30–70 mm'],['Vật liệu chèn khe','15–25 mm']],src:'Thuyết minh mục V.3 · AQMTS-DL-02'},
+ cpdd2:{tag:'Móng đường · lớp dưới',t:'Cấp phối đá dăm 200 mm',d:'Lớp móng dưới. Cùng chỉ tiêu với lớp trên. Tổng hai lớp 400 mm, khối lượng 1.123,20 m³.',
+  s:[['Chiều dày','200 mm'],['Tổng hai lớp','400 mm'],['Khối lượng cả hai lớp','1.123,20 m³'],['Rải theo chiều dày lớp rời','× hệ số lu lèn thí nghiệm'],['Yêu cầu','không phân tầng, cấm xe trước khi lu']],src:'Thuyết minh mục V.3 · AQMTS-DL-02'},
+ daphonghoa:{tag:'Nền đường',t:'Đá phong hoá (sơn bì thạch) ≥ 600 mm',d:'Lớp đệm dưới cùng của kết cấu đường. Đoạn có đào thì thay bằng đá hộc 600 mm.',
+  s:[['Chiều dày','≥ 600 mm'],['Khối lượng','3.406,13 m³'],['Tỷ lệ thể tích hạt rắn','≥ 83%'],['Hàm lượng bùn sét','8–15%'],['Cỡ hạt lớn nhất','≤ 120 mm'],['Hạt 2–120 mm','> 50% khối lượng'],['Hệ số không đồng nhất Cu','≥ 5'],['Hệ số cấp phối Cc','1 – 3'],['KL thể tích khô sau đầm','≥ 2,05 t/m³'],['Sức chịu tải đỉnh nền','≥ 120 kPa']],src:'Thuyết minh mục V.4 · AQMTS-DL-02'},
+ nendap:{tag:'Thân nền',t:'Thân nền đắp',d:'Khối đắp cao tới khoảng 4,3 m ở đoạn đầu tuyến. Yêu cầu CBR và độ chặt thay đổi theo chiều sâu dưới mặt nền.',
+  s:[['0 – 30 cm','CBR ≥ 6 · K ≥ 95% · hạt < 10 mm'],['30 – 80 cm','CBR ≥ 4 · K ≥ 95% · hạt < 10 mm'],['80 – 150 cm','CBR ≥ 3 · K ≥ 94% · hạt < 15 mm'],['> 150 cm','CBR ≥ 2 · K ≥ 92% · hạt < 15 mm'],['Bóc đất mặt trước khi đắp','300 mm'],['Mái taluy đắp','1:2'],['Chiều cao đắp lớn nhất','≈ 4,3 m']],src:'Thuyết minh mục II · AQMTS-DL-01, DL-02'},
+ dat:{tag:'Nền tự nhiên',t:'Nền đất tự nhiên ≈ +4,20',d:'Hồ sơ KHÔNG có báo cáo khảo sát địa chất. Đây là vùng mù lớn nhất của cả gói — chiều dài cọc và khối lượng đào đắp đều phụ thuộc vào nó.',
+  s:[['Cao độ mặt đất','≈ +4,20 m'],['Bóc lớp đất mặt','300 mm · 110,88 m³'],['Đào đất trên cạn','948,02 m³'],['Phạm vi bóc đất','205 m từ mép bến'],['Lớp chịu lực của cọc','"lớp 13" — cao độ chưa rõ'],['Số liệu địa hình','đo tháng 9/2017, đã 9 năm']],src:'Thuyết minh mục II · AQMTS-DL-02, DL-15'},
+ rip:{tag:'Bảo vệ mái và đáy',t:'Đá hộc 600 mm',d:'Phủ mái dốc 1:3 từ mép bến xuống đáy khu nước, và phủ đáy trong dải rộng 84,1 m tính từ chân mái.',
+  s:[['Chiều dày','600 mm'],['Độ dốc mái','1:3'],['Dải bảo vệ đáy','rộng 84,1 m'],['Cỡ đá hộc','10 – 100 kg'],['Cường độ ngâm nước','≥ 30 MPa'],['Yêu cầu đá','không dẹt, không phong hoá nặng'],['Cao độ đáy khu nước','−2,60 m'],['Khối lượng','KHÔNG có trong hồ sơ — tôi ước ≈ 2.500 m³']],src:'Thuyết minh mục II · AQMTS-DL-06'},
+ cap:{tag:'Trụ bến',t:'Bệ trụ 14 × 12 m',d:'Bệ bê tông đặt trên 9 cọc khoan nhồi, là điểm cuối của tuyến đường và là nơi tàu cập.',
+  s:[['Kích thước','14,0 × 12,0 m'],['Chiều dày','1,34 m (bờ) → 1,60 m (sông)'],['Cao độ đỉnh','+2,28 → +1,70'],['Cao độ đáy','+0,94 → +0,10'],['Bê tông','C30 · 267,24 m³'],['Cốt thép Φ25','30.965,55 kg'],['Cốt thép Φ16','638,95 kg'],['Tổng cốt thép','31.604,50 kg'],['Hàm lượng thép','≈ 118 kg/m³']],src:'AQMTC-DL-13, DL-14'},
+ pilegrp:{tag:'Móng cọc',t:'9 cọc khoan nhồi D1000',d:'Lưới 3 × 3, khoảng cách tim cọc 5,0 m. Mũi cọc −16,00 m, ngàm vào lớp 13 ít nhất 2,0 m.',
+  s:[['Số cọc','9 (3 hàng × 3)'],['Đường kính','D1000 mm'],['Khoảng cách tim cọc','5.000 mm'],['Mép bệ đến tim cọc','2.000 / 1.000 mm'],['Cao độ đầu cọc','+0,82 / +0,52 / +0,22'],['Cao độ mũi cọc','−16,00 m'],['Chiều dài trung bình','16,5 m'],['Bê tông 1 cọc','C30 · 12,96 m³'],['Cốt thép 1 cọc','1.677,44 kg'],['Tổng 9 cọc','116,64 m³ · 15.097 kg'],['Lắng cặn đáy lỗ khoan','≤ 10 cm']],src:'AQMTC-DL-13, DL-15'},
+ anchor:{tag:'Neo tàu',t:'Khối neo bê tông C25',d:'Hai khối neo đặt hai bên đường, cách mép đường 5 m, để buộc dây tàu qua cột bích. Đỉnh khối cao hơn mặt đất 300 mm.',
+  s:[['Số lượng','2 khối'],['Bê tông','C25 đổ tại chỗ'],['Đáy khối','3.500 × 3.500 mm, cao 800 mm'],['Đỉnh khối (cổ)','800 × 800 mm'],['Thân chóp cụt','2.500 → 800 mm, cao ≈ 1.700 mm'],['Nhô trên mặt đất','300 mm'],['Lớp đệm đá dăm','150 mm'],['Mặt trên quanh khối','100 mm BT C20 + 100 mm đá dăm'],['Thể tích 1 khối','≈ 14,8 m³'],['Đắp trả xung quanh','cát sỏi hoặc đất, đầm chặt']],src:'AQMTS-DL-04'},
+ boll:{tag:'Neo tàu',t:'Cột bích gang 150 kN',d:'Lắp trên đỉnh khối neo. Đúc chữ "150kN" trên đỉnh. Sau khi lắp xong phải đổ bê tông vào trong vỏ.',
+  s:[['Số lượng','2 cái'],['Vỏ cột bích','Gang HT200 · 234 kg'],['Bu lông neo','Q235 · M30 × 1158 · 4 cái · 25,8 kg'],['Đai ốc + long đen','Q235 · 4 bộ · 1,2 kg'],['Bản định vị','Q235 · 600 × 600 · 15,5 kg'],['Thép neo','φ10 CB300-T · 8 cái · 10,31 kg'],['Tổng khối lượng 1 cột','≈ 286,8 kg'],['Chiều sâu bu lông neo','970 mm'],['Sơn lót','giàu kẽm, dày 40 µm'],['Sơn phủ','polyurethane, dày 280 µm'],['Que hàn','E43xx']],src:'AQMTS-DL-05'},
+ fender:{tag:'Thiết bị bến',t:'Đệm va cao su SA-A300H × 1,5 m',d:'Hai đệm va gắn ở mặt sông của trụ bến để đỡ va đập khi tàu cập. Không thuộc gói nền móng của bạn.',
+  s:[['Số lượng','2 cái'],['Quy cách','SA-A300H × 1,5 m, loại RO'],['Khoảng cách giữa 2 đệm','1.200 mm'],['Khoảng cách tới mép bệ','3.250 mm'],['Chiều cao bố trí','500 + 600 + 500 mm'],['Cao độ','+1,70 / +0,10'],['Bu lông chờ','phụ kiện đi kèm đệm va']],src:'AQMTC-DL-16'},
+ pole:{tag:'Chiếu sáng · đề xuất',t:'Cột đèn đường 10 m',d:'KHÔNG có trong 19 bản vẽ. Đây là đề xuất của tôi theo thông lệ chiếu sáng đường cảng — cần xác nhận với chủ đầu tư trước khi đưa vào giá.',
+  s:[['Số lượng đề xuất','10 cột'],['Chiều cao cột','10 m, thép mạ kẽm'],['Khoảng cách cột','≈ 24 m'],['Bố trí','một bên đường'],['Đèn','LED 150 W, cần đơn'],['Móng cột','bê tông đổ tại chỗ'],['Cấp điện','cáp ngầm, ống luồn, tiếp địa'],['Trạng thái','ước tính — chưa có bản vẽ điện']],src:'Đề xuất của người lập — không có trong hồ sơ'},
+ mast:{tag:'Chiếu sáng · đề xuất',t:'Cột đèn pha 12 m chiếu bãi neo',d:'KHÔNG có trong hồ sơ. Đề xuất để chiếu sáng khu vực trụ bến và vùng nước neo tàu khi làm hàng ban đêm.',
+  s:[['Số lượng đề xuất','2 cột'],['Chiều cao cột','12 m'],['Đèn mỗi cột','4 × LED 250 W'],['Vị trí','hai bên, trên bờ gần chân mái'],['Mục đích','chiếu bãi neo và mặt trụ bến'],['Trạng thái','ước tính — chưa có bản vẽ điện']],src:'Đề xuất của người lập — không có trong hồ sơ'},
+ water:{tag:'Khu nước',t:'Khu nước bến và nạo vét',d:'Đáy khu nước thiết kế −2,70 m. Khối lượng đào dưới nước lấy từ bảng mặt cắt DL-09.',
+  s:[['Đáy khu nước trước bến','−2,70 m'],['Đáy khu nước (thuyết minh)','−2,60 m'],['MN lũ 100 năm','+8,20 m'],['MN cao thiết kế (lũ 20 năm)','+7,13 m'],['MN thấp thiết kế (95%)','−0,31 m'],['Khối lượng đào dưới nước','21.056,44 m³'],['Số mặt cắt tính toán','6 mặt cắt'],['Thi công','đê quây, bơm nước, nạo vét']],src:'AQMTC-ZT-01 · AQMTS-DL-08, DL-09'},
+ boat:{tag:'Khai thác',t:'Tàu cập bến hàng nặng',d:'Minh hoạ tàu cập vào trụ bến qua hai đệm va, dây buộc kéo về hai khối neo trên bờ. Đây là lý do tồn tại của khối neo và cột bích.',
+  s:[['Tải trọng thiết kế đường','7 t/m²'],['Phương tiện','rơ moóc phẳng (xe module)'],['Cấu hình','12 hàng trục × 4 hàng dọc'],['Lực neo mỗi cột bích','150 kN'],['Cao độ mặt bến','+1,70 → +2,54']],src:'Thuyết minh mục I · AQMTC-ZT-01'},
+ slabq:{tag:'Chuyển tiếp',t:'Bản quá độ BTCT',d:'Nối giữa đường đắp (có thể lún) và trụ bến trên cọc (không lún). Điểm dễ hỏng nhất của cả tuyến.',
+  s:[['Số tấm','4 tấm'],['Chiều dài','≈ 3,0 m'],['Vật liệu','bê tông cốt thép'],['Vị trí','giữa đường dốc và bệ trụ'],['Rủi ro','chênh lún giữa hai kết cấu']],src:'AQMTS-DL-10 · DL-03'}
+};
+function seg(i){
+  var L=[['15,26 m','0%','+8,55','+8,55'],['77,5 m','dốc 4,2%','+8,55','+5,30'],['80 m','bằng 0%','+5,30','+5,30'],['60 m','dốc 6%','+5,30','+1,70']][i];
+  return {tag:'Đường dốc · đoạn '+(i+1),t:'Đoạn '+(i+1)+' — '+L[0]+' · '+L[1],
+   d:'Một trong bốn đoạn của đường dốc hàng nặng, tổng chiều dài 232,76 m, rộng 12 m.',
+   s:[['Chiều dài',L[0]],['Độ dốc dọc',L[1]],['Cao độ đầu đoạn',L[2]],['Cao độ cuối đoạn',L[3]],['Bề rộng','12,0 m'],['Dốc ngang','2% hai mái'],
+     ['Kết cấu','BT C40 260 + CPĐD 200+200 + đá phong hoá ≥600 mm'],['Tải thiết kế','7 t/m²']],
+   src:'Thuyết minh mục III · AQMTS-DL-01, DL-03'};
+}
+for(var si=0;si<4;si++) DATA['seg'+si]=seg(si);
+
+/* ---------- build main scene ---------- */
+function buildMain(E,WL){
+  var M=[],i;
+  var top=function(ch){return elev(ch)}, L=[0.26,0.20,0.20,0.60], acc=0, lyr=[];
+  for(i=0;i<4;i++){
+    (function(a,b,id,col){
+      var o=slab(0,LEN,function(ch){return elev(ch)-a},function(ch){return elev(ch)-b},6,34);
+      var mm=mesh(id,id,col,o); mm.layerIdx=lyr.length; M.push(mm); lyr.push(mm);
+    })(acc,acc+L[i],['road','cpdd1','cpdd2','daphonghoa'][i],[COL.c40,COL.cpdd1,COL.cpdd2,COL.rock][i]);
+    acc+=L[i];
+  }
+  E.layers=lyr;
+  /* embankment fill 0..89 */
+  var fill=slab(0,89,function(ch){return elev(ch)-THK},function(){return 4.2},
+    function(ch){return 6+2*Math.max(0,elev(ch)-THK-4.2)},22);
+  M.push(mesh('nendap','nendap',COL.soilD,fill));
+  /* terrain ribbon */
+  var ter=strip(-10,252,function(ch){
+    var yO=yOuter(ch), yR=(ch<=LEN)?Math.min(yO,elev(ch)-THK):yO;
+    var w=6+1.5*Math.max(0,yO-yR);
+    return [P3(ch,-34,yO),P3(ch,-w,yO),P3(ch,-6,yR),P3(ch,6,yR),P3(ch,w,yO),P3(ch,34,yO)];
+  },52);
+  M.push(mesh('dat','dat',COL.soil,ter,{twoSided:true,edge:false}));
+  /* riprap: slope + bed */
+  var rs=strip(202,228,function(ch){var y=yOuter(ch)+0.3;return [P3(ch,-33,y),P3(ch,0,y),P3(ch,33,y)];},16);
+  M.push(mesh('rip','rip',COL.rip,rs,{twoSided:true,edge:false,bias:1.6}));
+  var rb=strip(228,268,function(ch){return [P3(ch,-33,-2.42),P3(ch,0,-2.42),P3(ch,33,-2.42)];},6);
+  M.push(mesh('rip','rip',COL.rip,rb,{twoSided:true,edge:false,bias:1.0}));
+  /* approach slab */
+  M.push(mesh('slabq','slabq',COL.slabq,slab(229.7,232.9,function(){return 1.72},function(){return 1.42},6,2)));
+  /* dolphin cap */
+  M.push(mesh('cap','cap',COL.cap,slab(232.76,246.76,function(ch){return 1.70+(246.76-ch)/14*0.58},function(){return 0.10},6,4)));
+  /* fenders on river face */
+  for(i=0;i<2;i++){
+    var fo=(i?0.6:-0.6), fv=slab(246.76,247.4,function(){return 1.25},function(){return 0.55},0.75,1);
+    var fn=nrm(240);
+    for(var q=0;q<fv.v.length;q++){ fv.v[q]=[fv.v[q][0]+fn[0]*fo, fv.v[q][1], fv.v[q][2]+fn[1]*fo]; }
+    M.push(mesh('fender','fender',COL.fender,fv));
+  }
+  /* piles */
+  var tops=[0.82,0.52,0.22];
+  for(var r=0;r<3;r++)for(var c=0;c<3;c++){
+    var p=pos(232.76+[2,7,12][r], [-5,0,5][c]);
+    M.push(mesh('pilegrp','pilegrp',COL.pile,cylV(p[0],-16,tops[r],p[1],0.5,12)));
+  }
+  /* anchor blocks + bollards */
+  for(var sgn=-1;sgn<=1;sgn+=2){
+    var o2=sgn*11;
+    M.push(mesh('anchor','anchor',COL.anchor,pyr(172.76,o2,2.0,2.8,1.75,1.75)));
+    M.push(mesh('anchor','anchor',COL.anchor,pyr(172.76,o2,2.8,4.5,1.25,0.4)));
+    var bp=pos(172.76,o2);
+    M.push(mesh('boll','boll',COL.boll,boxV(bp[0]-0.3,bp[0]+0.3,4.50,4.62,bp[1]-0.3,bp[1]+0.3)));
+    M.push(mesh('boll','boll',COL.boll,cylV(bp[0],4.62,5.00,bp[1],0.16,10)));
+    M.push(mesh('boll','boll',COL.boll,cylV(bp[0],5.00,5.14,bp[1],0.26,10)));
+  }
+  /* light poles */
+  E.lamps=[];
+  for(i=0;i<10;i++){
+    var ch=15+i*24, o3=7.6, pp2=pos(ch,o3), base=elev(ch)-0.1, hTop=base+10;
+    M.push(mesh('pole','pole',COL.pole,cylV(pp2[0],base,hTop,pp2[1],0.13,8)));
+    var nn2=nrm(ch), ax=pp2[0]-nn2[0]*1.5, az2=pp2[1]-nn2[1]*1.5;
+    M.push(mesh('pole','pole',COL.pole,boxV(Math.min(pp2[0],ax)-0.05,Math.max(pp2[0],ax)+0.05,hTop-0.12,hTop+0.02,Math.min(pp2[1],az2)-0.05,Math.max(pp2[1],az2)+0.05)));
+    M.push(mesh('pole','pole',COL.lamp,boxV(ax-0.35,ax+0.35,hTop-0.34,hTop-0.1,az2-0.22,az2+0.22),{em:true,night:true}));
+    E.lamps.push({x:ax,y:hTop-0.34,z:az2,r:9,id:'pole'});
+  }
+  /* flood masts */
+  for(var sg2=-1;sg2<=1;sg2+=2){
+    var om=sg2*15, pm=pos(203,om);
+    M.push(mesh('mast','mast',COL.pole,cylV(pm[0],4.2,16.2,pm[1],0.2,8)));
+    M.push(mesh('mast','mast',COL.lamp,boxV(pm[0]-0.8,pm[0]+0.8,15.9,16.4,pm[1]-0.45,pm[1]+0.45),{em:true,night:true}));
+    E.lamps.push({x:pm[0],y:15.9,z:pm[1],r:26,id:'mast'});
+  }
+  /* boat */
+  var bc=pos(252,0), nb=nrm(254), db=dirAt(254);
+  function bpt(a,b,y){return [bc[0]+db[0]*a+nb[0]*b, y, bc[1]+db[1]*a+nb[1]*b];}
+  var hull={v:[bpt(-5,-16,WL-1.3),bpt(5,-16,WL-1.3),bpt(5,16,WL-1.3),bpt(-5,16,WL-1.3),
+               bpt(-5.6,-18,WL+1.6),bpt(5.6,-18,WL+1.6),bpt(5.6,18,WL+1.6),bpt(-5.6,18,WL+1.6)],
+            f:[[0,3,2,1],[4,5,6,7],[0,1,5,4],[1,2,6,5],[2,3,7,6],[3,0,4,7]]};
+  orient(hull);
+  M.push(mesh('boat','boat',COL.hull,hull));
+  M.push(mesh('boat','boat',COL.deck,orient({v:[bpt(-2.6,9,WL+1.6),bpt(2.6,9,WL+1.6),bpt(2.6,15,WL+1.6),bpt(-2.6,15,WL+1.6),
+      bpt(-2.6,9,WL+4.4),bpt(2.6,9,WL+4.4),bpt(2.6,15,WL+4.4),bpt(-2.6,15,WL+4.4)],f:[[0,3,2,1],[4,5,6,7],[0,1,5,4],[1,2,6,5],[2,3,7,6],[3,0,4,7]]}))); 
+  /* mooring lines */
+  for(var ml=-1;ml<=1;ml+=2){
+    var A=pos(172.76,ml*11), Bp=bpt(ml*4.5,ml*15,WL+1.6);
+    var ax2=[A[0],4.9,A[1]];
+    M.push(mesh('boat','boat',[246,243,232],{v:[[ax2[0],ax2[1],ax2[2]],[ax2[0]+0.3,ax2[1]+0.3,ax2[2]],[Bp[0]+0.3,Bp[1]+0.3,Bp[2]],[Bp[0],Bp[1],Bp[2]]],f:[[0,1,2,3]]},{twoSided:true,edge:false,pick:false,bias:10}));
+  }
+  /* soil body so piles read as buried */
+  var sb=strip(224,256,function(ch){return [P3(ch,-15,-2.42),P3(ch,15,-2.42),P3(ch,15,-18.5),P3(ch,-15,-18.5)];},4);
+  M.push(mesh('dat','dat',[192,186,164],sb,{twoSided:true,alpha:.22,edge:false,bias:-4}));
+  /* water — starts where terrain drops below the water line */
+  var ws=(WL>=4.2)?-8:Math.max(205,205+3*(4.2-WL));
+  var w0=pos(ws,-33),w1=pos(ws,33),w2=pos(272,33),w3=pos(272,-33);
+  M.push(mesh('water','water',COL.water,{v:[[w0[0],WL,w0[1]],[w1[0],WL,w1[1]],[w2[0],WL,w2[1]],[w3[0],WL,w3[1]]],f:[[0,1,2,3]]},
+    {twoSided:true,alpha:.52,edge:false,bias:4}));
+  var BIAS={road:2,cpdd1:2,cpdd2:2,daphonghoa:2,nendap:0.5,
+    cap:9,pilegrp:9,anchor:9,boll:9,pole:9,mast:9,boat:9,fender:9,slabq:9};
+  for(i=0;i<M.length;i++){ var bb=BIAS[M[i].id]; if(bb!==undefined && M[i].bias===undefined) M[i].bias=bb; }
+  return M;
+}
+
+/* ---------- build pile scene ---------- */
+function buildPile(E,opt){
+  var M=[],i,r,c, tops=[0.82,0.52,0.22];
+  var C=pos(239.76,0);
+  function L(ch,o,y){var p=pos(ch,o);return [p[0]-C[0],y,p[1]-C[1]];}
+  function lbox(c0,c1,o0,o1,y0,y1){
+    var v=[L(c0,o0,y0),L(c1,o0,y0),L(c1,o1,y0),L(c0,o1,y0),L(c0,o0,y1),L(c1,o0,y1),L(c1,o1,y1),L(c0,o1,y1)];
+    return {v:v,f:[[0,3,2,1],[4,5,6,7],[0,1,5,4],[1,2,6,5],[2,3,7,6],[3,0,4,7]]};
+  }
+  if(!opt.noSoil){
+    M.push(mesh('soil','soil',COL.soil,orient(lbox(226,254,-16,16,-19,-2.42)),{alpha:.30,pick:false,twoSided:true}));
+    M.push(mesh('soil','soil',[150,163,176],orient(lbox(226,254,-16,16,-19,-13.5)),{alpha:.40,pick:false,twoSided:true}));
+  }
+  M.push(mesh('cap','cap',COL.cap,orient(lbox(232.76,246.76,-6,6,0.10,1.70)),{alpha:opt.ghost?0.26:1}));
+  for(r=0;r<3;r++)for(c=0;c<3;c++){
+    var p=pos(232.76+[2,7,12][r],[-5,0,5][c]), id='P'+'ABC'[r]+(c+1);
+    M.push(mesh(id,id,COL.pile,cylV(p[0]-C[0],-16,tops[r],p[1]-C[1],0.5,14),{alpha:opt.rebar?0.30:1}));
+    if(opt.rebar){
+      for(var k=0;k<10;k++){ var ang=k/10*Math.PI*2;
+        M.push(mesh(id,id,COL.rebar,cylV(p[0]-C[0]+0.43*Math.cos(ang),-15.6,tops[r]+1.0,p[1]-C[1]+0.43*Math.sin(ang),0.055,5),{pick:false,edge:false}));
+      }
+      for(var h=0;h<14;h++){
+        var yh=-15.4+h*1.15; if(yh>tops[r])break;
+        M.push(mesh(id,id,COL.hoop,{v:(function(){var vv=[],q,n2=14;
+          for(q=0;q<n2;q++){var aa=q/n2*Math.PI*2;vv.push([p[0]-C[0]+0.452*Math.cos(aa),yh,p[1]-C[1]+0.452*Math.sin(aa)]);}
+          for(q=0;q<n2;q++){var ab=q/n2*Math.PI*2;vv.push([p[0]-C[0]+0.452*Math.cos(ab),yh+0.07,p[1]-C[1]+0.452*Math.sin(ab)]);}
+          return vv;})(),f:(function(){var ff=[],q,n2=14;for(q=0;q<n2;q++){var j=(q+1)%n2;ff.push([q,j,n2+j,n2+q]);}return ff;})()},{pick:false,edge:false}));
+      }
+    }
+  }
+  M.push(mesh('water','water',COL.water,{v:[L(226,-16,-0.31),L(254,-16,-0.31),L(254,16,-0.31),L(226,16,-0.31)],f:[[0,1,2,3]]},{twoSided:true,alpha:.30,edge:false,pick:false}));
+  return M;
+}
+
+/* ---------- inspector ---------- */
+var PILEROW=[{k:'A',nm:'Hàng phía bờ',top:0.82,len:16.82},{k:'B',nm:'Hàng giữa',top:0.52,len:16.52},{k:'C',nm:'Hàng phía sông',top:0.22,len:16.22}];
+var PCOORD={'PC1':'X 2349053,430 / Y 432896,427','PC3':'X 2349058,777 / Y 432904,877'};
+function pileData(id){
+  var R=PILEROW['ABC'.indexOf(id[1])], L=R.len, V=Math.PI*0.25*L, nm=id.slice(1);
+  return {tag:'Cọc khoan nhồi · '+nm,t:'Cọc '+nm+' — '+R.nm,
+    d:'Một trong 9 cọc D1000 dưới bệ trụ. Ba hàng có cao độ đầu cọc khác nhau nên chiều dài khác nhau.',
+    s:[['Đường kính','D1000 mm'],['Cao độ đầu cọc','+'+vn(R.top)],['Cao độ mũi cọc','−16,00'],['Chiều dài cọc',vn(L)+' m'],
+       ['Bê tông C30 lý thuyết',vn(V)+' m³'],['Kể hao hụt 18%',vn(V*1.18)+' m³'],['Cốt thép','≈ 1.677 kg'],
+       ['Thép chủ','20 thanh Φ25'],['Vòng gia cường','9 vòng Φ20, cách 2 m'],['Đai xoắn','Φ10 · 50×100 + 58×200 mm'],
+       ['Thép định vị','36 thanh Φ12'],['Tọa độ VN2000',PCOORD[id]||'không ghi trên bản vẽ']],
+    src:'AQMTC-DL-13, DL-15'};
+}
+function renderInsp(box,id,extra){
+  var D = id && (DATA[id] || (/^P[ABC][123]$/.test(id)?pileData(id):null));
+  if(!D){ box.innerHTML='<div class="idle"><b>Chạm vào một bộ phận trong mô hình</b> để xem kích thước, chiều dày, vật liệu và yêu cầu kỹ thuật lấy từ bản vẽ.'+
+    '<div class="legend3">'+(extra||'')+'</div></div>'; return; }
+  var h='<div class="tag">'+D.tag+'</div><h3>'+D.t+'</h3><div class="desc">'+D.d+'</div><dl class="spec">';
+  for(var i=0;i<D.s.length;i++) h+='<dt>'+D.s[i][0]+'</dt><dd>'+D.s[i][1]+'</dd>';
+  h+='</dl><div class="src">Nguồn: '+D.src+'</div>';
+  box.innerHTML=h;
+}
+var LEGEND=[['#46505c','Bê tông C40'],['#b0b7be','Cấp phối đá dăm'],['#c4a37a','Đá phong hoá'],['#d48246','Trụ bến'],
+  ['#a0acb8','Cọc khoan nhồi'],['#7a6c98','Khối neo'],['#8a9aa8','Đá hộc bảo vệ'],['#96a0aa','Cột đèn']]
+  .map(function(a){return '<span><i style="background:'+a[0]+'"></i>'+a[1]+'</span>'}).join('');
+
+/* ---------- wire viewers ---------- */
+var VIEWS={iso:{az:2.46,el:0.26,dist:168,ortho:false,tc:196},
+           plan:{az:2.26,el:1.42,dist:420,ortho:true,os:2.45,tc:116,ty:2},
+           side:{az:3.33,el:0.05,dist:420,ortho:true,os:2.45,tc:116,ty:-3},
+           river:{az:1.62,el:0.20,dist:126,ortho:false,tc:212}};
+var EM=Eng('cv-main','stage-main'); EM.WL=-0.31; EM.target=[pos(196,0)[0],-0.5,pos(196,0)[1]]; EM.az=2.46; EM.el=0.26; EM.dist=168;
+function rebuildMain(){ EM.meshes=buildMain(EM,EM.WL); applyNight(EM); EM.draw(); }
+function applyNight(E){
+  for(var i=0;i<E.meshes.length;i++){var m=E.meshes[i]; if(m.night) m.em=E.night;}
+}
+EM.overlay=function(ctx,B,P){
+  if(!EM.night||!EM.lamps)return;
+  for(var i=0;i<EM.lamps.length;i++){
+    var L=EM.lamps[i], gy=(L.id==='mast')?-1.5:elev(0)*0+4.2;
+    var a=P([L.x,L.y,L.z]), b=P([L.x,gy,L.z]);
+    if(a[2]<1||b[2]<1)continue;
+    var rad=Math.abs(b[1]-a[1])*0.55+18;
+    var g=ctx.createRadialGradient(b[0],b[1],0,b[0],b[1],rad);
+    g.addColorStop(0,'rgba(255,232,160,.42)'); g.addColorStop(1,'rgba(255,232,160,0)');
+    ctx.fillStyle=g; ctx.beginPath(); ctx.ellipse(b[0],b[1],rad,rad*0.42,0,0,Math.PI*2); ctx.fill();
+    var g2=ctx.createLinearGradient(a[0],a[1],b[0],b[1]);
+    g2.addColorStop(0,'rgba(255,236,170,.30)'); g2.addColorStop(1,'rgba(255,236,170,0)');
+    ctx.fillStyle=g2; ctx.beginPath(); ctx.moveTo(a[0],a[1]);
+    ctx.lineTo(b[0]-rad*0.5,b[1]); ctx.lineTo(b[0]+rad*0.5,b[1]); ctx.closePath(); ctx.fill();
+  }
+};
+EM.onPick=function(id){ renderInsp($('#insp-main'),id,LEGEND); };
+rebuildMain(); EM.resize(); renderInsp($('#insp-main'),null,LEGEND);
+
+var EP=Eng('cv-pile','stage-pile');
+EP.opt={rebar:false,ghost:false,noSoil:false};
+EP.az=-0.78; EP.el=0.30; EP.dist=62; EP.target=[0,-6.5,0];
+function rebuildPile(){ EP.meshes=buildPile(EP,EP.opt); EP.draw(); }
+EP.onPick=function(id){ renderInsp($('#insp-pile'),id,''); };
+rebuildPile(); EP.resize(); renderInsp($('#insp-pile'),null,'');
+
+function setView(E,v){ var V=VIEWS[v]; E.az=V.az; E.el=V.el; E.dist=V.dist; E.ortho=!!V.ortho;
+  if(V.tc!==undefined){var t=pos(V.tc,0); E.target=[t[0],V.ty===undefined?-0.5:V.ty,t[1]];}
+  if(V.os)E.oscale=V.os*(E.W/900); E.draw(); }
+$$('[data-view]').forEach(function(b){ b.addEventListener('click',function(){
+  var p=b.dataset.view.split(':'), E=(p[0]==='main')?EM:EP;
+  $$('[data-view^="'+p[0]+'"]').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+  if(p[0]==='pile'&&p[1]==='plan'){E.az=0;E.el=1.44;E.ortho=true;E.oscale=11*(E.W/900);E.draw();return;}
+  if(p[0]==='pile'&&p[1]==='side'){E.az=-Math.PI/2;E.el=0.04;E.ortho=true;E.oscale=11*(E.W/900);E.draw();return;}
+  if(p[0]==='pile'){E.az=-0.78;E.el=0.30;E.ortho=false;E.dist=62;E.draw();return;}
+  setView(E,p[1]); }); });
+$$('[data-wl]').forEach(function(b){ b.addEventListener('click',function(){
+  $$('[data-wl]').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+  EM.WL=parseFloat(b.dataset.wl.split(':')[1]); rebuildMain(); }); });
+$('[data-night]').addEventListener('click',function(){
+  EM.night=!EM.night; this.classList.toggle('on',EM.night);
+  this.textContent=EM.night?'☀ Ban ngày':'🌙 Ban đêm';
+  $('#stage-main').classList.toggle('night',EM.night); applyNight(EM); EM.draw(); });
+var exploded=false;
+$('[data-explode]').addEventListener('click',function(){
+  exploded=!exploded; this.classList.toggle('on',exploded);
+  for(var i=0;i<EM.layers.length;i++) EM.layers[i].off=exploded?(3-i)*5:0;
+  EM.draw(); });
+$('[data-reset="main"]').addEventListener('click',function(){
+  exploded=false; $('[data-explode]').classList.remove('on');
+  for(var i=0;i<EM.layers.length;i++)EM.layers[i].off=0;
+  EM.night=false; $('#stage-main').classList.remove('night');
+  $('[data-night]').classList.remove('on'); $('[data-night]').textContent='🌙 Ban đêm';
+  EM.WL=-0.31; $$('[data-wl]').forEach(function(x,k){x.classList.toggle('on',k===0)});
+  EM.pick=null; renderInsp($('#insp-main'),null,LEGEND);
+  $$('[data-view^="main"]').forEach(function(x){x.classList.remove('on')});
+  rebuildMain(); setView(EM,'iso'); });
+$('[data-rebar]').addEventListener('click',function(){ EP.opt.rebar=!EP.opt.rebar; this.classList.toggle('on',EP.opt.rebar);
+  this.textContent=EP.opt.rebar?'Ẩn lồng thép':'Hiện lồng thép'; rebuildPile(); });
+$('[data-ghost]').addEventListener('click',function(){ EP.opt.ghost=!EP.opt.ghost; this.classList.toggle('on',EP.opt.ghost); rebuildPile(); });
+$('[data-soil]').addEventListener('click',function(){ EP.opt.noSoil=!EP.opt.noSoil; this.classList.toggle('on',EP.opt.noSoil);
+  this.textContent=EP.opt.noSoil?'Hiện đất':'Ẩn đất'; rebuildPile(); });
+$('[data-reset="pile"]').addEventListener('click',function(){
+  EP.opt={rebar:false,ghost:false,noSoil:false};
+  $('[data-rebar]').classList.remove('on'); $('[data-rebar]').textContent='Hiện lồng thép';
+  $('[data-ghost]').classList.remove('on');
+  $('[data-soil]').classList.remove('on'); $('[data-soil]').textContent='Ẩn đất';
+  EP.az=-0.78;EP.el=0.30;EP.ortho=false;EP.dist=62;EP.pick=null;
+  $$('[data-view^="pile"]').forEach(function(x){x.classList.remove('on')});
+  renderInsp($('#insp-pile'),null,''); rebuildPile(); });
+
+
+/* ==================================================================
+   DỮ LIỆU BẢN VẼ — mỗi nút của cây hồ sơ
+   box = [x0,y0,x1,y1] theo tỷ lệ 0..1 của ảnh bản vẽ
+   ================================================================== */
+var GROUPS=[
+ {id:'g0',name:'Mô hình 3D',sub:'xoay bằng ngón tay'},
+ {id:'g1',name:'Hồ sơ chung'},
+ {id:'g2',name:'Tổng mặt bằng'},
+ {id:'g3',name:'Đường dốc'},
+ {id:'g4',name:'Mái dốc và đào đắp'},
+ {id:'g5',name:'Mặt đường bê tông'},
+ {id:'g6',name:'Neo tàu'},
+ {id:'g7',name:'Trụ bến và cọc'},
+ {id:'g8',name:'Đệm va'},
+ {id:'g9',name:'Không có bản vẽ',sub:'tôi tự tính'}
+];
+var PKL={yes:'Thuộc gói của bạn',no:'Không thuộc gói',ref:'Tài liệu tham chiếu',est:'Đề xuất — không có trong hồ sơ'};
+var NODES=[
+{id:'m3d',g:'g0',mode:'3d',view:'main',code:'3D',name:'Toàn cảnh bến hàng nặng',pkg:'yes',items:[]},
+{id:'m3dp',g:'g0',mode:'3d',view:'pile',code:'3D',name:'Khu 9 cọc khoan nhồi',pkg:'yes',items:[]},
+
+{id:'contents',g:'g1',mode:'img',imgs:['img/contents-1.jpg'],code:'Danh mục',name:'Danh mục bản vẽ',pkg:'ref',items:[],
+ sum:'Danh mục 16 bản vẽ của hạng mục bến hàng nặng (phần Jetty) thuộc nhà máy nhiệt điện An Khánh – Bắc Giang 650 MW. Phiên bản A, phát hành tháng 10/2026.',
+ facts:[['Số bản vẽ trong danh mục','16'],['Mã dự án','A134002792'],['Phiên bản','A · 2026.10'],['Đơn vị thiết kế','Anhui Transport Survey & Design Institute'],['Tổng mặt bằng ZT-01','là bản riêng, không nằm trong danh mục 16 bản'],['Tổng số file bạn gửi','19 file PDF (20 trang)']],
+ zones:[]},
+
+{id:'thuyet',g:'g1',mode:'img',imgs:['img/thuyet-1.jpg','img/thuyet-2.jpg'],code:'Thuyết minh',name:'Thuyết minh thiết kế đường dốc tải trọng nặng',pkg:'ref',items:[],
+ sum:'Hai trang thuyết minh quy định tải trọng, yêu cầu nền đường, kết cấu mặt đường, vật liệu và trình tự thi công. Đây là văn bản gốc để nghiệm thu nền của bạn.',
+ facts:[['Tải trọng thiết kế','7 t/m² · xe module 12 hàng trục × 4 hàng dọc'],['Đường dốc','232,76 m · rộng 12 m · dốc ngang hai mái 2%'],['Bốn đoạn dọc','15,26 / 77,5 / 80 / 60 m'],['Dốc dọc bốn đoạn','0% / 4,2% / 0% / 6%'],['Góc kẹp đoạn 2–3','159°'],['Sức chịu tải đỉnh nền','≥ 120 kPa (ghi chú DL-02)'],['Kết cấu mặt đường','BT C40 260 mm + CPĐD 200 + 200 mm'],['Mái bờ','1:3, đá hộc dày 600 mm, từ mép bến xuống −2,60 m'],['Đáy khu nước được bảo vệ','dải rộng 84,1 m, đá hộc dày 600 mm'],['Bóc đất mặt','300 mm, phạm vi 205 m từ mép bến']],
+ flags:['Phần bảng thành phần hạt của đá dăm cho bê tông ghi là “sẽ được bổ sung sau”.','Thuyết minh nói bóc đất trong phạm vi 205 m, nhưng đường dốc dài 232,76 m — cần hỏi tư vấn đoạn còn lại.'],
+ zones:[
+  {p:0,b:[0.06,0.146,0.487,0.217],t:'I. Tải trọng thiết kế',d:'Xe vận chuyển hạng nặng loại rơ moóc phẳng (xe module), 12 hàng trục và 4 hàng dọc, tải 7 t/m².'},
+  {p:0,b:[0.06,0.222,0.487,0.557],t:'II. Nền đường — bảng CBR và độ chặt',d:'Phần trên 0–30 cm: CBR ≥ 6, độ chặt ≥ 95%. 30–80 cm: CBR ≥ 4, ≥ 95%. 80–150 cm: CBR ≥ 3, ≥ 94%. Dưới 150 cm: CBR ≥ 2, ≥ 92%. Mái 1:3 gia cố đá hộc 600 mm; bóc 300 mm đất mặt; đoạn không đào đắp đá phong hoá 600 mm, đoạn có đào đắp đá hộc 600 mm.'},
+  {p:0,b:[0.06,0.712,0.487,0.91],t:'III–IV. Bình đồ và kết cấu mặt đường',d:'Đường rộng 12 m, bốn đoạn 15,26 / 77,5 / 80 / 60 m. Giữa đoạn hai và ba có đoạn cong góc kẹp 159°. Kết cấu từ trên xuống: BT C40 260 mm, CPĐD 200 + 200 mm, nền đá phong hoá hoặc đá hộc.'},
+  {p:0,b:[0.573,0.142,0.877,0.297],t:'Bảng thông số mặt đường',d:'Cường độ chịu kéo khi uốn fcm = 5 MPa; mô đun đàn hồi khi uốn Ec = 31.000 MPa; mô đun đàn hồi khi nén của cấp phối đá dăm E1 = 300 MPa.'},
+  {p:0,b:[0.513,0.297,0.943,0.896],t:'V. Yêu cầu thi công bê tông mặt đường',d:'Bê tông tuổi 28 ngày; cường độ nén 40 MPa. Xi măng PC rộng lò quay: nén 28 ngày ≥ 42,5 MPa. Cát mô đun độ lớn 2,0–3,5. Đá dăm nén dập ≤ 10%. Kiểm tra độ sụt ít nhất hai lần mỗi ca.'},
+  {p:1,b:[0.06,0.075,0.487,0.231],t:'Bảo dưỡng bê tông',d:'Giữ ẩm 7 ngày đầu; bảo dưỡng 14–21 ngày, tối thiểu 14 ngày khi nóng và 21 ngày khi lạnh. Không dừng trước khi đạt 80% cường độ chịu kéo khi uốn thiết kế.'},
+  {p:1,b:[0.06,0.231,0.487,0.552],t:'Cấp phối đá dăm (đây là phần việc của bạn)',d:'Nén ≥ 80 MPa; độ nén dập < 35%; hạt mềm yếu < 5%; hạt thoi dẹt < 20%; bùn sét < 2%; đá dăm 30–70 mm, vật liệu chèn khe 15–25 mm. Lớp rời = chiều dày thiết kế × hệ số lu lèn xác định ở đoạn thi công thử.'},
+  {p:1,b:[0.06,0.557,0.487,0.68],t:'Đá phong hoá (sơn bì thạch)',d:'Thể tích hạt rắn ≥ 83%; bùn sét 8–15%; hạt lớn nhất ≤ 120 mm; hạt 2–120 mm chiếm trên 50%; Cu ≥ 5; Cc = 1–3; khối lượng thể tích khô sau đầm ≥ 2,05 t/m³.'},
+  {p:1,b:[0.06,0.681,0.487,0.75],t:'Đá hộc',d:'Đá hộc 10–100 kg, không dẹt, không phong hoá nặng hoặc nứt nẻ; cường độ sau ngâm nước ≥ 30 MPa.'},
+  {p:1,b:[0.06,0.755,0.943,0.90],t:'VI. Trình tự thi công chính',d:'Chuẩn bị → Trắc đạc, định vị → Phát quang, đào bề mặt trên cạn, thi công đê quây → Đắp đá hộc và đá phong hoá → Thi công các lớp kết cấu mặt đường và móng neo → Thi công gia cố mái dốc và lắp đặt cột bích → Dỡ bỏ đê quây và nạo vét dưới nước → Nghiệm thu.'}
+ ]},
+
+{id:'zt01',g:'g2',mode:'img',imgs:['img/zt01-1.jpg'],code:'ZT-01',name:'Tổng mặt bằng bố trí',pkg:'ref',items:[],
+ sum:'Tổng mặt bằng khu bến bên sông Lục Nam: bến than ở thượng lưu, bến hàng nặng ở hạ lưu, khu vực ngập lụt phải đào tới +4,20 m, và các mốc cao độ nước thiết kế.',
+ facts:[['Tỷ lệ bản vẽ','1:1250'],['Hệ tọa độ','VN2000, múi 30, kinh tuyến trục 107°00′'],['Hệ cao độ','quốc gia Hòn Dấu – Hải Phòng'],['Địa hình','đo tháng 09/2017, tỷ lệ 1:1000'],['MN lũ 1% (100 năm)','+8,20 m'],['MN cao thiết kế (lũ 5%, 20 năm)','+7,13 m'],['MN thấp thiết kế (đảm bảo 95%)','−0,31 m'],['Cao độ mặt bến than','+8,73 … +8,82'],['Cao độ mặt bến hàng nặng','+1,70 … +2,54'],['Đáy sông thiết kế','bến than −3,00 · bến hàng nặng −2,70'],['Khu vực ngập lụt','đào tới cao độ +4,20 m'],['Tàu bến than','600 T · 43,5 × 10,3 × 1,85 m']],
+ flags:['Địa hình đo từ 2017, đã 9 năm. Lòng sông và bãi có thể đã bồi hoặc xói — khối lượng nạo vét có thể lệch.'],
+ zones:[
+  {p:0,b:[0.30,0.04,0.72,0.18],t:'Bến than',d:'Hạng mục riêng cho nhập than, đá vôi và xuất tro xỉ; không thuộc gói của bạn.'},
+  {p:0,b:[0.70,0.30,0.83,0.73],t:'Bến hàng nặng và đường dốc',d:'Đường dốc từ khu nhà máy xuống trụ bến — nơi gói nền móng của bạn nằm.'},
+  {p:0,b:[0.35,0.46,0.53,0.59],t:'Khu vực ngập lụt',d:'Phải đào tới cao độ +4,20 m.'},
+  {p:0,b:[0.805,0.68,0.985,0.79],t:'Bảng cao độ thiết kế chính',d:'Mực nước lũ 100 năm +8,20; nước cao +7,13; nước thấp −0,31; mặt bến; đáy sông thiết kế.'},
+  {p:0,b:[0.29,0.795,0.50,0.965],t:'Bảng tọa độ điểm khống chế',d:'Các điểm A1–A3 và M1–M4 để định vị bến than, bến hàng nặng và vùng neo đậu.'}
+ ]},
+
+{id:'dl01',g:'g3',mode:'img',imgs:['img/dl01-1.jpg'],code:'DL-01',name:'Mặt bằng đường dốc',pkg:'yes',items:[],
+ sum:'Mặt bằng tuyến đường dốc hàng nặng 232,76 m với bốn đoạn, đoạn cong 159°, hai khối neo và trụ bến ở đầu cuối. Bản này chỉ định vị; vật liệu và chi phí tính ở DL-02.',
+ facts:[['Tỷ lệ','1:1000'],['Chiều dài bốn đoạn','15,26 / 77,5 / 80 / 60 m'],['Độ dốc dọc','0% / 4,2% / 0% / 6%'],['Bề rộng','12 m'],['Đoạn cong','góc kẹp 159°, R25 m'],['Mái taluy hai bên đường','1:2'],['Mái bờ cạnh trụ bến','1:3'],['Cao độ tại các điểm','+8,55 / +5,3 / +5,3 / +1,7'],['Cao độ đáy sông','−2,6'],['Số khối neo','2']],
+ zones:[
+  {b:[0.22,0.31,0.77,0.47],t:'Tuyến đường dốc bốn đoạn',d:'15,26 m bằng · 77,5 m dốc 4,2% · 80 m bằng · 60 m dốc 6% xuống trụ bến. Rộng 12 m.'},
+  {b:[0.13,0.36,0.40,0.50],t:'Đoạn cong 159°',d:'Chỗ đổi hướng giữa đoạn dốc 4,2% và đoạn bằng 80 m. Bán kính R25 m.'},
+  {b:[0.61,0.29,0.79,0.43],t:'Trụ bến và đoạn dốc 6%',d:'Trụ bến ở đầu cuối đường; hai bên có mái 1:3 dài 40 m, 14 m và 50 m xuống sông.'},
+  {b:[0.50,0.30,0.66,0.38],t:'Khối neo phía trên',d:'Một trong hai khối neo đặt cách mép đường 5 m. Chi tiết ở DL-04.'},
+  {b:[0.50,0.42,0.67,0.50],t:'Khối neo phía dưới',d:'Khối neo thứ hai, đối xứng qua tim đường. Chi tiết ở DL-04.'},
+  {b:[0.13,0.635,0.30,0.795],t:'Bảng tọa độ điểm khống chế',d:'ZB1 (2349057,793; 432899,582) · ZB2 (2349045,963; 432907,069) · ZB3 (2348939,494; 432974,451) · ZB4 (2348884,450; 433049,059).'}
+ ]},
+
+{id:'dl02',g:'g3',mode:'img',imgs:['img/dl02-1.jpg'],code:'DL-02',name:'Mặt cắt ngang đường dốc và bảng khối lượng',pkg:'yes',
+ items:['boc','daodat','daphonghoa','dahocnen','cpdd'],
+ sum:'Bản quan trọng nhất của phần nền đường: có bốn lớp kết cấu, bảng khối lượng đường, thông số bê tông và ghi chú sức chịu tải. Năm khoản chi phí của bạn lấy khối lượng từ bảng này.',
+ facts:[['Bề rộng mặt cắt','13 m (500 + 6.000 + 6.000 + 500 mm)'],['Dốc ngang','2% hai mái'],['Lớp 1','BT xi măng C40 · 260 mm'],['Lớp 2','Cấp phối đá dăm · 200 mm'],['Lớp 3','Cấp phối đá dăm · 200 mm'],['Lớp 4','Đá phong hoá ≥ 600 mm (đoạn đào: đá hộc 600 mm)'],['Sức chịu tải đỉnh nền','≥ 120 kPa'],['Độ chặt đá phong hoá','≥ 83%'],['BT mặt đường 260 mm','673,92 m³ — không thuộc gói'],['CPĐD 400 mm','1.123,20 m³'],['Đá phong hoá','3.406,13 m³'],['Đá hộc 600 mm','367,08 m³'],['Bóc đất mặt','110,88 m³'],['Đào đất trên cạn','948,02 m³'],['Khối liên kết BT C20 bảo vệ mái','105,28 m³ — không thuộc gói'],['Gờ đỉnh + chân khay BT C20','28,20 + 11,28 m³ — không thuộc gói']],
+ flags:['Bảng khối lượng ghi “cấp phối đá dăm 400 mm” nhưng mặt cắt và thuyết minh ghi 200 + 200 mm — là hai lớp, tổng 400 mm, khớp nhau.'],
+ zones:[
+  {b:[0.10,0.055,0.49,0.26],t:'Mặt cắt A–A — đoạn đắp trên cạn',d:'Bê tông C40 260 mm, hai lớp cấp phối đá dăm 200 mm, đá phong hoá dày ≥ 600 mm. Gờ đỉnh BT C20 ở hai mép, mái taluy 1:2.'},
+  {b:[0.08,0.32,0.55,0.51],t:'Mặt cắt B–B — đoạn có đào',d:'Cùng kết cấu nhưng lớp dưới cùng là đá hộc dày 600 mm đặt trên nền đã đào.'},
+  {b:[0.625,0.10,0.94,0.41],t:'Bảng khối lượng đường',d:'BT 260 mm: 673,92 · CPĐD: 1.123,20 · đá phong hoá: 3.406,13 · đá hộc 600 mm: 367,08 · chân khay: 11,28 · gờ đỉnh: 28,20 · khối liên kết: 105,28 · đá dăm 100 mm: 105,28 · bóc đất mặt: 110,88 · đào đất trên cạn: 948,02 (m³).'},
+  {b:[0.625,0.43,0.94,0.59],t:'Thông số kỹ thuật mặt bê tông',d:'fcm = 5 MPa; Ec = 31.000 MPa; E1 (cấp phối đá dăm) = 300 MPa.'},
+  {b:[0.07,0.555,0.535,0.95],t:'Khối liên kết đúc sẵn và chi tiết nối đường',d:'Khối liên kết bảo vệ mái dày 350 mm × dài 500 mm; chi tiết chuyển tiếp mặt đường với bậc BT C20 160 / 200 / 150 / 200 mm.'},
+  {b:[0.49,0.67,0.98,0.76],t:'Ghi chú',d:'Kích thước tính bằng mm. Độ chặt đá phong hoá ≥ 83%. Sức chịu tải đỉnh nền đường ≥ 120 kPa.'}
+ ]},
+
+{id:'dl03',g:'g3',mode:'img',imgs:['img/dl03-1.jpg'],code:'DL-03',name:'Mặt cắt dọc đường dốc',pkg:'yes',items:[],
+ sum:'Mặt cắt dọc toàn tuyến từ chỗ giáp nhà máy tới trụ bến, thấy rõ độ dốc, cao độ, bản quá độ, trụ bến, mái 1:3 và cọc khoan nhồi.',
+ facts:[['Tỷ lệ','1:250'],['Cao độ đầu tuyến','+8,55'],['Cao độ đoạn bằng','+5,30'],['Cao độ đầu trụ bến','+1,70'],['Cao độ đáy sông','−2,60'],['Mặt đất tự nhiên (nhãn 4,2)','≈ +4,20'],['Bản quá độ BTCT','dài 3.000 mm'],['Mái bờ','1:3 · đá hộc 600 mm'],['Mũi cọc ghi trên bản này','−13,0']],
+ flags:['MÂU THUẪN: bản này ghi mũi cọc −13,0 m, còn DL-13 ghi −16,00 m. Chênh 3 m × 9 cọc ≈ 21 m³ bê tông, khoảng 131 triệu đồng.'],
+ zones:[
+  {b:[0.09,0.04,0.94,0.26],t:'Đoạn 1 và đoạn 2',d:'15,26 m bằng ở +8,55, rồi 77,5 m dốc 4,2% xuống +5,30. Nền đắp đá phong hoá.'},
+  {b:[0.08,0.32,0.94,0.53],t:'Đoạn 3 — 80 m bằng',d:'Giữ cao độ +5,30. Kết cấu 260 + 200 + 200 + 600 mm.'},
+  {b:[0.08,0.525,0.66,0.94],t:'Đoạn 4 dốc 6%, trụ bến và cọc',d:'60 m dốc 6% xuống +1,70, bản quá độ BTCT 3 m, trụ bến trên cọc khoan nhồi φ1000. Mái 1:3 xuống −2,60 m, đá hộc 600 mm.'},
+  {b:[0.70,0.585,0.985,0.715],t:'Ghi chú',d:'Cao độ tính bằng m, kích thước tính bằng mm; hệ cao độ quốc gia Hòn Dấu – Hải Phòng.'}
+ ]},
+
+{id:'dl06',g:'g4',mode:'img',imgs:['img/dl06-1.jpg'],code:'DL-06',name:'Vị trí bảo vệ mái bến hàng nặng',pkg:'yes',items:['dahocmai'],
+ sum:'Vị trí và mặt cắt phần mái bờ 1:3 được bảo vệ bằng đá hộc. Đây là chỗ khối lượng “đá hộc bảo vệ mái và đáy” của bạn xuất phát — nhưng bản vẽ không có bảng khối lượng.',
+ facts:[['Tỷ lệ','1:1000 (mặt bằng) · 1:250 (mặt cắt I–I)'],['Độ dốc mái','1:3'],['Chiều dày đá hộc','600 mm'],['Cao độ đất tự nhiên','+4,2'],['Cao độ đáy','−2,6'],['Dải rộng','84,1 m'],['Điểm ZB5','2349025,354 · 432887,034'],['Điểm ZB6','2349055,250 · 432934,271']],
+ flags:['Hồ sơ KHÔNG có bảng khối lượng đá hộc cho mái và đáy khu nước. Trang này tạm ước tính 2.500 m³ (có thể từ 1.000 đến 4.500). Đây là khoảng mù lớn nhất của gói.'],
+ zones:[
+  {b:[0.55,0.05,0.76,0.36],t:'Mái bờ 1:3 (ZB5 – ZB6)',d:'Phạm vi mái dốc được bọc đá hộc 600 mm, xuống tới −2,6 m.'},
+  {b:[0.155,0.68,0.45,0.855],t:'Mặt cắt I–I',d:'Mái 1:3 từ +4,2 xuống −2,6; lớp đá hộc 600 mm; có thềm nằm ngang ở đáy.'},
+  {b:[0.07,0.335,0.25,0.55],t:'Bảng tọa độ điểm khống chế',d:'ZB1…ZB6 theo VN2000.'},
+  {b:[0.655,0.52,0.985,0.79],t:'Ghi chú',d:'Kích thước tính bằng m; hệ tọa độ VN2000 múi 30; địa hình đo tháng 9/2017.'}
+ ]},
+
+{id:'dl07',g:'g4',mode:'img',imgs:['img/dl07-1.jpg'],code:'DL-07',name:'Vị trí các mặt cắt đào đắp',pkg:'yes',items:[],
+ sum:'Mặt bằng đánh dấu sáu mặt cắt 1-1 … 6-6 cắt ngang vùng sông. Nhìn bản này để hiểu các mặt cắt ở DL-08 và DL-09 nằm ở đâu.',
+ facts:[['Tỷ lệ','1:1000'],['Số mặt cắt','6 (1-1 … 6-6)'],['Khoảng cách giữa các mặt cắt','10,8 / 10,6 / 9,7 / 22,5 / 41,6 m'],['Điểm khống chế','ZB1 … ZB4'],['Địa hình','đo tháng 9/2017']],
+ zones:[
+  {b:[0.655,0.23,0.90,0.59],t:'Vị trí sáu mặt cắt',d:'Sáu đường cắt ngang vùng bờ – sông ngay trước trụ bến. Từ đây tính diện tích đào dưới nước ở từng mặt cắt.'},
+  {b:[0.17,0.385,0.73,0.49],t:'Tuyến đường dốc',d:'Cho thấy tuyến đường và hai khối neo trên nền địa hình.'},
+  {b:[0.08,0.645,0.25,0.80],t:'Bảng tọa độ điểm khống chế',d:'ZB1 … ZB4.'},
+  {b:[0.31,0.685,0.635,0.953],t:'Ghi chú',d:'Kích thước tính bằng m, VN2000 múi 30, địa hình 1:1000 đo tháng 9/2017.'}
+ ]},
+
+{id:'dl08',g:'g4',mode:'img',imgs:['img/dl08-1.jpg'],code:'DL-08',name:'Mặt cắt đào đắp (1)',pkg:'yes',items:[],
+ sum:'Ba mặt cắt đầu tiên (1-1, 2-2, 3-3) với diện tích đào dưới nước ghi ngay trên hình.',
+ facts:[['Tỷ lệ','1:500'],['Mặt cắt 1-1','diện tích đào = 0 m² (đất cao +4,2)'],['Mặt cắt 2-2','diện tích đào = 300 m²'],['Mặt cắt 3-3','diện tích đào = 240 m²']],
+ flags:['MÂU THUẪN VỚI BẢNG: DL-09 ghi mặt cắt 2 = 325,79 m² và mặt cắt 3 = 744,82 m². Hình này ghi 300 và 240 m². Chênh rất lớn ở mặt cắt 3.'],
+ zones:[
+  {b:[0.215,0.12,0.80,0.31],t:'Mặt cắt 1-1',d:'Cao độ +4,2 — chưa đào, diện tích đào dưới nước bằng 0.'},
+  {b:[0.215,0.31,0.80,0.50],t:'Mặt cắt 2-2',d:'Đào hình thang xuống đáy; diện tích ghi trên hình 300 m².'},
+  {b:[0.215,0.525,0.80,0.71],t:'Mặt cắt 3-3',d:'Đào xuống −2,6 m; diện tích ghi trên hình 240 m².'},
+  {b:[0.125,0.76,0.355,0.87],t:'Ghi chú',d:'Kích thước tính bằng m.'}
+ ]},
+
+{id:'dl09',g:'g4',mode:'img',imgs:['img/dl09-1.jpg'],code:'DL-09',name:'Mặt cắt đào đắp (2) và bảng khối lượng nạo vét',pkg:'yes',items:['naovet'],
+ sum:'Hai mặt cắt cuối và bảng tổng hợp khối lượng nạo vét 21.056,44 m³ — đây là con số tính tiền nạo vét của bạn.',
+ facts:[['Tỷ lệ','1:500'],['Mặt cắt 4-4 trên hình','240 m²'],['Mặt cắt 5-5 trên hình','270 m²'],['MC1 — diện tích · KL','0 · 0'],['MC2 — 325,79 m² · cách 10 m','1.628,95 m³'],['MC3 — 744,82 m² · cách 10 m','5.353,05 m³'],['MC4 — 323,24 m² · cách 9 m','4.806,27 m³'],['MC5 — 181,35 m² · cách 22 m','5.550,49 m³'],['MC6 — 0 · cách 41 m','3.717,68 m³'],['Tổng đào dưới nước','21.056,44 m³']],
+ flags:['MÂU THUẪN QUAN TRỌNG: diện tích ghi trên bốn hình (300, 240, 240, 270 m²) khác hẳn cột diện tích trong bảng (325,79 / 744,82 / 323,24 / 181,35). Nếu tính theo diện tích trên hình, khối lượng chỉ khoảng 17.500 m³ thay vì 21.056 m³ (phép tính nhanh của tôi, giả sử MC6 bằng 0). Phải hỏi tư vấn con số nào là đúng trước khi báo giá.'],
+ zones:[
+  {b:[0.19,0.13,0.80,0.52],t:'Mặt cắt 4-4 và 5-5',d:'Đào hình thang xuống −2,6 m. Diện tích ghi trên hình: 240 và 270 m².'},
+  {b:[0.195,0.56,0.54,0.915],t:'Bảng khối lượng nạo vét',d:'Diện tích từng mặt cắt, diện tích trung bình giữa hai mặt cắt, khoảng cách và khối lượng. Tổng 21.056,44 m³.'},
+  {b:[0.595,0.61,0.80,0.715],t:'Ghi chú',d:'Kích thước tính bằng m.'}
+ ]},
+
+{id:'dl10',g:'g5',mode:'img',imgs:['img/dl10-1.jpg'],code:'DL-10',name:'Cốt thép bản quá độ bê tông',pkg:'no',items:[],
+ sum:'Bản quá độ BTCT nối đường đắp với trụ bến. Do nhà thầu mặt đường làm, nhưng nằm đúng chỗ giáp ranh với phần nền của bạn.',
+ facts:[['Số tấm','4 tấm (rộng 4 × 3 m = 12 m)'],['Kích thước một tấm','3.000 × 3.000 mm'],['Dày','260 mm'],['Dốc','6%'],['Bê tông','C30'],['Bảng vật liệu','BT 2,34 m³ · thép 362,87 kg'],['Thép Φ20','16 thanh × 3.250 mm'],['Thép Φ16','2 lớp, mỗi lớp 16 thanh'],['Thép Φ14','16 thanh × 3.150 mm'],['Thép Φ12','64 thanh × 205 mm']],
+ flags:['Bảng ghi “4 tấm” nhưng 2,34 m³ chính là 3 × 3 × 0,26 — tức chỉ một tấm. Cần hỏi bảng này tính một hay bốn tấm.'],
+ zones:[
+  {b:[0.15,0.10,0.43,0.23],t:'Mặt cắt I–I',d:'Dốc 6%, chiều dày 260 mm, hai lớp lưới thép.'},
+  {b:[0.64,0.10,0.90,0.25],t:'Mặt đứng',d:'Chiều dài 3.000 mm chia 15 ô × 193,3 mm.'},
+  {b:[0.107,0.31,0.46,0.735],t:'Mặt bằng lưới thép',d:'Lưới 15 × 15 ô, mỗi ô 193,3 mm. Thép chủ ① Φ20 và ② Φ16.'},
+  {b:[0.48,0.38,0.573,0.73],t:'Chi tiết thanh thép',d:'Thanh ② 16 Φ16 dài 3.250 mm; thanh ① 16 Φ20 dài 3.250 mm; móc 150 mm.'},
+  {b:[0.64,0.345,0.96,0.66],t:'Bảng khối lượng',d:'Φ20 128,44 kg · Φ16 161,79 kg · Φ14 60,98 kg · Φ12 11,65 kg · tổng 362,87 kg · BT C30 2,34 m³.'}
+ ]},
+
+{id:'dl11',g:'g5',mode:'img',imgs:['img/dl11-1.jpg'],code:'DL-11',name:'Phân chia tấm mặt đường',pkg:'no',items:[],
+ sum:'Cách chia tấm bê tông mặt đường: tấm 4 m × 3 m trên đoạn thẳng, nút giao, đoạn chuyển hướng, bố trí thép góc và thanh truyền lực. Phần của nhà thầu mặt đường.',
+ facts:[['Chiều dài mặt đường','126.000 mm (30 × 4.000 + đoạn cong)'],['Tấm trên đoạn thẳng','dài 4 m × rộng 3 m'],['Tỷ lệ dài/rộng tấm','≤ 1,35'],['Diện tích tấm','≤ 25 m²'],['Thanh truyền lực khe co ngang','Φ32 @ 250'],['Thanh liên kết khe dọc','Φ16 @ 600'],['Thép lưới','Φ10'],['Thép góc tấm','Φ14']],
+ zones:[
+  {b:[0.08,0.03,0.79,0.285],t:'Phân chia tấm bê tông mặt đường',d:'Từ nhà máy: khe co ngang loại B, khe giãn tại đổi hướng, khe lún, rồi 30 tấm × 4 m ở đoạn thẳng, kết thúc bằng bản quá độ BTCT.'},
+  {b:[0.18,0.40,0.335,0.877],t:'Nút giao cùng mức',d:'Chỗ tiếp giáp với đường cắt ngang; có khe giãn và thanh truyền lực.'},
+  {b:[0.333,0.40,0.447,0.707],t:'Đoạn chuyển hướng',d:'Tấm hình thang ở đoạn cong; kích thước từ 163 đến 495 mm.'},
+  {b:[0.483,0.33,0.60,0.55],t:'Bố trí lưới thép',d:'Lưới Φ10, thép ngang và dọc theo ô lưới.'},
+  {b:[0.607,0.30,0.787,0.594],t:'Thép góc cho tấm có góc nhọn',d:'Φ14, dài 1.200 mm, bố trí hướng tia ở góc nhọn.'},
+  {b:[0.773,0.275,0.967,0.735],t:'Sơ đồ thanh liên kết, thanh truyền lực',d:'Khe dọc dùng thanh liên kết Φ16 @ 600; khe co ngang dùng thanh truyền lực Φ32 @ 250; tấm rộng 3 m, đoạn rộng 12 m.'},
+  {b:[0.40,0.77,0.787,0.905],t:'Ghi chú',d:'Thanh truyền lực đặt ở các khe cắt đường; tấm có ký hiệu tam giác là tấm BTCT; tấm dài/rộng ≤ 1,35; diện tích ≤ 25 m².'}
+ ]},
+
+{id:'dl12',g:'g5',mode:'img',imgs:['img/dl12-1.jpg'],code:'DL-12',name:'Cấu tạo khe tấm bê tông mặt đường',pkg:'no',items:[],
+ sum:'Chi tiết các loại khe: khe giả, khe co có thanh truyền lực, khe thi công, khe giãn, khe dọc, và bảng khối lượng thép khe nối. Phần của nhà thầu mặt đường.',
+ facts:[['Chiều dày tấm','260 mm'],['Thanh truyền lực','Φ32 @ 250, dài 450 mm'],['Thanh liên kết khe dọc','Φ16, dài 800 mm'],['Vật liệu chèn khe','mát-tít PVC'],['Thanh liên kết khe dọc (KL)','1.390,40 kg'],['Thanh truyền lực khe co loại B','1.703,70 kg'],['Thanh truyền lực khe giãn','Φ32 144,81 kg + Φ12 479,52 kg'],['Thép góc Φ14','123,42 kg']],
+ zones:[
+  {b:[0.06,0.085,0.293,0.32],t:'Khe co ngang loại A — khe giả',d:'Khe cắt sâu 60 mm, rộng 8 mm trên tấm 260 mm, không có thanh truyền lực.'},
+  {b:[0.313,0.057,0.553,0.32],t:'Khe co ngang loại B',d:'Có thanh truyền lực Φ32 @ 250, quét nhựa đường một nửa chiều dài thanh.'},
+  {b:[0.573,0.042,0.827,0.32],t:'Khe giãn ngang',d:'Rộng 20 mm, có tấm đệm mềm, thanh truyền lực Φ32 @ 250 trong ống nhựa bọc, thép Φ12 @ 200.'},
+  {b:[0.06,0.396,0.293,0.613],t:'Khe thi công ngang',d:'Cắt khe sâu 60 mm; thanh truyền lực Φ32 @ 250.'},
+  {b:[0.327,0.415,0.573,0.613],t:'Khe dọc',d:'Thanh liên kết Φ16 dài 800 mm, sơn chống gỉ ở giữa, khe cắt sâu 90 mm.'},
+  {b:[0.627,0.35,0.933,0.66],t:'Bảng khối lượng thép khe nối',d:'Liên kết Φ16 1.100 thanh; truyền lực khe co Φ32 600 thanh; khe giãn Φ32 51 thanh; lưới Φ10 1.852 m; thép góc Φ14 34 thanh.'},
+  {b:[0.06,0.717,0.373,0.896],t:'Ghi chú',d:'Mát-tít PVC chèn khe. Dùng khe loại A cho khe co thường, loại B cho khe liền kề khe giãn hoặc ba khe co ở đầu tự do.'}
+ ]},
+
+{id:'dl04',g:'g6',mode:'img',imgs:['img/dl04-1.jpg'],code:'DL-04',name:'Cấu tạo khối neo',pkg:'yes',added:true,items:['neodao','neodem','neobt','neodap','neomat'],to3d:{view:'main',pick:'anchor'},
+ sum:'Hai khối neo bê tông C25 đặt hai bên đường để gắn cột bích buộc tàu. Bạn đã chọn đưa hạng mục này vào gói của mình.',
+ facts:[['Số khối neo','2'],['Bê tông','C25 đổ tại chỗ'],['Đáy khối','3.500 × 3.500 mm, cao 800 mm'],['Thu vào ở đỉnh phần đáy','500 mm mỗi bên → 2.500 × 2.500'],['Thân chóp cụt','từ 2.500 xuống 800 mm, cao ≈ 1.700 mm'],['Cổ khối','800 × 800 mm'],['Nhô trên mặt đất','300 mm'],['Lớp đệm đá dăm','150 mm, rộng 3.900 mm'],['Độ sâu hố đào','≈ 2.350 mm; taluy đào 1:0,5'],['Mặt trên quanh khối','100 mm BT C20 + 100 mm đá dăm'],['Thể tích một khối (tôi tính)','≈ 14,8 m³'],['Thể tích hai khối','≈ 29,7 m³']],
+ flags:['Thể tích khối do tôi tự tính từ kích thước trên bản vẽ; bản vẽ không có bảng khối lượng khối neo.'],
+ zones:[
+  {b:[0.07,0.07,0.50,0.34],t:'Mặt cắt A–A',d:'Cột bích 150 kN trên cổ 800 mm; chóp cụt cao 1.400 mm trên đáy 800 mm; đệm đá dăm 150 mm; đắp trả vật liệu mịn đầm chặt; mặt trên 100 mm BT C20 và 100 mm đá dăm.'},
+  {b:[0.55,0.07,0.98,0.34],t:'Mặt cắt B–B',d:'Mặt cắt vuông góc A–A, cùng kích thước.'},
+  {b:[0.14,0.49,0.44,0.91],t:'Mặt bằng khối neo',d:'Khung ngoài 3.500; thu vào 500 mỗi bên còn 2.500; cổ 800 × 800 ở giữa, bốn đường chéo tạo mặt chóp.'},
+  {b:[0.55,0.49,0.98,0.74],t:'Ghi chú thiết kế',d:'Bố trí 2 khối neo; chiều sâu chôn điều chỉnh theo địa hình, đỉnh khối cao hơn mặt đất 300 mm. BT C25 đổ tại chỗ. Đào tới đáy móng, rải đá dăm 150 mm rồi đầm chặt. Đắp trả bằng cát sỏi hoặc đất, đầm chặt.'}
+ ]},
+
+{id:'dl05',g:'g6',mode:'img',imgs:['img/dl05-1.jpg'],code:'DL-05',name:'Cấu tạo cột bích gang 150 kN',pkg:'yes',added:true,items:['bollard'],to3d:{view:'main',pick:'boll'},
+ sum:'Cột bích gang chịu lực kéo 150 kN, gắn lên đỉnh khối neo bằng bốn bu lông M30 và bản định vị. Tổng mỗi cột 286,8 kg.',
+ facts:[['Số lượng','2 cột'],['Lực neo','150 kN'],['Vỏ','Gang HT200 · 234 kg'],['Bu lông neo','Q235 · M30 × 1.158 mm · 4 cái · 25,8 kg'],['Đai ốc','Q235 · 4 cái · 0,9 kg'],['Long đen','Q235 · 4 cái · 0,3 kg'],['Bản định vị','Q235 · 15,5 kg'],['Thép neo','φ10 CB300-T · 8 cái · 10,31 kg'],['Tổng một cột','286,81 kg'],['Đế vỏ','600 × 600 mm'],['Thân tròn','Ø250 mm, lỗ Ø80'],['Sơn lót','giàu kẽm 40 µm'],['Sơn phủ','polyurethane 280 µm']],
+ zones:[
+  {b:[0.11,0.10,0.33,0.47],t:'Mặt cắt 1–1',d:'Vỏ gang rỗng; bu lông neo xuyên đế; bán kính bo R30, R49, R38 để không có cạnh sắc.'},
+  {b:[0.11,0.49,0.36,0.93],t:'Mặt bằng',d:'Bốn lỗ bu lông Ø36 ở bốn góc, đế 600 × 600; vòng tròn Ø250 là thân cột.'},
+  {b:[0.465,0.155,0.57,0.44],t:'Bản định vị',d:'Tấm thép Q235 có bốn lỗ, hàn vào đầu bu lông neo để giữ đúng vị trí khi đổ bê tông.'},
+  {b:[0.405,0.45,0.67,0.85],t:'Bu lông neo và thép neo',d:'Bu lông M30 dài 970 mm chôn vào khối neo; thép neo φ10 hình móc ở đáy, bước 150 mm.'},
+  {b:[0.675,0.07,0.915,0.28],t:'Bảng vật liệu một cột',d:'Vỏ 234 · bu lông 25,8 · đai ốc 0,9 · long đen 0,3 · bản định vị 15,5 · thép neo 10,31 → 286,81 kg.'},
+  {b:[0.67,0.29,0.98,0.78],t:'Ghi chú',d:'Đúc chữ “150kN” trên đỉnh. Chèn kín lỗ bu lông bằng vữa cát nhựa đường chống gỉ. Đổ bê tông vào trong vỏ sau khi lắp. Que hàn E43xx. Sơn lót giàu kẽm 40 µm, phủ polyurethane 280 µm.'}
+ ]},
+
+{id:'dl13',g:'g7',mode:'img',imgs:['img/dl13-1.jpg'],code:'DL-13',name:'Ván khuôn trụ bến hàng nặng',pkg:'yes',items:['khoan','vankhuon','sandao'],to3d:{view:'pile'},
+ sum:'Bệ trụ 14 × 12 m đặt trên 9 cọc khoan nhồi D1000, xếp ba hàng ba cọc, mũi cọc −16,00 m. Đây là bản cho biết có bao nhiêu cọc và cọc dài bao nhiêu.',
+ facts:[['Số cọc','9 (3 hàng × 3 cọc)'],['Đường kính cọc','D1000 mm, khoan nhồi'],['Khoảng cách tim cọc','5.000 mm theo cả hai phương'],['Mép bệ đến tim cọc','2.000 mm (phương 14 m) · 1.000 mm (phương 12 m)'],['Bệ trụ','14.000 × 12.000 mm'],['Chiều dày bệ','1.340 mm phía bờ → 1.600 mm phía sông'],['Cao độ đỉnh bệ','+2,28 → +1,70'],['Cao độ đáy bệ','+0,94 → +0,10'],['Cao độ đầu cọc','+0,82 / +0,52 / +0,22'],['Cao độ mũi cọc','−16,00 m'],['Chiều dài cọc','16,22 / 16,52 / 16,82 m (TB 16,5)'],['Tọa độ hai điểm','X 2349053,430 · Y 432896,427 và X 2349058,777 · Y 432904,877']],
+ flags:['MÂU THUẪN: DL-03 ghi mũi cọc −13,0 m. Trang này dùng −16,00 m theo lựa chọn của bạn, khớp với khối lượng 12,96 m³ mỗi cọc ở DL-15.'],
+ zones:[
+  {b:[0.14,0.05,0.535,0.44],t:'Mặt cắt I–I',d:'Ba hàng cọc theo phương dài 14 m, cách nhau 5.000 mm. Đầu cọc +0,82 / +0,52 / +0,22; mũi cọc −16,00. Bệ dày 1.340 → 1.600 mm.'},
+  {b:[0.55,0.085,0.975,0.44],t:'Mặt cắt II–II',d:'Ba cọc theo phương ngang 12 m, cách nhau 5.000 mm, mép bệ cách tim cọc 1.000 mm. Hai khoang đệm va ở mặt sông.'},
+  {b:[0.11,0.45,0.60,0.96],t:'Mặt bằng trụ bến — 9 cọc',d:'Phía bờ bên trái, phía sông bên phải. Hai tọa độ góc: X 2349053,430 · Y 432896,427 và X 2349058,777 · Y 432904,877.'},
+  {b:[0.62,0.525,0.985,0.65],t:'Ghi chú',d:'Kích thước tính bằng mm, cao độ tính bằng m, hệ cao độ quốc gia Hòn Dấu – Hải Phòng.'}
+ ]},
+
+{id:'dl14',g:'g7',mode:'img',imgs:['img/dl14-1.jpg'],code:'DL-14',name:'Cốt thép bệ trụ bến',pkg:'yes',items:['btbe','thepbe'],to3d:{view:'pile'},
+ sum:'Bố trí cốt thép bệ trụ: các thanh Φ25 lớp trên, lớp dưới, đai Φ16. Bảng khối lượng cho biết 267,24 m³ bê tông C30 và 31,6 tấn thép.',
+ facts:[['Bê tông bệ','C30 · 267,24 m³'],['Thép 1a','119 Φ25 · dài 15.500 mm'],['Thép 1b','119 Φ25 · dài 2.300 mm'],['Thép 1c','119 Φ25 · dài 16.500 mm'],['Thép 2a','140 Φ25 · dài 13.700 mm'],['Thép 2b','139 Φ25 · dài 14.700 mm'],['Thép Φ25 tổng','30.965,55 kg'],['Thép 3a, 3b','6 + 6 Φ16 · 11,9 và 13,9 m'],['Thép 4','156 Φ16 · dài 1.600 mm'],['Thép Φ16 tổng','638,95 kg'],['Tổng thép bệ','31.604,50 kg'],['Hàm lượng thép','≈ 118 kg/m³'],['Khoảng cách thanh','100 mm theo cả hai phương']],
+ zones:[
+  {b:[0.125,0.03,0.53,0.265],t:'Mặt cắt I–I',d:'Thanh dọc 1a, 1b, 1c và 2a, 2b theo chiều dài bệ; đầu thanh uốn móc.'},
+  {b:[0.55,0.035,0.89,0.265],t:'Mặt cắt II–II',d:'Thanh ngang theo phương 12 m.'},
+  {b:[0.10,0.265,0.51,0.81],t:'Mặt bằng bố trí cốt thép',d:'138 × 100 mm theo phương 14 m; 118 × 100 mm theo phương 12 m.'},
+  {b:[0.545,0.265,0.985,0.50],t:'Chi tiết các thanh thép',d:'Từng loại thanh với đường kính, số lượng và chiều dài.'},
+  {b:[0.65,0.50,0.90,0.735],t:'Bảng khối lượng vật liệu',d:'Φ25: 30.965,55 kg · Φ16: 638,95 kg · Bê tông C30 267,24 m³.'}
+ ]},
+
+{id:'dl15',g:'g7',mode:'img',imgs:['img/dl15-1.jpg'],code:'DL-15',name:'Cốt thép cọc khoan nhồi',pkg:'yes',items:['btcoc','thepcoc','sieuam'],to3d:{view:'pile'},
+ sum:'Cấu tạo lồng thép một cọc D1000, bảng khối lượng và tám ghi chú yêu cầu kỹ thuật bắt buộc khi thi công cọc.',
+ facts:[['Đường kính cọc','1.000 mm'],['Chiều dài trung bình','16.500 mm'],['Lồng thép cao','16.600 mm'],['Bê tông','C30 · 12,96 m³'],['Thép chủ N1','20 Φ25 · dài TB 18.109 mm · 1.394,39 kg'],['Vòng gia cường N2','9 Φ20 · 2.692 mm · 59,84 kg'],['Đai xoắn N3','Φ10 · 312,59 m · 192,87 kg'],['Đai xoắn phụ N4','Φ10 · 21,71 m · 13,39 kg'],['Thép định vị N5','36 Φ12 · 530 mm · 16,94 kg'],['Tổng thép một cọc','1.677,44 kg'],['Hàm lượng thép','≈ 129 kg/m³'],['Chín cọc','116,64 m³ · 15.097 kg']],
+ flags:['Bản vẽ không ghi mác thép, dung dịch khoan, độ sụt bê tông, thí nghiệm kiểm tra cọc (siêu âm, PIT, nén tĩnh) và sai số cho phép.','Lớp 13 là lớp chịu lực nhưng hồ sơ không có báo cáo địa chất để biết lớp này ở cao độ nào.'],
+ notes:['Cốt thép gia cường N2 đặt phía trong thép chủ, cách 2 m một vòng; mối nối chồng của chính nó hàn hai mặt.','Lồng thép hạ từng đoạn; thép chủ giữa các đoạn nối hàn; mối nối bố trí so le theo quy phạm.','Thép định vị N5 bố trí cách 2 m một bộ, mỗi bộ 4 thanh phân bố đều quanh N2.','Chiều dài cọc trên bản vẽ là chiều dài trung bình.','Trước khi đổ bê tông, sau khi vệ sinh lỗ khoan, lớp lắng cặn đáy lỗ không dày quá 10 cm.','Lớp chịu lực của cọc là lớp 13; chiều sâu ngàm vào lớp chịu lực không nhỏ hơn 2,0 m.','Nếu điều kiện địa chất thực tế khác tài liệu thiết kế phải kịp thời báo đơn vị thiết kế.'],
+ zones:[
+  {b:[0.13,0.115,0.25,0.885],t:'Lồng thép thân cọc',d:'Dài 16.600 mm, đường kính ngoài lồng 905 mm. Phần trên cùng neo vào bệ trụ.'},
+  {b:[0.275,0.09,0.34,0.87],t:'Thép chủ N1',d:'20 thanh Φ25, dài trung bình 18.109 mm (kể cả đoạn neo vào bệ).'},
+  {b:[0.36,0.085,0.60,0.24],t:'Mặt cắt I–I',d:'20 thanh Φ25 trên vòng tròn; vòng gia cường Φ20 đường kính 825 mm bên trong.'},
+  {b:[0.335,0.34,0.62,0.61],t:'Chi tiết đai xoắn N3, N4',d:'N3: 50 vòng bước 100 mm + 58 vòng bước 200 mm, dài 312,59 m. N4: đai xoắn phụ cao 1.061 mm cho đầu cọc.'},
+  {b:[0.57,0.08,0.91,0.28],t:'Bảng khối lượng vật liệu một cọc',d:'N1 1.394,39 · N2 59,84 · N3 192,87 · N4 13,39 · N5 16,94 → 1.677,44 kg; bê tông C30 12,96 m³.'},
+  {b:[0.62,0.33,0.99,0.79],t:'Ghi chú — yêu cầu kỹ thuật',d:'Tám ghi chú gồm: gia cường N2, hạ lồng theo đoạn, thép định vị N5, chiều dài trung bình, lắng cặn ≤ 10 cm, lớp 13 và ngàm ≥ 2,0 m, báo thiết kế nếu địa chất khác.'}
+ ]},
+
+{id:'dl16',g:'g8',mode:'img',imgs:['img/dl16-1.jpg'],code:'DL-16',name:'Bố trí đệm va cao su',pkg:'no',items:[],to3d:{view:'main',pick:'fender'},
+ sum:'Hai đệm va cao su SA-A300H gắn vào mặt sông của trụ bến để đỡ va đập khi tàu cập. Không thuộc gói của bạn nhưng gắn trực tiếp vào bệ do bạn đổ.',
+ facts:[['Số lượng','2 đệm va'],['Quy cách','SA-A300H × 1,5 m, loại RO tiêu chuẩn'],['Khoảng cách','3.250 / 2.150 / 1.200 / 2.150 / 3.250 mm'],['Khoảng cách bu lông','3.387,5 / 3 × 625 / 1.475 / 3 × 625 / 3.387,5'],['Cao độ trụ','+1,70 (đỉnh) · +0,10 (đáy)'],['Chiều cao bố trí','500 + 600 + 500 mm']],
+ flags:['Bu lông chờ là phụ kiện đi kèm đệm va. Phải đặt đúng vị trí trước khi đổ bê tông bệ — bạn đổ bê tông nên cần phối hợp với nhà cung cấp đệm va.'],
+ zones:[
+  {b:[0.125,0.11,0.55,0.52],t:'Mặt bằng bố trí đệm va cao su',d:'Hai đệm đặt cách nhau 1.200 mm, đối xứng qua tim bệ.'},
+  {b:[0.20,0.63,0.435,0.905],t:'Chi tiết lắp đặt SA-A300H',d:'Bu lông chờ chôn vào bê tông bệ; chiều cao bố trí 500 + 600 + 500 mm.'},
+  {b:[0.60,0.17,0.915,0.28],t:'Bảng khối lượng',d:'SA-A300H × 1,5 m, loại RO tiêu chuẩn — 2 cái.'},
+  {b:[0.67,0.49,0.98,0.68],t:'Ghi chú',d:'Kích thước tính bằng mm; bu lông chờ là phụ kiện đi kèm đệm va.'}
+ ]},
+
+{id:'bp',g:'g9',mode:'none',code:'Biện pháp',name:'Đê quây, bơm nước, huy động',pkg:'est',items:['dequay','huydong'],
+ sum:'Không có bản vẽ nào cho đê quây hay huy động thiết bị. Thuyết minh chỉ nêu trình tự thi công. Chi phí hai khoản này hoàn toàn là ước tính của tôi.',
+ steps:['Chuẩn bị thi công','Trắc đạc, định vị','Phát quang, đào bề mặt trên cạn, thi công đê quây','Đắp đá hộc và đá phong hoá','Thi công các lớp kết cấu mặt đường và móng neo','Gia cố mái dốc, lắp cột bích neo tàu','Dỡ đê quây và nạo vét dưới nước','Nghiệm thu'],
+ flags:['Lũ 100 năm +8,20 m cao hơn mặt bến 6,5 m — đê quây là rủi ro lớn nhất về an toàn và tiến độ.','Phải quyết định ai chịu chi phí đê quây khi lũ vượt thiết kế: bạn hay chủ đầu tư.'],
+ facts:[['Đê quây','cần cho nạo vét, đào trên cạn, đổ bệ trụ'],['Cao độ nước lũ 100 năm','+8,20 m'],['Mặt bến','+1,70 … +2,54 m'],['Thời gian thi công ước','8 – 14 tháng']],
+ zones:[]},
+
+{id:'dien',g:'g9',mode:'none',code:'Chiếu sáng',name:'Điện chiếu sáng đường và bãi neo',pkg:'est',added:true,items:['poleroad','ledroad','mastled','cable','tudien'],to3d:{view:'main',night:true},
+ sum:'Không có bản vẽ điện trong 19 file. Hệ chiếu sáng gồm 10 cột đèn 10 m dọc đường, 2 cột đèn pha 12 m chiếu bãi neo, cáp ngầm và tủ điện là đề xuất của tôi theo thông lệ chiếu sáng đường cảng.',
+ flags:['Phải hỏi chủ đầu tư hệ chiếu sáng có thuộc gói của bạn không. Nếu không thuộc, toàn bộ khoảng 600 triệu này được bỏ khỏi bảng chi phí.','Công suất, cấp chiếu sáng và vị trí nguồn điện đều chưa biết.'],
+ facts:[['Cột đèn đường','10 cột · 10 m · thép mạ kẽm · cách nhau ≈ 24 m'],['Đèn đường','LED 150 W, cần đơn'],['Cột đèn pha','2 cột · 12 m · mỗi cột 4 đèn LED 250 W'],['Mục đích đèn pha','chiếu trụ bến và vùng nước neo tàu'],['Cáp ngầm','≈ 450 m, ống luồn, mương cáp, tiếp địa'],['Tủ điện','1 tủ chiếu sáng và điều khiển']],
+ zones:[]}
+];
+
+/* ==================================================================
+   KHUNG LÀM VIỆC: CÂY HỒ SƠ + BỘ XEM BẢN VẼ + BẢNG THÔNG TIN
+   ================================================================== */
+var ITEM2NODE={};
+NODES.forEach(function(n){(n.items||[]).forEach(function(id){ITEM2NODE[id]=n.id;});});
+function nodeById(id){for(var i=0;i<NODES.length;i++)if(NODES[i].id===id)return NODES[i];}
+function nodeCost(n){var s=0;(n.items||[]).forEach(function(id){var it=find(id);if(it)s+=it.q*it.p;});return s;}
+function grpCost(gid){var s=0;NODES.forEach(function(n){if(n.g===gid)s+=nodeCost(n);});return s;}
+function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+var SEL='m3d', OPEN={g0:true}, ZSEL=-1, PAGE=0;
+var treeEl=$('#tree'), infoDraw=$('#info-draw'), vtool=$('#vtool'), vstage=$('#vstage');
+
+/* ---------- cây ---------- */
+function buildTree(){
+  var h='<div class="tree-h"><b>Hồ sơ bản vẽ</b><button class="tbtn" id="tr-all">Mở hết</button></div>'+
+   '<div class="tleg"><span><i class="d-yes"></i>thuộc gói</span><span><i class="d-no"></i>ngoài gói</span><span><i class="d-ref"></i>tham chiếu</span><span><i class="d-est"></i>đề xuất</span></div>';
+  GROUPS.forEach(function(g){
+    var ns=NODES.filter(function(n){return n.g===g.id;});
+    h+='<div class="tgp'+(OPEN[g.id]?' open':'')+'" data-g="'+g.id+'"><button class="tg-h" data-gt="'+g.id+'"><span class="chev">▸</span><span class="tg-n">'+g.name+(g.sub?'<small>'+g.sub+'</small>':'')+'</span><span class="tg-c" data-gc="'+g.id+'"></span></button><div class="tg-b">';
+    ns.forEach(function(n){
+      h+='<button class="tn'+(SEL===n.id?' sel':'')+'" data-n="'+n.id+'"><i class="d-'+n.pkg+'"></i><span class="tn-code">'+n.code+'</span><span class="tn-name">'+n.name+'</span><span class="tn-c" data-nc="'+n.id+'"></span></button>';
+    });
+    h+='</div></div>';
+  });
+  treeEl.innerHTML=h;
+  $$('.tg-h',treeEl).forEach(function(b){b.onclick=function(){var id=b.dataset.gt;OPEN[id]=!OPEN[id];b.parentNode.classList.toggle('open',!!OPEN[id]);};});
+  $$('.tn',treeEl).forEach(function(b){b.onclick=function(){selectNode(b.dataset.n);closeDrawer();};});
+  $('#tr-all').onclick=function(){var all=Object.keys(OPEN).filter(function(k){return OPEN[k];}).length<GROUPS.length;
+    GROUPS.forEach(function(g){OPEN[g.id]=all;});$$('.tgp',treeEl).forEach(function(e){e.classList.toggle('open',all);});this.textContent=all?'Thu gọn':'Mở hết';};
+  updateTreeCosts();
+}
+function updateTreeCosts(){
+  GROUPS.forEach(function(g){var e=treeEl.querySelector('[data-gc="'+g.id+'"]');if(e){var c=grpCost(g.id);e.textContent=c>0?tr(c):'';}});
+  NODES.forEach(function(n){var e=treeEl.querySelector('[data-nc="'+n.id+'"]');if(e){var c=nodeCost(n);e.textContent=c>0?tr(c):'';}});
+}
+
+/* ---------- chọn nút ---------- */
+var MODE='3d';
+function selectNode(id,opt){
+  var n=nodeById(id); if(!n)return;
+  SEL=id; ZSEL=-1; PAGE=0;
+  $$('.tn',treeEl).forEach(function(b){b.classList.toggle('sel',b.dataset.n===id);});
+  OPEN[n.g]=true; var gel=treeEl.querySelector('[data-g="'+n.g+'"]'); if(gel)gel.classList.add('open');
+  var se=treeEl.querySelector('.tn.sel'); if(se&&se.scrollIntoView&&!(opt&&opt.noscroll)) se.scrollIntoView({block:'nearest'});
+  MODE=n.mode;
+  $('#info-draw').style.display=(n.mode==='3d')?'none':'block';
+  $('#insp-main').style.display=(n.mode==='3d'&&n.view==='main')?'block':'none';
+  $('#insp-pile').style.display=(n.mode==='3d'&&n.view==='pile')?'block':'none';
+  $('#imgv').style.display=(n.mode==='img')?'block':'none';
+  $('#stage-main').style.display=(n.mode==='3d'&&n.view==='main')?'block':'none';
+  $('#stage-pile').style.display=(n.mode==='3d'&&n.view==='pile')?'block':'none';
+  $('#nodraw').style.display=(n.mode==='none')?'flex':'none';
+  $('#zcap').style.display='none';
+  $('#tb-img').style.display=(n.mode==='img')?'flex':'none';
+  $('#tb-main').style.display=(n.mode==='3d'&&n.view==='main')?'flex':'none';
+  $('#tb-pile').style.display=(n.mode==='3d'&&n.view==='pile')?'flex':'none';
+  $('#vtitle').innerHTML='<b>'+esc(n.code)+'</b> '+esc(n.name);
+  var idx=NODES.indexOf(n); $('#v-prev').disabled=idx<=0; $('#v-next').disabled=idx>=NODES.length-1;
+  if(n.mode==='img'){ loadDrawing(n); renderInfo(n); }
+  else if(n.mode==='3d'){ requestAnimationFrame(function(){var E=(n.view==='main')?EM:EP;E.resize();E.draw();}); }
+  else { renderNoDraw(n); renderInfo(n); }
+  if(location.hash!=='#hinh-ve'&&!(opt&&opt.nohash)){}
+}
+function stepNode(d){var i=NODES.indexOf(nodeById(SEL))+d; if(i>=0&&i<NODES.length)selectNode(NODES[i].id);}
+
+/* ---------- bảng thông tin ---------- */
+function costBox(n){
+  if(n.pkg==='no'&&!(n.items||[]).length) return '<div class="cbox c-none"><b>Không tính vào chi phí của bạn</b><p>Bản vẽ này thuộc nhà thầu khác. Có ghi ở đây để bạn hiểu chỗ giáp ranh.</p></div>';
+  if(!(n.items||[]).length) return '<div class="cbox c-none"><b>Không có khoản chi phí riêng</b><p>'+(n.pkg==='ref'?'Tài liệu tham chiếu — không tính tiền.':'Bản vẽ này chỉ định vị hoặc minh hoạ. Chi phí của phần việc này nằm ở bản vẽ liên quan, xem tab Chi phí.')+'</p></div>';
+  var h='<div class="cbox"><div class="cbox-t"><span>Chi phí trực tiếp của bản vẽ này</span><b>'+tr(nodeCost(n))+'</b></div>';
+  (n.items||[]).forEach(function(id){var it=find(id);if(!it)return;
+    h+='<button class="crow" data-go="'+id+'"><span class="cn">'+esc(it.nm)+'<small>'+NF.format(it.q)+' '+it.u+' × '+NF.format(it.p)+' đ</small></span><span class="ca">'+tr(it.q*it.p)+'</span></button>';});
+  h+='<div class="cbox-f">Bấm một dòng để sửa đơn giá trong tab Chi phí. Chưa gồm chi phí chung '+vn(OH,1)+'%.</div></div>';
+  return h;
+}
+function renderInfo(n){
+  var h='<div class="i-tag">'+esc(n.code)+' · '+esc(GROUPS.filter(function(g){return g.id===n.g;})[0].name)+'</div>'+
+        '<h3>'+esc(n.name)+'</h3><div class="pkb pkb-'+n.pkg+'">'+PKL[n.pkg]+(n.added?' <em>· mới thêm</em>':'')+'</div>';
+  if(n.sum) h+='<p class="i-sum">'+esc(n.sum)+'</p>';
+  h+='<div id="info-cost">'+costBox(n)+'</div>';
+  if(n.to3d) h+='<button class="btn go3d" id="go3d">Xem phần này trên mô hình 3D →</button>';
+  if(n.flags&&n.flags.length){h+='<div class="flagbox"><b>Điểm cần lưu ý</b><ul>';n.flags.forEach(function(f){h+='<li>'+esc(f)+'</li>';});h+='</ul></div>';}
+  if(n.zones&&n.zones.length){
+    h+='<h4>Vùng trên bản vẽ <small>(bấm để phóng to)</small></h4><div class="zl">';
+    n.zones.forEach(function(z,i){h+='<button class="zi" data-z="'+i+'"><span class="zn">'+(i+1)+'</span><span class="zt">'+esc(z.t)+(n.imgs.length>1?'<small>trang '+((z.p||0)+1)+'</small>':'')+'</span></button><div class="zd" data-zd="'+i+'">'+esc(z.d)+'</div>';});
+    h+='</div>';
+  }
+  if(n.facts&&n.facts.length){h+='<h4>Số liệu chính</h4><dl class="spec">';n.facts.forEach(function(f){h+='<dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd>';});h+='</dl>';}
+  if(n.notes&&n.notes.length){h+='<h4>Ghi chú thiết kế gốc</h4><ol class="notes">';n.notes.forEach(function(t){h+='<li>'+esc(t)+'</li>';});h+='</ol>';}
+  infoDraw.innerHTML=h; infoDraw.scrollTop=0;
+  $$('.zi',infoDraw).forEach(function(b){b.onclick=function(){selectZone(+b.dataset.z);};});
+  $$('.crow',infoDraw).forEach(function(b){b.onclick=function(){goCost(b.dataset.go);};});
+  var g3=$('#go3d'); if(g3)g3.onclick=function(){go3D(n.to3d);};
+}
+function refreshInfoCost(){var n=nodeById(SEL); var e=$('#info-cost'); if(n&&e&&n.mode!=='3d') e.innerHTML=costBox(n);
+  $$('.crow',infoDraw).forEach(function(b){b.onclick=function(){goCost(b.dataset.go);};});}
+function renderNoDraw(n){
+  var h='<div class="nd-card"><div class="nd-ic">'+(n.id==='dien'?'💡':'🌊')+'</div><h3>'+esc(n.name)+'</h3><p>'+esc(n.sum)+'</p>';
+  if(n.steps){h+='<ol class="steps">';n.steps.forEach(function(s,i){h+='<li><span>'+(i+1)+'</span>'+esc(s)+'</li>';});h+='</ol><div class="nd-src">Trình tự lấy từ mục VI của thuyết minh thiết kế.</div>';}
+  if(n.to3d) h+='<button class="btn go3d" id="go3d2">Xem trên mô hình 3D ban đêm →</button>';
+  h+='</div>'; $('#nodraw').innerHTML=h;
+  var g=$('#go3d2'); if(g)g.onclick=function(){go3D(n.to3d);};
+}
+function go3D(o){
+  selectNode(o.view==='pile'?'m3dp':'m3d');
+  if(o.night&&!EM.night){$('[data-night]').click();}
+  if(o.pick){EM.pick=o.pick;EM.draw();renderInsp($('#insp-main'),o.pick,LEGEND);}
+}
+
+/* ---------- bộ xem ảnh ---------- */
+var imgv=$('#imgv'), imgt=$('#imgt'), imgEl=$('#img'), hsEl=$('#hs'), spin=$('#spin');
+var V={iw:0,ih:0,s:1,tx:0,ty:0,fit:1,show:true,ptr:{},last:0,lx:0,ly:0};
+function vw(){return imgv.clientWidth;} function vh(){return imgv.clientHeight;}
+function apply(anim){
+  imgt.classList.toggle('anim',!!anim);
+  imgt.style.transform='translate('+V.tx+'px,'+V.ty+'px) scale('+V.s+')';
+  imgt.style.setProperty('--inv',(1/V.s).toFixed(4));
+  var z=$('#zoomv'); if(z) z.textContent=Math.round(V.s/V.fit*100)+'%';
+}
+function clampPan(){
+  var W=vw(),H=vh(),w=V.iw*V.s,h=V.ih*V.s,m=90;
+  V.tx=Math.min(W-m,Math.max(m-w,V.tx)); V.ty=Math.min(H-m,Math.max(m-h,V.ty));
+}
+function fitView(anim){
+  if(!V.iw)return; var W=vw(),H=vh(); if(!W||!H)return;
+  V.fit=Math.min(W/V.iw,H/V.ih)*0.97; V.s=V.fit; V.tx=(W-V.iw*V.s)/2; V.ty=(H-V.ih*V.s)/2; apply(anim);
+}
+function zoomAt(f,cx,cy,anim){
+  var ns=Math.max(V.fit*0.6,Math.min(V.fit*14,V.s*f)); f=ns/V.s;
+  V.tx=cx-(cx-V.tx)*f; V.ty=cy-(cy-V.ty)*f; V.s=ns; clampPan(); apply(anim);
+}
+function zoomBox(b,anim){
+  var W=vw(),H=vh(),bw=(b[2]-b[0])*V.iw,bh=(b[3]-b[1])*V.ih;
+  var s=Math.min(W/bw,H/bh)*0.84; s=Math.max(V.fit,Math.min(V.fit*14,s));
+  var cx=(b[0]+b[2])/2*V.iw, cy=(b[1]+b[3])/2*V.ih;
+  V.s=s; V.tx=W/2-cx*s; V.ty=H/2-cy*s; clampPan(); apply(anim!==false);
+}
+function loadDrawing(n){
+  var src=n.imgs[PAGE]; spin.style.display='flex';
+  var pg=$('#pager'); pg.style.display=(n.imgs.length>1)?'flex':'none';
+  if(n.imgs.length>1){$('#pg-t').textContent='Trang '+(PAGE+1)+' / '+n.imgs.length;$('#pg-p').disabled=PAGE===0;$('#pg-n').disabled=PAGE===n.imgs.length-1;}
+  var im=new Image();
+  im.onload=function(){ if(nodeById(SEL)!==n||n.imgs[PAGE]!==src)return;
+    imgEl.src=src; V.iw=im.naturalWidth; V.ih=im.naturalHeight;
+    imgt.style.width=V.iw+'px'; imgt.style.height=V.ih+'px'; spin.style.display='none';
+    buildHotspots(n); fitView(false);};
+  im.onerror=function(){spin.innerHTML='<div class="sp-err">Không tải được ảnh bản vẽ.</div>';};
+  im.src=src;
+}
+function buildHotspots(n){
+  hsEl.innerHTML=''; hsEl.classList.toggle('off',!V.show);
+  (n.zones||[]).forEach(function(z,i){
+    if((z.p||0)!==PAGE)return;
+    var d=document.createElement('div'); d.className='hz'; d.dataset.z=i;
+    d.style.left=(z.b[0]*100)+'%'; d.style.top=(z.b[1]*100)+'%';
+    d.style.width=((z.b[2]-z.b[0])*100)+'%'; d.style.height=((z.b[3]-z.b[1])*100)+'%';
+    d.innerHTML='<span class="bd">'+(i+1)+'</span>'; hsEl.appendChild(d);
+  });
+}
+function selectZone(i){
+  var n=nodeById(SEL); var z=n.zones[i]; if(!z)return;
+  if((z.p||0)!==PAGE){PAGE=z.p||0; loadDrawing(n); setTimeout(function(){selectZone(i);},350); return;}
+  ZSEL=i;
+  $$('.hz',hsEl).forEach(function(e){e.classList.toggle('sel',+e.dataset.z===i);}); hsEl.classList.add('has-sel');
+  $$('.zi',infoDraw).forEach(function(e){e.classList.toggle('sel',+e.dataset.z===i);});
+  $$('.zd',infoDraw).forEach(function(e){e.classList.toggle('open',+e.dataset.zd===i);});
+  var zi=infoDraw.querySelector('.zi.sel'); if(zi&&zi.scrollIntoView)zi.scrollIntoView({block:'nearest',behavior:'smooth'});
+  var cap=$('#zcap'); cap.style.display='block';
+  cap.innerHTML='<button class="zx" id="zx" aria-label="Đóng">×</button><div class="zc-n">'+(i+1)+'</div><div class="zc-b"><b>'+esc(z.t)+'</b><p>'+esc(z.d)+'</p></div>';
+  $('#zx').onclick=clearZone;
+  zoomBox(z.b,true);
+}
+function clearZone(){
+  ZSEL=-1; $$('.hz',hsEl).forEach(function(e){e.classList.remove('sel');}); hsEl.classList.remove('has-sel');
+  $$('.zi',infoDraw).forEach(function(e){e.classList.remove('sel');}); $$('.zd',infoDraw).forEach(function(e){e.classList.remove('open');});
+  $('#zcap').style.display='none'; fitView(true);
+}
+
+/* cử chỉ: kéo, chụm, nhấp đúp, cuộn */
+imgv.addEventListener('pointerdown',function(e){
+  imgv.setPointerCapture(e.pointerId); V.ptr[e.pointerId]={x:e.clientX,y:e.clientY};
+  V.moved=0; V.t0=Date.now(); V.tgt=e.target; V.cnt=Object.keys(V.ptr).length;
+  if(V.cnt===2){var k=Object.keys(V.ptr);var a=V.ptr[k[0]],b=V.ptr[k[1]];V.pd=Math.hypot(a.x-b.x,a.y-b.y);}
+  imgt.classList.remove('anim');
+});
+imgv.addEventListener('pointermove',function(e){
+  var p=V.ptr[e.pointerId]; if(!p)return; var dx=e.clientX-p.x,dy=e.clientY-p.y; V.moved+=Math.abs(dx)+Math.abs(dy);
+  var keys=Object.keys(V.ptr);
+  if(keys.length===1){V.tx+=dx;V.ty+=dy;p.x=e.clientX;p.y=e.clientY;clampPan();apply(false);}
+  else if(keys.length===2){
+    p.x=e.clientX;p.y=e.clientY; var a=V.ptr[keys[0]],b=V.ptr[keys[1]]; var d=Math.hypot(a.x-b.x,a.y-b.y);
+    var r=imgv.getBoundingClientRect(); var cx=(a.x+b.x)/2-r.left, cy=(a.y+b.y)/2-r.top;
+    if(V.pd){zoomAt(d/V.pd,cx,cy,false);} V.pd=d;
+  }
+});
+function endPtr(e){
+  var had=V.ptr[e.pointerId]; delete V.ptr[e.pointerId]; if(!had)return;
+  if(Object.keys(V.ptr).length===0&&V.cnt===1&&V.moved<9&&Date.now()-V.t0<450){
+    var hz=V.tgt&&V.tgt.closest?V.tgt.closest('.hz'):null;
+    var r=imgv.getBoundingClientRect(); var px=e.clientX-r.left,py=e.clientY-r.top;
+    var now=Date.now();
+    if(now-V.last<320&&Math.abs(px-V.lx)<30&&Math.abs(py-V.ly)<30){
+      if(V.s>V.fit*1.5) fitView(true); else zoomAt(2.6,px,py,true); V.last=0; return;
+    }
+    V.last=now; V.lx=px; V.ly=py;
+    if(hz){ selectZone(+hz.dataset.z); }
+  }
+  V.pd=0;
+}
+imgv.addEventListener('pointerup',endPtr); imgv.addEventListener('pointercancel',endPtr);
+imgv.addEventListener('wheel',function(e){e.preventDefault();var r=imgv.getBoundingClientRect();zoomAt(e.deltaY>0?0.88:1.14,e.clientX-r.left,e.clientY-r.top,false);},{passive:false});
+window.addEventListener('resize',function(){ if(MODE==='img'&&ZSEL<0)fitView(false); else if(MODE==='img'&&ZSEL>=0){var n=nodeById(SEL);zoomBox(n.zones[ZSEL].b,false);} });
+
+/* thanh công cụ ảnh */
+$('#z-in').onclick=function(){zoomAt(1.5,vw()/2,vh()/2,true);};
+$('#z-out').onclick=function(){zoomAt(1/1.5,vw()/2,vh()/2,true);};
+$('#z-fit').onclick=function(){if(ZSEL>=0){clearZone();}else fitView(true);};
+$('#z-hs').onclick=function(){V.show=!V.show;this.classList.toggle('on',V.show);this.textContent=V.show?'Vùng chạm: bật':'Bản vẽ thô';hsEl.classList.toggle('off',!V.show);if(!V.show&&ZSEL>=0)clearZone();};
+$('#pg-p').onclick=function(){PAGE=Math.max(0,PAGE-1);loadDrawing(nodeById(SEL));clearZoneQuiet();};
+$('#pg-n').onclick=function(){var n=nodeById(SEL);PAGE=Math.min(n.imgs.length-1,PAGE+1);loadDrawing(n);clearZoneQuiet();};
+function clearZoneQuiet(){ZSEL=-1;$('#zcap').style.display='none';}
+$('#v-prev').onclick=function(){stepNode(-1);}; $('#v-next').onclick=function(){stepNode(1);};
+$('#z-fs').onclick=function(){toggleFS();}; $('#fs-x').onclick=function(){toggleFS(false);};
+function toggleFS(force){
+  var c=$('#center'); var on=(force===undefined)?!c.classList.contains('fs'):force;
+  c.classList.toggle('fs',on); document.body.classList.toggle('nofs',on);
+  setTimeout(function(){ if(MODE==='img'){ZSEL>=0?zoomBox(nodeById(SEL).zones[ZSEL].b,false):fitView(false);} else {var E=(SEL==='m3dp')?EP:EM;E.resize();E.draw();} },80);
+}
+
+/* ngăn kéo cây trên màn hình hẹp */
+function closeDrawer(){treeEl.classList.remove('open');$('#drawer-bg').classList.remove('on');}
+$('#tree-toggle').onclick=function(){treeEl.classList.add('open');$('#drawer-bg').classList.add('on');};
+$('#drawer-bg').onclick=closeDrawer;
+
+/* ---------- liên kết với tab chi phí ---------- */
+function drawLink(itemId){
+  var nid=ITEM2NODE[itemId]; if(!nid)return '';
+  var n=nodeById(nid);
+  return '<button class="dlink" data-dl="'+nid+'">Bản vẽ: '+esc(n.code)+' →</button>';
+}
+function goCost(itemId){
+  switchTab('chi-phi'); setTimeout(function(){
+    var r=document.querySelector('[data-row="'+itemId+'"]'); if(r){r.scrollIntoView({block:'center',behavior:'smooth'});r.classList.add('flash');setTimeout(function(){r.classList.remove('flash');},2200);}
+  },60);
+}
+function goDraw(nodeId){ switchTab('hinh-ve'); selectNode(nodeId); }
+
+/* ---------- tab ---------- */
+var TABS=['hinh-ve','chi-phi','rui-ro'];
+function switchTab(name){
+  if(TABS.indexOf(name)<0)name='hinh-ve';
+  TABS.forEach(function(t){var p=$('#tab-'+t);if(p)p.classList.toggle('on',t===name);});
+  $$('.tabb').forEach(function(b){b.classList.toggle('on',b.dataset.tab===name);});
+  if(location.hash!=='#'+name){try{history.replaceState(null,'','#'+name);}catch(e){location.hash=name;}}
+  window.scrollTo(0,0);
+  if(name==='hinh-ve'){ setTimeout(function(){ if(MODE==='img'){fitView(false);} else if(MODE==='3d'){var E=(SEL==='m3dp')?EP:EM;E.resize();E.draw();} },30); }
+}
+$$('.tabb').forEach(function(b){b.onclick=function(){switchTab(b.dataset.tab);};});
+document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-dl]'); if(t){goDraw(t.dataset.dl);}});
+window.addEventListener('hashchange',function(){var h=location.hash.replace('#','');if(TABS.indexOf(h)>=0)switchTab(h);});
+
+/* gọi mỗi khi chi phí đổi */
+function onCost(){ updateTreeCosts(); refreshInfoCost(); }
+
+/* ==================================================================
+   COST MODEL
+   ================================================================== */
+var G=[['coc','1 · Cọc khoan nhồi D1000 — tự thi công'],['be','2 · Bệ trụ 14 × 12 m'],
+['nuoc','3 · Nạo vét và bảo vệ mái, đáy khu nước'],['nen','4 · Nền đường dốc'],
+['mong','5 · Móng đường'],['bp','6 · Biện pháp thi công và huy động'],
+['neo','7 · Khối neo và cột bích neo tàu'],['dien','8 · Điện chiếu sáng đường và bãi neo']];
+var OPTG={dien:1};
+var I=[
+{id:'khoan',g:'coc',nm:'Khoan tạo lỗ cọc D1000',q:148.5,u:'md',p:1500000,lo:1050000,hi:2200000,mn:700000,mx:3000000,st:25000,vl:.15,my:.60,nc:.25,src:'est',note:'9 cọc × 16,5 m. Tự thi công: ca máy khoan, cẩu phục vụ, bentonite, ống vách.'},
+{id:'btcoc',g:'coc',nm:'Bê tông C30 thân cọc',q:137.64,u:'m³',p:1650000,lo:1480000,hi:1950000,mn:1200000,mx:2400000,st:10000,vl:.85,my:.08,nc:.07,src:'hs',note:'116,64 m³ theo DL-15 × hệ số hao hụt 1,18 khi đổ dưới dung dịch.'},
+{id:'thepcoc',g:'coc',nm:'Cốt thép cọc — gia công, lắp dựng',q:15.097,u:'tấn',p:18000000,lo:16200000,hi:21500000,mn:14000000,mx:26000000,st:100000,vl:.88,my:.04,nc:.08,src:'hs',note:'15.097 kg theo DL-15. Mác thép chưa được ghi trên bản vẽ.'},
+{id:'sieuam',g:'coc',nm:'Ống siêu âm và thí nghiệm kiểm tra cọc',q:9,u:'cọc',p:8000000,lo:4500000,hi:14000000,mn:2000000,mx:22000000,st:250000,vl:.40,my:.20,nc:.40,src:'est',note:'Bản vẽ không nêu phương pháp hay số lượng thí nghiệm — cần hỏi tư vấn.'},
+{id:'btbe',g:'be',nm:'Bê tông C30 bệ trụ',q:280.60,u:'m³',p:1650000,lo:1480000,hi:1950000,mn:1200000,mx:2400000,st:10000,vl:.85,my:.08,nc:.07,src:'hs',note:'267,24 m³ theo DL-14 × hao hụt 1,05.'},
+{id:'thepbe',g:'be',nm:'Cốt thép bệ trụ',q:31.605,u:'tấn',p:18000000,lo:16200000,hi:21500000,mn:14000000,mx:26000000,st:100000,vl:.88,my:.04,nc:.08,src:'hs',note:'Φ25 30.965,55 kg + Φ16 638,95 kg theo DL-14.'},
+{id:'vankhuon',g:'be',nm:'Ván khuôn bệ trụ',q:250,u:'m²',p:800000,lo:500000,hi:1350000,mn:300000,mx:2000000,st:25000,vl:.45,my:.15,nc:.40,src:'est',qadj:1,note:'Diện tích tôi tự tính từ kích thước bệ 14 × 12 × 1,47 m. Ván khuôn treo trên nước.'},
+{id:'sandao',g:'be',nm:'Sàn đạo, hệ đỡ thi công trên nước',q:1,u:'trọn gói',p:300000000,lo:160000000,hi:600000000,mn:80000000,mx:900000000,st:10000000,vl:.40,my:.35,nc:.25,src:'est',note:'Không có trong hồ sơ. Cần sàn công tác để khoan cọc và đổ bệ trên mặt nước.'},
+{id:'naovet',g:'nuoc',nm:'Đào, nạo vét dưới nước',q:21056,u:'m³',p:110000,lo:75000,hi:185000,mn:45000,mx:300000,st:2500,vl:0,my:.75,nc:.25,src:'hs',note:'21.056,44 m³ theo bảng DL-09. Đơn giá phụ thuộc mạnh vào thiết bị và cự ly đổ thải.'},
+{id:'dahocmai',g:'nuoc',nm:'Đá hộc 600 mm bảo vệ mái 1:3 và đáy khu nước',q:2500,u:'m³',p:400000,lo:290000,hi:560000,mn:180000,mx:800000,st:10000,vl:.60,my:.25,nc:.15,src:'est',qadj:1,note:'⚠ Hồ sơ KHÔNG có bảng khối lượng. Tôi ước từ dải rộng 84,1 m và mái 1:3. Kéo cả khối lượng lẫn đơn giá.'},
+{id:'boc',g:'nen',nm:'Bóc lớp đất mặt 300 mm',q:110.88,u:'m³',p:50000,lo:35000,hi:85000,mn:20000,mx:130000,st:2500,vl:0,my:.70,nc:.30,src:'hs',note:'Theo bảng khối lượng DL-02.'},
+{id:'daodat',g:'nen',nm:'Đào đất trên cạn',q:948.02,u:'m³',p:60000,lo:42000,hi:105000,mn:25000,mx:160000,st:2500,vl:0,my:.75,nc:.25,src:'hs',note:'948,02 m³ theo DL-02.'},
+{id:'daphonghoa',g:'nen',nm:'Đắp đá phong hoá (sơn bì thạch)',q:3406.13,u:'m³',p:230000,lo:165000,hi:330000,mn:120000,mx:450000,st:5000,vl:.65,my:.25,nc:.10,src:'hs',note:'3.406,13 m³ theo DL-02. Phải đạt Cu ≥ 5, Cc 1–3, γd ≥ 2,05 t/m³.'},
+{id:'dahocnen',g:'nen',nm:'Đá hộc 600 mm nền đoạn có đào',q:367.08,u:'m³',p:380000,lo:270000,hi:520000,mn:180000,mx:700000,st:5000,vl:.62,my:.25,nc:.13,src:'hs',note:'367,08 m³ theo DL-02. Đá 10–100 kg, cường độ ngâm nước ≥ 30 MPa.'},
+{id:'cpdd',g:'mong',nm:'Cấp phối đá dăm 400 mm (200 + 200)',q:1123.20,u:'m³',p:480000,lo:350000,hi:660000,mn:250000,mx:850000,st:5000,vl:.70,my:.22,nc:.08,src:'hs',note:'1.123,20 m³ theo DL-02. Cường độ nén ≥ 80 MPa, bùn sét < 2%.'},
+{id:'dequay',g:'bp',nm:'Đê quây, bơm nước, biện pháp mùa lũ',q:1,u:'trọn gói',p:650000000,lo:320000000,hi:1250000000,mn:150000000,mx:1800000000,st:25000000,vl:.35,my:.45,nc:.20,src:'est',note:'⚠ Không có trong hồ sơ. Thuyết minh chỉ nêu trình tự thi công đê quây rồi dỡ bỏ.'},
+{id:'huydong',g:'bp',nm:'Huy động thiết bị, lán trại, an toàn, môi trường',q:1,u:'trọn gói',p:250000000,lo:140000000,hi:470000000,mn:60000000,mx:700000000,st:10000000,vl:.30,my:.30,nc:.40,src:'est',note:'Huy động máy khoan, cẩu, thiết bị nạo vét tới công trường bên sông Lục Nam.'},
+{id:'neodao',g:'neo',nm:'Đào móng 2 khối neo',q:123,u:'m³',p:80000,lo:50000,hi:130000,mn:30000,mx:200000,st:2500,vl:0,my:.75,nc:.25,src:'est',qadj:1,note:'Hố đáy 3,9 × 3,9 m, sâu ≈ 2,35 m, taluy 1:0,5; hai hố ≈ 123 m³. Khối lượng tôi tự tính từ DL-04.'},
+{id:'neodem',g:'neo',nm:'Lớp đệm đá dăm 150 mm dưới khối neo',q:4.56,u:'m³',p:450000,lo:320000,hi:650000,mn:200000,mx:900000,st:10000,vl:.72,my:.14,nc:.14,src:'hs',note:'Ghi chú 4 DL-04: đào tới đáy móng, rải đệm đá dăm 150 mm rồi đầm chặt.'},
+{id:'neobt',g:'neo',nm:'Bê tông C25 khối neo (2 khối)',q:29.7,u:'m³',p:1550000,lo:1380000,hi:1850000,mn:1100000,mx:2300000,st:10000,vl:.85,my:.07,nc:.08,src:'hs',note:'Mỗi khối: đáy 3,5 × 3,5 × 0,8 m + chóp cụt 2,5 → 0,8 m cao 1,7 m ≈ 14,8 m³. BT C25 đổ tại chỗ.'},
+{id:'neodap',g:'neo',nm:'Đắp trả cát sỏi quanh khối neo, đầm chặt',q:89,u:'m³',p:180000,lo:120000,hi:280000,mn:70000,mx:400000,st:5000,vl:.55,my:.30,nc:.15,src:'est',qadj:1,note:'Ghi chú 5 DL-04: xung quanh khối neo đắp trả bằng cát sỏi hoặc đất, đầm chặt.'},
+{id:'neomat',g:'neo',nm:'Mặt BT C20 100 mm + đá dăm 100 mm quanh khối neo',q:77,u:'m²',p:210000,lo:150000,hi:320000,mn:90000,mx:450000,st:5000,vl:.70,my:.12,nc:.18,src:'hs',note:'Theo mặt cắt A-A và B-B của DL-04.'},
+{id:'bollard',g:'neo',nm:'Cột bích gang 150 kN, lắp đặt hoàn chỉnh',q:2,u:'cái',p:32000000,lo:24000000,hi:46000000,mn:15000000,mx:70000000,st:500000,vl:.82,my:.05,nc:.13,src:'hs',note:'Vỏ gang HT200 234 kg + bu lông M30 × 1158, bản định vị, thép neo, sơn kẽm 40 µm + PU 280 µm. Tổng 286,8 kg/cái.'},
+{id:'poleroad',g:'dien',nm:'Cột đèn thép mạ kẽm 10 m + móng + cần đơn',q:10,u:'cột',p:18000000,lo:12000000,hi:27000000,mn:7000000,mx:40000000,st:250000,vl:.68,my:.12,nc:.20,src:'est',qadj:1,note:'⚠ Không có bản vẽ điện trong hồ sơ. Đề xuất khoảng cách 24 m dọc đường 232,76 m, bố trí một bên.'},
+{id:'ledroad',g:'dien',nm:'Đèn LED chiếu sáng đường 150 W',q:10,u:'bộ',p:4500000,lo:3000000,hi:7500000,mn:1500000,mx:12000000,st:100000,vl:.90,my:0,nc:.10,src:'est',qadj:1,note:'⚠ Đề xuất. Công suất và cấp chiếu sáng cần chốt với chủ đầu tư.'},
+{id:'mastled',g:'dien',nm:'Cột đèn pha 12 m + 4 đèn LED 250 W chiếu bãi neo',q:2,u:'cột',p:45000000,lo:32000000,hi:68000000,mn:18000000,mx:110000000,st:500000,vl:.78,my:.08,nc:.14,src:'est',qadj:1,note:'⚠ Đề xuất. Chiếu sáng khu trụ bến và vùng nước neo tàu khi làm hàng ban đêm.'},
+{id:'cable',g:'dien',nm:'Cáp ngầm, ống luồn, mương cáp, tiếp địa',q:450,u:'m',p:450000,lo:300000,hi:700000,mn:180000,mx:1000000,st:10000,vl:.62,my:.10,nc:.28,src:'est',qadj:1,note:'⚠ Đề xuất. Chiều dài tuyến cáp phụ thuộc vị trí nguồn điện — chưa biết.'},
+{id:'tudien',g:'dien',nm:'Tủ điện chiếu sáng, điều khiển, đấu nối',q:1,u:'trọn gói',p:80000000,lo:45000000,hi:140000000,mn:20000000,mx:250000000,st:2500000,vl:.70,my:.05,nc:.25,src:'est',note:'⚠ Đề xuất. Gồm tủ, aptomat, điều khiển thời gian, đấu nối vào nguồn của nhà máy.'}
+];
+var BASE=I.map(function(x){return {id:x.id,p:x.p,q:x.q}});
+var OH=6.5, BID=10e9, VATR=10, CAP=8e9, GMAX=12e9, HMAX=11e9;
+function rev(){return BID/(1+VATR/100);}
+
+(function(){
+  var box=$('#cost-rows');
+  G.forEach(function(gg){
+    var g=document.createElement('div'); g.className='grp'+(OPTG[gg[0]]?' opt':'');
+    g.innerHTML='<div class="grp-h"><span>'+gg[1]+(OPTG[gg[0]]?' <span class="chip c-est" style="text-transform:none;letter-spacing:0">đề xuất, không có trong hồ sơ</span>':'')+'</span><span class="gt" data-gt="'+gg[0]+'">—</span></div>';
+    I.filter(function(x){return x.g===gg[0]}).forEach(function(x){
+      var r=document.createElement('div'); r.className='row'; r.setAttribute('data-row',x.id);
+      var qH = x.qadj
+        ? '<input type="number" value="'+x.q+'" data-q="'+x.id+'" class="qin"> '+x.u+' · <span class="chip c-est">KL sửa được</span>'
+        : NF.format(x.q)+' '+x.u;
+      r.innerHTML='<div><div class="nm">'+x.nm+' <span class="chip '+(x.src==='hs'?'c-src">từ hồ sơ':'c-est">ước tính')+'</span></div>'+
+        '<div class="qt">'+qH+'</div><div class="nt">'+x.note+'</div>'+drawLink(x.id)+'</div>'+
+        '<div class="ctrl"><input type="range" data-r="'+x.id+'" min="'+x.mn+'" max="'+x.mx+'" step="'+x.st+'" value="'+x.p+'">'+
+        '<input type="text" inputmode="numeric" data-n="'+x.id+'" value="'+NF.format(x.p)+'"><span class="u">đ/'+x.u+'</span></div>'+
+        '<div class="amt" data-a="'+x.id+'">—</div>';
+      g.appendChild(r);
+    });
+    box.appendChild(g);
+  });
+  $$('input[data-r]').forEach(function(s){s.addEventListener('input',function(e){
+    var it=find(e.target.dataset.r); it.p=+e.target.value;
+    $('input[data-n="'+it.id+'"]').value=NF.format(it.p); calc();});});
+  $$('input[data-n]').forEach(function(s){
+    s.addEventListener('input',function(e){
+      var it=find(e.target.dataset.n), v=+String(e.target.value).replace(/[^\d]/g,'');
+      if(!isFinite(v)||v<0)return; it.p=v;
+      $('input[data-r="'+it.id+'"]').value=Math.max(it.mn,Math.min(it.mx,v)); calc();});
+    s.addEventListener('blur',function(e){e.target.value=NF.format(find(e.target.dataset.n).p)});});
+  $$('input[data-q]').forEach(function(s){s.addEventListener('input',function(e){
+    var it=find(e.target.dataset.q), v=+e.target.value; if(!isFinite(v)||v<0)return; it.q=v; calc();});});
+})();
+function find(id){for(var i=0;i<I.length;i++)if(I[i].id===id)return I[i];}
+
+$('#r-oh').addEventListener('input',function(e){OH=+e.target.value;calc()});
+function syncBid(){ $('#r-bid').value=(BID/1e9).toFixed(2); $('#n-bid').value=NF.format(BID); }
+$('#r-bid').addEventListener('input',function(e){BID=parseFloat(e.target.value)*1e9; $('#n-bid').value=NF.format(BID); calc();});
+$('#n-bid').addEventListener('input',function(e){var v=+String(e.target.value).replace(/[^\d]/g,'');
+  if(!isFinite(v)||v<=0)return; BID=v; $('#r-bid').value=Math.max(7,Math.min(14,v/1e9)); calc();});
+$('#n-bid').addEventListener('blur',function(){$('#n-bid').value=NF.format(BID)});
+$$('[data-vat]').forEach(function(b){b.addEventListener('click',function(){
+  $$('[data-vat]').forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+  VATR=+b.dataset.vat; calc();});});
+function setAll(key){ I.forEach(function(x){ if(x[key]!==undefined)x.p=x[key];
+  var sl=$('input[data-r="'+x.id+'"]'); if(sl)sl.value=Math.max(x.mn,Math.min(x.mx,x.p));
+  var nb=$('input[data-n="'+x.id+'"]'); if(nb)nb.value=NF.format(x.p); }); }
+$('#btn-reset').onclick=function(){ I.forEach(function(x,k){x.p=BASE[k].p;x.q=BASE[k].q;
+  $('input[data-r="'+x.id+'"]').value=x.p; $('input[data-n="'+x.id+'"]').value=NF.format(x.p);
+  var qb=$('input[data-q="'+x.id+'"]'); if(qb)qb.value=x.q; });
+  OH=6.5; $('#r-oh').value=6.5; BID=10e9; VATR=10; syncBid();
+  $$('[data-vat]').forEach(function(x){x.classList.toggle('on',x.dataset.vat==='10')}); calc(); };
+function qset(id,v){var it=find(id); if(!it)return; it.q=v; var qb=$('input[data-q="'+id+'"]'); if(qb)qb.value=v;}
+$('#btn-low').onclick=function(){ setAll('lo'); qset('dahocmai',1400); qset('vankhuon',200); qset('poleroad',8); qset('ledroad',8); qset('cable',350);
+  OH=4.5; $('#r-oh').value=4.5; calc(); };
+$('#btn-high').onclick=function(){ setAll('hi'); qset('dahocmai',3800); qset('vankhuon',300); qset('poleroad',12); qset('ledroad',12); qset('cable',600);
+  OH=9; $('#r-oh').value=9; calc(); };
+
+var DIRECT=0,TOTAL=0,MATB=0,MACHB=0;
+function calc(){
+  DIRECT=0;MATB=0;MACHB=0; var gs={};
+  I.forEach(function(x){ var a=x.q*x.p; DIRECT+=a; MATB+=a*x.vl; MACHB+=a*x.my;
+    gs[x.g]=(gs[x.g]||0)+a;
+    $('[data-a="'+x.id+'"]').innerHTML=tr(a)+(a>=1e9?'<i>'+ti(a)+'</i>':'');});
+  G.forEach(function(gg){ $('[data-gt="'+gg[0]+'"]').textContent=tr(gs[gg[0]]||0); });
+  var oh=DIRECT*OH/100; TOTAL=DIRECT+oh;
+  var R=rev(), pr=R-TOTAL, brk=TOTAL*(1+VATR/100);
+  $('#t-direct').textContent=vnd(DIRECT);
+  $('#t-ohp').textContent=vn(OH,1)+'%'; $('#t-oh').textContent=vnd(oh);
+  $('#t-total').textContent=vnd(TOTAL);
+  $('#t-vat').textContent=vnd(BID-R);
+  $('#t-rev').textContent=vnd(R);
+  var pe=$('#t-profit'); pe.textContent=(pr<0?'− ':'')+vnd(Math.abs(pr))+'  ('+vn(pr/R*100,1)+'%)';
+  pe.style.color = pr<0?'var(--red)':(pr/R<0.07?'var(--amber)':'var(--green)');
+  $('#t-break').textContent=vnd(brk)+'  ('+ti(brk)+')';
+  $('#gneedle').style.left=Math.max(0,Math.min(100,TOTAL/GMAX*100))+'%';
+  $('#gval').textContent=ti(TOTAL);
+  $('#gtrack').firstElementChild.style.left=(CAP/GMAX*100)+'%';
+  $('#gmark-rev').style.left=(R/GMAX*100)+'%';
+  $('#gmark-rev-t').textContent='doanh thu '+ti(R);
+  $('#gtrack').style.background='linear-gradient(90deg,#e7f4ec 0%,#e7f4ec '+(CAP/GMAX*100)+'%,#fdf2e7 '+(CAP/GMAX*100)+'%,#fdf2e7 '+(R/GMAX*100)+'%,#fbeeec '+(R/GMAX*100)+'%,#fbeeec 100%)';
+  var gv=$('#gverdict');
+  if(TOTAL<=CAP) gv.innerHTML='<span style="color:var(--green);font-size:22px">●</span><span>Dưới trần 8 tỉ. Còn <b>'+tr(pr)+'</b> lãi gộp. Vùng an toàn — nhưng chỉ đúng nếu các đơn giá ước tính ở trên là thật.</span>';
+  else if(TOTAL<=R) gv.innerHTML='<span style="color:var(--amber);font-size:22px">●</span><span>Vượt trần vốn 8 tỉ <b>'+tr(TOTAL-CAP)+'</b>. Vẫn còn <b>'+tr(pr)+'</b> lãi gộp, nhưng mỏng — chỉ một rủi ro xảy ra là âm.</span>';
+  else gv.innerHTML='<span style="color:var(--red);font-size:22px">●</span><span>Chi phí vượt cả doanh thu. <b>Lỗ '+tr(-pr)+'</b>. Muốn hoà vốn, giá chào phải từ <b>'+ti(brk)+'</b> trở lên.</span>';
+  var cbd=$('#cb-dot');
+  $('#cb-rev').textContent=ti(R); $('#cb-cost').textContent=ti(TOTAL); $('#cb-cap').textContent=ti(CAP);
+  var cp=$('#cb-profit'); cp.textContent=(pr<0?'− ':'')+tr(Math.abs(pr)); cp.style.color=pr<0?'var(--red)':(pr/R<0.07?'var(--amber)':'var(--green)');
+  var vt=$('#cb-text');
+  if(TOTAL<=CAP){cbd.style.background='var(--green)';vt.innerHTML='<b>Trong tầm kiểm soát</b> — chi phí dưới trần vốn 8 tỉ.';}
+  else if(TOTAL<=R){cbd.style.background='var(--amber)';vt.innerHTML='<b>Có lãi nhưng vượt trần vốn '+tr(TOTAL-CAP)+'</b> — lãi mỏng '+vn(pr/R*100,1)+'%.';}
+  else {cbd.style.background='var(--red)';vt.innerHTML='<b>Giá '+ti(BID)+' không đủ</b> — lỗ '+tr(-pr)+'; cần chào từ '+ti(brk)+' để hoà vốn.';}
+  if(typeof onCost==='function') onCost();
+  risk();
+}
+
+/* ============ RISK ============ */
+['k-mat','k-day','k-dcost','k-pile','k-mach','k-pay','k-rate'].forEach(function(id){$('#'+id).addEventListener('input',risk)});
+['k-dyke','k-geo'].forEach(function(id){$('#'+id).addEventListener('change',risk)});
+function rv(id){return +$('#'+id).value}
+function perMetre(){ return find('khoan').p + 0.7854*1.18*find('btcoc').p + 0.1016*find('thepcoc').p; }
+function parts(){
+  var mat=MATB*rv('k-mat')/100;
+  var wea=rv('k-day')*rv('k-dcost')*1e6 + ($('#k-dyke').checked?450e6:0);
+  var geo=rv('k-pile')*9*perMetre() + ($('#k-geo').checked?180e6:0);
+  var mach=MACHB*rv('k-mach')/100;
+  var sub=TOTAL+mat+wea+geo+mach;
+  var pay=sub*0.30*(rv('k-rate')/100)*(rv('k-pay')/12);
+  return {mat:mat,wea:wea,geo:geo,mach:mach,pay:pay,add:mat+wea+geo+mach+pay};
+}
+function risk(){
+  $('#v-mat').textContent=rv('k-mat')+'%'; $('#v-day').textContent=rv('k-day')+' ngày';
+  $('#v-dcost').textContent=rv('k-dcost')+' tr'; $('#v-pile').textContent=String(rv('k-pile')).replace('.',',')+' m';
+  $('#v-mach').textContent=rv('k-mach')+'%'; $('#v-pay').textContent=rv('k-pay')+' tháng';
+  $('#v-rate').textContent=String(rv('k-rate')).replace('.',',')+'%/năm';
+  var p=parts(), R=rev();
+  $('#i-mat').textContent='Tác động: '+(p.mat?'+'+tr(p.mat):'0 đ')+'   (nền vật liệu '+tr(MATB)+')';
+  $('#i-weather').textContent='Tác động: '+(p.wea?'+'+tr(p.wea):'0 đ');
+  $('#i-geo').textContent='Tác động: '+(p.geo?'+'+tr(p.geo):'0 đ')+'   (mỗi mét thêm cho 9 cọc ≈ '+tr(9*perMetre())+')';
+  $('#i-mach').textContent='Tác động: '+((p.mach+p.pay)?'+'+tr(p.mach+p.pay):'0 đ')+'   (máy '+tr(p.mach)+' · lãi vay '+tr(p.pay)+')';
+  var tot=TOTAL+p.add, pr=R-tot;
+  $('#r-total').innerHTML=ti(tot).replace(' tỉ','')+'<i> tỉ</i>';
+  $('#r-total').style.color = tot>R?'var(--red)':(tot>CAP?'var(--amber)':'var(--green)');
+  $('#r-base').textContent=ti(TOTAL);
+  $('#r-add').textContent=(p.add>0?'+':'')+tr(p.add);
+  $('#r-rev').textContent=ti(R);
+  $('#r-profit').textContent=(pr<0?'− ':'')+tr(Math.abs(pr));
+  $('#r-profit').style.color = pr<0?'var(--red)':'var(--navy)';
+  $('#r-over').textContent = tot>CAP?'+'+tr(tot-CAP):'không vượt';
+  $('#r-over').style.color = tot>CAP?'var(--amber)':'var(--green)';
+  var v=$('#r-verdict');
+  if(tot<=CAP){v.className='rverd rv-ok';v.innerHTML='<span>✓</span><span>Vẫn dưới trần 8 tỉ. Lãi gộp '+tr(pr)+'. Gói này chịu được mức rủi ro bạn đang đặt.</span>';}
+  else if(tot<=R){v.className='rverd rv-warn';v.innerHTML='<span>!</span><span>Vượt trần vốn '+tr(tot-CAP)+' — bạn phải thu xếp thêm phần vốn này. Còn lãi '+tr(pr)+', tức '+vn(pr/R*100,1)+'%.</span>';}
+  else {v.className='rverd rv-bad';v.innerHTML='<span>✕</span><span>Lỗ '+tr(-pr)+'. Ở mức rủi ro này, giá chào '+ti(BID)+' không gánh nổi. Cần nâng giá lên ít nhất '+ti(tot*(1+VATR/100))+' hoặc chuyển rủi ro sang chủ đầu tư bằng điều khoản hợp đồng.</span>';}
+  var pm=perMetre();
+  var S=[['Vật liệu tăng 15%',MATB*.15,'#c98a06'],['Dừng 30 ngày + vỡ đê quây',30*12e6+450e6,'#1f74ab'],
+         ['Cọc dài thêm 3 m + khảo sát',3*9*pm+180e6,'#8a9aa8'],['Máy phát sinh 12%',MACHB*.12,'#d4621f'],
+         ['Chậm thanh toán 4 tháng',TOTAL*.30*.10*(4/12),'#b8322a']];
+  S.sort(function(a,b){return b[1]-a[1]});
+  var mx=S[0][1]||1;
+  $('#torn').innerHTML=S.map(function(a){return '<div class="tr"><span class="tl">'+a[0]+
+    '</span><div class="ttrack"><div class="tfill" style="width:'+(a[1]/mx*100)+'%;background:'+a[2]+'"></div></div><span class="tv">+'+tr(a[1])+'</span></div>';}).join('');
+}
+function setR(o){ for(var k in o){ var e=$('#'+k); if(e.type==='checkbox')e.checked=o[k]; else e.value=o[k]; } risk(); }
+$('#btn-rnone').onclick=function(){setR({'k-mat':0,'k-day':0,'k-dcost':12,'k-dyke':false,'k-pile':0,'k-geo':false,'k-mach':0,'k-pay':0,'k-rate':10})};
+$('#btn-rlikely').onclick=function(){setR({'k-mat':8,'k-day':15,'k-dcost':12,'k-dyke':false,'k-pile':1.5,'k-geo':true,'k-mach':6,'k-pay':2,'k-rate':10})};
+$('#btn-rbad').onclick=function(){setR({'k-mat':18,'k-day':40,'k-dcost':15,'k-dyke':true,'k-pile':4,'k-geo':true,'k-mach':14,'k-pay':5,'k-rate':12})};
+
+
+/* ---------- khởi động ---------- */
+buildTree(); syncBid(); calc();
+selectNode('m3d',{noscroll:true});window.__sel=selectNode;
+(function(){var h=location.hash.replace('#','');switchTab(TABS.indexOf(h)>=0?h:'hinh-ve');})();
+})();
+</script>
+</body>
+</html>
